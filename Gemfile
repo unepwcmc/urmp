@@ -7,6 +7,9 @@ gem 'rails', '3.0.9'
 
 gem 'pg'
 
+gem 'devise' # Devise must be required before RailsAdmin
+gem 'rails_admin', :git => 'git://github.com/sferik/rails_admin.git'
+
 group :development do
   gem 'ruby-debug19'
 
