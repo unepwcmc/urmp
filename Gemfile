@@ -7,9 +7,12 @@ gem 'rake', '0.8.7'
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
 gem 'pg'
+gem 'globalize3'
 
 gem 'devise' # Devise must be required before RailsAdmin
 gem 'rails_admin', :git => 'git://github.com/sferik/rails_admin.git'
+
+gem 'jquery-rails'  
 
 group :development do
   gem 'ruby-debug19'
@@ -17,7 +20,16 @@ group :development do
   gem 'capistrano'
   gem 'capistrano-ext'
   gem 'brightbox'
+
+  gem 'rb-fsevent', :require => false if RUBY_PLATFORM =~ /darwin/i
+  gem 'growl' if RUBY_PLATFORM =~ /darwin/i #You will need growlnotify from growl extra for this to work
 end
+
+group :test do  
+  gem "factory_girl_rails"  
+  gem "capybara"  
+  gem "guard-test"  
+end  
 
 #gem 'therubyracer', :require => false
 

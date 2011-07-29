@@ -3,5 +3,12 @@ class Principle < ActiveRecord::Base
   has_many :resource_links
   has_many :resources, :through => :resource_links
 
-  validates_presence_of :name
+  validates_presence_of :number
+
+  rails_admin do
+    object_label_method do
+      :number
+    end
+  end
+   
 end

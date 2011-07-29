@@ -10,19 +10,19 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110729103706) do
+ActiveRecord::Schema.define(:version => 20110729152933) do
 
   create_table "criteria", :force => true do |t|
-    t.string   "name"
     t.integer  "principle_id"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "number"
   end
 
   create_table "principles", :force => true do |t|
-    t.string   "name"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "number"
   end
 
   create_table "rails_admin_histories", :force => true do |t|
@@ -38,6 +38,16 @@ ActiveRecord::Schema.define(:version => 20110729103706) do
 
   add_index "rails_admin_histories", ["item", "table", "month", "year"], :name => "index_rails_admin_histories"
 
+  create_table "resource_link_translations", :force => true do |t|
+    t.integer  "resource_link_id"
+    t.string   "locale"
+    t.text     "reference"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "resource_link_translations", ["resource_link_id"], :name => "index_3d7173407008b1615412f5ecb40093e833a1f8f3"
+
   create_table "resource_links", :force => true do |t|
     t.text     "reference"
     t.integer  "principle_id"
@@ -45,13 +55,20 @@ ActiveRecord::Schema.define(:version => 20110729103706) do
     t.integer  "resource_id"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.text     "cached_name"
   end
 
   create_table "resources", :force => true do |t|
-    t.string   "name"
+    t.string   "title"
     t.string   "link"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "author"
+    t.string   "language"
+    t.date     "resource_date"
+    t.string   "institution"
+    t.text     "description"
+    t.integer  "res_type_id"
   end
 
   create_table "users", :force => true do |t|

@@ -3,5 +3,12 @@ class Criterion < ActiveRecord::Base
   has_many :resource_links
   has_many :resources, :through => :resource_links
 
-  validates_presence_of :principle, :name
+  validates_presence_of :principle, :number
+
+  rails_admin do
+    object_label_method do
+      :number
+    end
+  end
+
 end
