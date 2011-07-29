@@ -6,13 +6,19 @@ gem 'rails', '3.0.9'
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
 gem 'pg'
+
+group :development do
+  gem 'ruby-debug19'
+
+  gem 'capistrano'
+  gem 'capistrano-ext'
+  gem 'brightbox'
+end
+
 #gem 'therubyracer', :require => false
 
 # Use unicorn as the web server
 # gem 'unicorn'
-
-# Deploy with Capistrano
-# gem 'capistrano'
 
 # To use debugger (ruby-debug for Ruby 1.8.7+, ruby-debug19 for Ruby 1.9.2+)
 # gem 'ruby-debug'
