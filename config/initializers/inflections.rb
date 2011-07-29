@@ -8,3 +8,8 @@
 #   inflect.irregular 'person', 'people'
 #   inflect.uncountable %w( fish sheep )
 # end
+
+ActiveSupport::Inflector.inflections do |inflect|
+  inflect.plural(/rion$/ ,'ria') # criterion => criteria
+  inflect.singular(/ria$/, 'rion') # criteria => criterion
+end
