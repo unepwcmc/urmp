@@ -5,8 +5,6 @@ class ResourceLink < ActiveRecord::Base
 
   validates_presence_of :resource
 
-  translates :reference
-
   has_many :resource_link_translations
   accepts_nested_attributes_for :resource_link_translations
 
