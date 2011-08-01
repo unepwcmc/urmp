@@ -1,6 +1,6 @@
 GIT
   remote: git://github.com/sferik/rails_admin.git
-  revision: 3b87a55eede81d349b821eb06f9e28d0ee514540
+  revision: ef02329d8c4263d55b2c958dba498dda803fd18b
   specs:
     rails_admin (0.0.1)
       builder (~> 2.1.0)
@@ -129,8 +129,8 @@ GEM
       rdoc (~> 3.4)
       thor (~> 0.14.4)
     rake (0.8.7)
-    rb-fsevent (0.4.1)
-    rdoc (3.8)
+    rb-fsevent (0.4.2)
+    rdoc (3.9.1)
     ruby-debug-base19 (0.11.25)
       columnize (>= 0.3.1)
       linecache19 (>= 0.5.11)
