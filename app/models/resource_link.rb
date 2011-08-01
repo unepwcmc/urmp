@@ -5,9 +5,6 @@ class ResourceLink < ActiveRecord::Base
   validates_presence_of :resource
   validates_presence_of :criterion
 
-  has_many :resource_link_translations
-  accepts_nested_attributes_for :resource_link_translations
-
   after_validation :store_cached_name
 
   rails_admin do
