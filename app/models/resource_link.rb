@@ -11,6 +11,16 @@ class ResourceLink < ActiveRecord::Base
     object_label_method do
       :cached_name
     end
+    list do
+      field :criterion
+      field :resource
+      field :reference
+    end
+    edit do
+      field :criterion
+      field :resource
+      field :reference
+    end
   end
    
   # Store a cached name based on the links

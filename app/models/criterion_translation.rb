@@ -9,6 +9,7 @@ class CriterionTranslation < ActiveRecord::Base
     object_label_method do
       :locale
     end
+    visible false
   end
   
 end

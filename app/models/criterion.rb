@@ -13,6 +13,18 @@ class Criterion < ActiveRecord::Base
     object_label_method do
       :number
     end
+    list do
+      field :number
+      field :description
+      field :principle
+      field :criterion_translations
+    end
+    edit do
+      field :number
+      field :description
+      field :principle
+      field :criterion_translations
+    end
   end
 
 end

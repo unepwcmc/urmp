@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110801110908) do
+ActiveRecord::Schema.define(:version => 20110801135012) do
 
   create_table "criteria", :force => true do |t|
     t.integer  "principle_id"
@@ -70,7 +70,6 @@ ActiveRecord::Schema.define(:version => 20110801110908) do
 
   create_table "resource_links", :force => true do |t|
     t.text     "reference"
-    t.integer  "principle_id"
     t.integer  "criterion_id"
     t.integer  "resource_id"
     t.datetime "created_at"
