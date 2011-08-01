@@ -23,8 +23,8 @@ group :development do
   gem 'capistrano-ext'
   gem 'brightbox'
 
-  gem 'rb-fsevent', :require => false if RUBY_PLATFORM =~ /darwin/i
-  gem 'growl' if RUBY_PLATFORM =~ /darwin/i #You will need growlnotify from growl extra for this to work
+  gem 'rb-fsevent', :require => false
+  gem 'growl'
 end
 
 group :test do  
