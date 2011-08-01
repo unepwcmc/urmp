@@ -5,3 +5,8 @@ tmp/
 *.swp
 *.swo
 vendor/ruby
+*/.DS_Store
+
+config/locales/.DS_Store
+
+.DS_Store
