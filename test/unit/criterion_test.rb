@@ -2,6 +2,7 @@ require 'test_helper'
 
 class CriterionTest < ActiveSupport::TestCase
   test "Can get the description in multiple language" do
+    I18n.locale = :en
     criterion = Factory.create(:criterion, :description => 'English description')
     #Add french translation
     I18n.locale = :fr
@@ -19,12 +20,14 @@ class CriterionTest < ActiveSupport::TestCase
   end
 
   test "Criterion translations should be a visible association, for rails_admin" do
+    I18n.locale = :en
     criterion = Factory.create(:criterion, :description => 'English description')
     #Add french translation
     I18n.locale = :fr
     criterion.description = 'Les description francais'
+    criterion.save
 
-    assert_not_equal 2, criterion.criterion_translations.count
+    assert_equal 2, criterion.criterion_translations.count
 
     #Reset the locale
     I18n.locale = :en

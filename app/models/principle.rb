@@ -1,6 +1,5 @@
 class Principle < ActiveRecord::Base
   has_many :criteria
-  has_many :resources, :through => :criteria
 
   has_many :principle_translations
 

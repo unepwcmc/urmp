@@ -26,8 +26,9 @@ class PrincipleTest < ActiveSupport::TestCase
     #Add french translation
     I18n.locale = :fr
     principle.description = 'Les description francais'
+    principle.save
 
-    assert_not_equal 2, principle.principle_translations.count
+    assert_equal 2, principle.principle_translations.count
     #Reset the locale
     I18n.locale = :en
   end
