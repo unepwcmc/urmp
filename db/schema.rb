@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110729152933) do
+ActiveRecord::Schema.define(:version => 20110801083655) do
 
   create_table "criteria", :force => true do |t|
     t.integer  "principle_id"
@@ -18,6 +18,26 @@ ActiveRecord::Schema.define(:version => 20110729152933) do
     t.datetime "updated_at"
     t.integer  "number"
   end
+
+  create_table "criterion_translations", :force => true do |t|
+    t.integer  "criterion_id"
+    t.string   "locale"
+    t.text     "description"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "criterion_translations", ["criterion_id"], :name => "index_criterion_translations_on_criterion_id"
+
+  create_table "principle_translations", :force => true do |t|
+    t.integer  "principle_id"
+    t.string   "locale"
+    t.text     "description"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "principle_translations", ["principle_id"], :name => "index_principle_translations_on_principle_id"
 
   create_table "principles", :force => true do |t|
     t.datetime "created_at"

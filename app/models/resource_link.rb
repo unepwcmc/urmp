@@ -1,9 +1,9 @@
 class ResourceLink < ActiveRecord::Base
   belongs_to :resource
-  belongs_to :principle
   belongs_to :criterion
 
   validates_presence_of :resource
+  validates_presence_of :criterion
 
   has_many :resource_link_translations
   accepts_nested_attributes_for :resource_link_translations
@@ -25,11 +25,7 @@ class ResourceLink < ActiveRecord::Base
       cached_name << "#{reference} - "
     end
     cached_name << "#{resource.title} - "
-    if criterion.present?
-      cached_name << "#{criterion.number}"
-    else
-      cached_name << "#{principle.try(:number)}"
-    end
+    cached_name << "#{criterion.number}"
   end
 
 end

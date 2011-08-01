@@ -14,9 +14,11 @@ gem 'rails_admin', :git => 'git://github.com/sferik/rails_admin.git'
 
 gem 'jquery-rails'  
 
-group :development do
+group :development, :test do
   gem 'ruby-debug19'
+end
 
+group :development do
   gem 'capistrano'
   gem 'capistrano-ext'
   gem 'brightbox'

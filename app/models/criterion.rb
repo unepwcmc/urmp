@@ -3,6 +3,8 @@ class Criterion < ActiveRecord::Base
   has_many :resource_links
   has_many :resources, :through => :resource_links
 
+  has_many :criterion_translations
+
   validates_presence_of :principle, :number
 
   translates :description

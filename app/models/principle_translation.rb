@@ -1,5 +1,5 @@
-class ResourceLinkTranslation < ActiveRecord::Base
-  belongs_to :resource_link
+class PrincipleTranslation < ActiveRecord::Base
+  belongs_to :principle
 
   def locale_enum
     I18n.available_locales
