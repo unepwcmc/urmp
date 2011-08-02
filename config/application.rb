@@ -38,5 +38,9 @@ module Urmp
 
     # Configure sensitive parameters which will be filtered from the log file.
     config.filter_parameters += [:password]
+
+    #Locales used (can't overwrite I18n.available_locales)
+    SITE_LOCALES = [:en, :fr, :es, :id]
   end
 end
+

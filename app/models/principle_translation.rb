@@ -2,7 +2,7 @@ class PrincipleTranslation < ActiveRecord::Base
   belongs_to :principle
 
   def locale_enum
-    I18n.available_locales
+    Urmp::Application::SITE_LOCALES
   end
 
   rails_admin do
