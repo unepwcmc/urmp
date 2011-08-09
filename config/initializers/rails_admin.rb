@@ -1,4 +1,7 @@
 RailsAdmin.config do |config|
+  config.model ResourceType do
+    visible :false
+  end
   config.model ResourceLink do
     object_label_method do
       :cached_name
@@ -19,6 +22,7 @@ RailsAdmin.config do |config|
       field :title
       field :author
       field :language
+      field :resource_type
       field :resource_date
       field :institution
       field :description
@@ -28,6 +32,7 @@ RailsAdmin.config do |config|
       field :title
       field :author
       field :language
+      field :resource_type
       field :resource_date
       field :institution
       field :description

@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110809084047) do
+ActiveRecord::Schema.define(:version => 20110809092356) do
 
   create_table "criteria", :force => true do |t|
     t.integer  "principle_id"
@@ -79,6 +79,12 @@ ActiveRecord::Schema.define(:version => 20110809084047) do
     t.text     "cached_name"
   end
 
+  create_table "resource_types", :force => true do |t|
+    t.string   "name"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
   create_table "resources", :force => true do |t|
     t.string   "title"
     t.string   "link"
@@ -89,7 +95,7 @@ ActiveRecord::Schema.define(:version => 20110809084047) do
     t.string   "resource_date"
     t.string   "institution"
     t.text     "description"
-    t.integer  "res_type_id"
+    t.integer  "resource_type_id"
   end
 
   create_table "users", :force => true do |t|

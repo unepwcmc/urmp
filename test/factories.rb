@@ -1,5 +1,10 @@
 Factory.define :resource do |f|  
   f.sequence(:title) { |n| "Resource #{n if n > 1}"}
+  f.association(:resource_type)
+end  
+
+Factory.define :resource_type do |f|  
+  f.sequence(:name) { |n| "Type #{n if n > 1}"}
 end  
 
 Factory.define :principle do |f|  
