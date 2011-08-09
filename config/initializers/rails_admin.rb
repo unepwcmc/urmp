@@ -1,7 +1,4 @@
 RailsAdmin.config do |config|
-  config.model ResourceType do
-    visible :false
-  end
   config.model ResourceLink do
     object_label_method do
       :cached_name
@@ -37,6 +34,12 @@ RailsAdmin.config do |config|
       field :institution
       field :description
       field :link
+    end
+  end
+  config.model ResourceType do
+    visible :false
+    edit do
+      field :name
     end
   end
 end
