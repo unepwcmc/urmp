@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110809082427) do
+ActiveRecord::Schema.define(:version => 20110809084047) do
 
   create_table "criteria", :force => true do |t|
     t.integer  "principle_id"
@@ -25,6 +25,7 @@ ActiveRecord::Schema.define(:version => 20110809082427) do
     t.text     "description"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "cached_name"
   end
 
   add_index "criterion_translations", ["criterion_id"], :name => "index_criterion_translations_on_criterion_id"

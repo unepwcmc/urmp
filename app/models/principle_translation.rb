@@ -11,9 +11,14 @@ class PrincipleTranslation < ActiveRecord::Base
 
   rails_admin do
     object_label_method do
-      :locale
+      :cached_name
     end
     visible false
+    edit do
+      field :principle
+      field :locale
+      field :description
+    end
   end
   
   # Store a cached name based on the principle and text

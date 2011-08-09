@@ -17,6 +17,12 @@ Factory.define :criterion do |f|
   f.association :principle
 end  
 
+Factory.define :criterion_translation do |f|  
+  f.association :criterion
+  f.locale :en
+  f.description "A description"
+end  
+
 Factory.define :resource_link do |f|  
   f.association :resource
 end
