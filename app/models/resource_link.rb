@@ -14,12 +14,12 @@ class ResourceLink < ActiveRecord::Base
   #
   # @return [String] the cached name
   def store_cached_name
-    cached_name = ""
+    self.cached_name = ""
     if reference.present?
-      cached_name << "#{reference} - "
+      self.cached_name << "#{reference} - "
     end
-    cached_name << "#{resource.title} - "
-    cached_name << "#{criterion.number}"
+    self.cached_name << "#{resource.title} - "
+    self.cached_name << "criterion #{criterion.number}"
   end
 
 end

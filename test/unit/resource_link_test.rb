@@ -18,6 +18,6 @@ class ResourceLinkTest < ActiveSupport::TestCase
     @criterion = Factory.create(:criterion)
 
     @link = Factory.create(:resource_link, :resource => @resource, :criterion => @criterion, :reference => 'Chapter 5')
-    assert "Chapter 5 - hat - criterion #{@criterion.number}", @link.cached_name
+    assert_equal "Chapter 5 - hat - criterion #{@criterion.number}", @link.cached_name
   end
 end

@@ -6,6 +6,12 @@ Factory.define :principle do |f|
   f.sequence(:number) { |n| n}
 end  
 
+Factory.define :principle_translation do |f|  
+  f.association :principle
+  f.locale :en
+  f.description "A description"
+end  
+
 Factory.define :criterion do |f|  
   f.sequence(:number) { |n| n}
   f.association :principle
