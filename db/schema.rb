@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110809095400) do
+ActiveRecord::Schema.define(:version => 20110809114020) do
 
   create_table "criteria", :force => true do |t|
     t.integer  "principle_id"
@@ -87,7 +87,7 @@ ActiveRecord::Schema.define(:version => 20110809095400) do
 
   create_table "resources", :force => true do |t|
     t.string   "title"
-    t.string   "link"
+    t.text     "link"
     t.datetime "created_at"
     t.datetime "updated_at"
     t.string   "author"
