@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110809092356) do
+ActiveRecord::Schema.define(:version => 20110809095400) do
 
   create_table "criteria", :force => true do |t|
     t.integer  "principle_id"
@@ -96,6 +96,7 @@ ActiveRecord::Schema.define(:version => 20110809092356) do
     t.string   "institution"
     t.text     "description"
     t.integer  "resource_type_id"
+    t.boolean  "made_by_un_redd"
   end
 
   create_table "users", :force => true do |t|

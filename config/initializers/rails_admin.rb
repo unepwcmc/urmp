@@ -24,6 +24,7 @@ RailsAdmin.config do |config|
       field :institution
       field :description
       field :link
+      field :made_by_un_redd
     end
     edit do
       field :title
@@ -34,6 +35,7 @@ RailsAdmin.config do |config|
       field :institution
       field :description
       field :link
+      field :made_by_un_redd
     end
   end
   config.model ResourceType do
