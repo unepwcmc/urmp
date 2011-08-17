@@ -6,6 +6,6 @@ class CriterionTranslationTest < ActiveSupport::TestCase
     @criterion = Factory.create(:criterion)
 
     @criterion_translation = Factory.create(:criterion_translation, :criterion => @criterion, :description => 'Hatboat', :locale => :en)
-    assert_equal "Criterion #{@criterion.number} - en - Hatboat", @criterion_translation.cached_name
+    assert_equal "Criterion #{@criterion.number} - en - Hatboat", @criterion_translation.name
   end
 end

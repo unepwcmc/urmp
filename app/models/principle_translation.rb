@@ -3,7 +3,7 @@ class PrincipleTranslation < ActiveRecord::Base
   validates_presence_of :principle
   validates_presence_of :locale
 
-  after_validation :store_cached_name
+  after_validation :name
 
   def locale_enum
     Urmp::Application::SITE_LOCALES
@@ -11,7 +11,7 @@ class PrincipleTranslation < ActiveRecord::Base
 
   rails_admin do
     object_label_method do
-      :cached_name
+      :name
     end
     visible false
     edit do
@@ -20,15 +20,15 @@ class PrincipleTranslation < ActiveRecord::Base
       field :description
     end
   end
-  
-  # Store a cached name based on the principle and text
+
+  # Generates a name for the translation, puts it into the cached name field
+  # Unfortunately, due to the fact that AR hooks aren't triggered by 
+  # globalize3, we can't just store the cached_name on edits :-(
   #
   # @return [String] the cached name
-  def store_cached_name
+  def name
     self.cached_name = "Principle #{principle.try(:number)}"
     self.cached_name << " - #{locale}"
     self.cached_name << " - #{description}"
   end
-
 end
-

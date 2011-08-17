@@ -6,6 +6,6 @@ class PrincipleTranslationTest < ActiveSupport::TestCase
     @principle = Factory.create(:principle)
 
     @principle_translation = Factory.create(:principle_translation, :principle => @principle, :description => 'Hatboat', :locale => :en)
-    assert_equal "Principle #{@principle.number} - en - Hatboat", @principle_translation.cached_name
+    assert_equal "Principle #{@principle.number} - en - Hatboat", @principle_translation.name
   end
 end
