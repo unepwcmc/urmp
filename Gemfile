@@ -10,7 +10,7 @@ gem 'pg'
 gem 'globalize3'
 
 gem 'devise' # Devise must be required before RailsAdmin
-gem 'rails_admin', :git => 'git://github.com/sferik/rails_admin.git'
+gem 'rails_admin', '0.0.1', :git => 'git://github.com/sferik/rails_admin.git', :branch => 'rails-3.0'
 
 gem 'jquery-rails'  
 

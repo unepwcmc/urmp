@@ -1,12 +1,12 @@
 GIT
   remote: git://github.com/sferik/rails_admin.git
-  revision: ef02329d8c4263d55b2c958dba498dda803fd18b
+  revision: 7ca591714c851d696cb0697f70180b72505facb8
+  branch: rails-3.0
   specs:
     rails_admin (0.0.1)
       builder (~> 2.1.0)
-      fastercsv (~> 1.5.4)
       haml (>= 3.1.0, < 3.3.0)
-      rails (~> 3.0.9)
+      rails (~> 3.0.10)
 
 GEM
   remote: http://rubygems.org/
@@ -72,7 +72,6 @@ GEM
     factory_girl_rails (1.1.0)
       factory_girl (~> 2.0.0)
       railties (>= 3.0.0)
-    fastercsv (1.5.4)
     ffi (1.0.9)
     globalize3 (0.1.0)
       activemodel (>= 3.0.0)
@@ -174,7 +173,7 @@ DEPENDENCIES
   jquery-rails
   pg
   rails (= 3.0.10)
-  rails_admin!
+  rails_admin (= 0.0.1)!
   rake (= 0.8.7)
   rb-fsevent
   ruby-debug19
