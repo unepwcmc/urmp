@@ -1,2 +1,35 @@
-<h1>Principle#index</h1>
-<p>Find me in app/views/principle/index.html.erb</p>
+<div id="main">
+  <h1>Social and Environmental Principles and Criteria</h1>
+  <p>Here, relevant tools and resources are presented for the environmental elements of the UN-REDD Programme’s Social and Environmental Principles and Criteria  (latest draft June 2011).</p>
+  <!-- content -->
+  <div id="content">
+    <h2 class="heading">All Principles</h2>
+    <!-- slide-list -->
+    <ul class="slide-list">
+      <% @principles.each do |principle| %>
+        <!-- slide-block -->
+        <li class="slide-block">
+        <div class="title-box">
+          <a class="open" href="#">Principle <%= principle.number %></a><span><%= principle.description %></span>
+        </div>
+        <div class="block">
+          <!-- container -->
+          <div class="container">
+            <% principle.criteria.each do |criterion| %>
+              <!-- box -->
+              <div class="box">
+                <h3>Criterion <%= criterion.number %></h3>
+                <p><%= criterion.description %></p>
+                <div class="panel">
+                  <% resource_count = criterion.resources.count %>
+                  <em>There  <%= resource_count == 1 ? 'is 1 document' : "are #{resource_count} documents" %> relating to this criteria, <a class="click" href="#">CLICK HERE</a> to see them</em>
+                </div>
+              </div>
+            <% end %>
+          </div>
+        </div>
+        </li>
+      <% end %>
+    </ul>
+  </div>
+</div>
