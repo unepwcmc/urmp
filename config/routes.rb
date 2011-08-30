@@ -1,4 +1,6 @@
 Urmp::Application.routes.draw do
+  get "static/about"
+
   get "criteria/show"
 
   resources :principles, :only => [:index]

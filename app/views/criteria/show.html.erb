@@ -1,4 +1,6 @@
 <div id="main">
+  <%= link_to "< Back to Principles", principles_path, :class => 'criterion_back' if false %>
+
   <h1>Criterion <%= @criterion.number %></h1>
   <p><%= @criterion.description%></p>
   <p><strong>Resources:</strong></p>
@@ -22,7 +24,9 @@
               <ul class="ico-list">
                 <li><a class="un-reed" href="#">un-redd</a></li>
                 <% type = resource.resource_type.try(:name) %>
-                <li><a class="<%= ['guidance','tool'].include?(type) ? type : 'tool' %>" href="#"><%= type %></a></li>
+                <% if ['guidance','tool'].include?(type) %>
+                  <li><a class="<%= type %>" href="#"><%= type %></a></li>
+                <% end %>
               </ul>
               <%= link_to "Download", resource_link.resource.link, :class => "download" %>
             </div>

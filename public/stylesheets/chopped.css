@@ -263,3 +263,6 @@ p{margin:0 0 10px;}
 .add-box p{
 	margin: 0 0 16px;
 }
+a.criterion_back {
+  padding-left:15px;
+}
