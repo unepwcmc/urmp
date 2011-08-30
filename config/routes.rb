@@ -1,5 +1,8 @@
 Urmp::Application.routes.draw do
+  get "criteria/show"
+
   resources :principles, :only => [:index]
+  resources :criteria, :only => [:show]
 
   devise_for :users
 

@@ -1,0 +1,34 @@
+<div id="main">
+  <h1>Criterion <%= @criterion.number %></h1>
+  <p><%= @criterion.description%></p>
+  <p><strong>Resources:</strong></p>
+  <!-- content -->
+  <div id="content">
+    <ul class="topic-list">
+      <%
+        @resource_links.each do |resource_link|
+          resource = resource_link.resource
+      %>
+        <li>
+          <h4><%= resource.title %></h4>
+          <span class="authors"><span>Authors:</span> <%= resource.author %></span>
+          <ul class="item-list">
+            <li>Publication date: <span><%= resource.resource_date %></span></li>
+            <li>Institution: <span><%= resource.institution.present? ? resource.institution : ' ' %></span></li>
+          </ul>
+          <div class="section">
+            <p><%= resource_link.reference %></p>
+            <div class="row">
+              <ul class="ico-list">
+                <li><a class="un-reed" href="#">un-redd</a></li>
+                <% type = resource.resource_type.try(:name) %>
+                <li><a class="<%= ['guidance','tool'].include?(type) ? type : 'tool' %>" href="#"><%= type %></a></li>
+              </ul>
+              <%= link_to "Download", resource_link.resource.link, :class => "download" %>
+            </div>
+          </div>
+        </li>
+      <% end %>
+    </ul>
+  </div>
+</div>
