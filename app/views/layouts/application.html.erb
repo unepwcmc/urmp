@@ -23,34 +23,30 @@
         <h2 class="heading">All Principles</h2>
         <!-- slide-list -->
         <ul class="slide-list">
-          <!-- slide-block -->
-          <li class="slide-block">
-          <div class="title-box">
-            <a class="open" href="#">Principle 1</a><span>Comply with standards of democratic governance</span>
-          </div>
-          <div class="block"></div>
-          </li>
-          <!-- slide-block -->
-          <li class="slide-block">
-          <div class="title-box">
-            <a class="open" href="#">Principle 2</a><span>Respect and protect stakeholder rights</span>
-          </div>
-          <div class="block"></div>
-          </li>
-          <!-- slide-block -->
-          <li class="slide-block">
-          <div class="title-box">
-            <a class="open" href="#">Principle 3</a><span>Promote and enhance sustainable livelihoods</span>
-          </div>
-          <div class="block"></div>
-          </li>
-          <!-- slide-block -->
-          <li class="slide-block">
-          <div class="title-box">
-            <a class="open" href="#">Principle 4</a><span>Contribute to coherent low-carbon, climate-resilient and environmentally sound development policy, consistent with commitments under international conventions and agreements</span>
-          </div>
-          <div class="block"></div>
-          </li>
+          <% @principles.each do |principle| %>
+            <!-- slide-block -->
+            <li class="slide-block">
+              <div class="title-box">
+                <a class="open" href="#">Principle <%= principle.number %></a><span><%= principle.description %></span>
+              </div>
+              <div class="block hidden">
+                <!-- container -->
+                <div class="container">
+                  <% principle.criteria.each do |criterion| %>
+                    <!-- box -->
+                    <div class="box">
+                      <h3>Criterion <%= criterion.number %></h3>
+                      <p><%= criterion.description %></p>
+                      <div class="panel">
+                        <% resources = criterion.resources.count %>
+                        <em>There  <%= resources == 1 ? 'is 1 document' : "are #{resources} documents" %> relating to this criteria, <a class="click" href="#">CLICK HERE</a> to see them</em>
+                      </div>
+                    </div>
+                  <% end %>
+                </div>
+              </div>
+            </li>
+          <% end %>
           <!-- slide-block active -->
           <li class="slide-block active">
           <div class="title-box">
@@ -74,21 +70,26 @@
                   <em>There are 3 documents relating to this criteria, <a class="click" href="#">CLICK HERE</a> to see them</em>
                 </div>
               </div>
-              <ul class="topic-list">									<li>
-                <h4>1. Monitoring for REDD +: carbon stock change and multiple benefits</h4>
-                <span class="authors"><span>Authors:</span> Lorem ipsum dolor sit amet, consetetur sadipscing elitr,</span>
-                <ul class="item-list">
-                  <li>Publication date: <span>Oct 2011</span></li>
-                  <li>Institution: <span>UNEP-WCMC</span></li>
-                </ul>
-                <div class="section">
-                  <p>The document outlines procedural steps for operationalising the UNFCCC biodiversity-related safeguards for<br /> REDD+. <strong>Section 2.1 (p4-5)</strong>: This section provides basic information about how carbon stock changes are monitored in order to report to the UNFCCC.</p>
-                  <div class="row">
-                    <ul class="ico-list">													<li><a class="un-reed" href="#">un-reed</a></li>													<li><a class="resource" href="#">Resource</a></li>												</ul>
-                    <a class="download" href="#">download</a>
+              <ul class="topic-list">
+                <li>
+                  <h4>1. Monitoring for REDD +: carbon stock change and multiple benefits</h4>
+                  <span class="authors"><span>Authors:</span> Lorem ipsum dolor sit amet, consetetur sadipscing elitr,</span>
+                  <ul class="item-list">
+                    <li>Publication date: <span>Oct 2011</span></li>
+                    <li>Institution: <span>UNEP-WCMC</span></li>
+                  </ul>
+                  <div class="section">
+                    <p>The document outlines procedural steps for operationalising the UNFCCC biodiversity-related safeguards for<br /> REDD+. <strong>Section 2.1 (p4-5)</strong>: This section provides basic information about how carbon stock changes are monitored in order to report to the UNFCCC.</p>
+                    <div class="row">
+                      <ul class="ico-list">
+													<li><a class="un-reed" href="#">un-reed</a></li>
+													<li><a class="resource" href="#">Resource</a></li>
+												</ul>
+                      <a class="download" href="#">download</a>
+                    </div>
                   </div>
-                </div>
-                </li>									<li>
+                </li>
+									<li>
                 <h4>2. Monitoring for REDD +: carbon stock change and multiple benefits</h4>
                 <span class="authors"><span>Authors:</span> Lorem ipsum dolor sit amet, consetetur sadipscing elitr,</span>
                 <ul class="item-list">
@@ -105,7 +106,8 @@
                     <a class="download" href="#">download</a>
                   </div>
                 </div>
-                </li>									<li>
+                </li>
+									<li>
                 <h4>2. Monitoring for REDD +: carbon stock change and multiple benefits</h4>
                 <span class="authors"><span>Authors:</span> Lorem ipsum dolor sit amet, consetetur sadipscing elitr,</span>
                 <ul class="item-list">
@@ -121,23 +123,27 @@
                     <a class="download" href="#">download</a>
                   </div>
                 </div>
-                </li>								</ul>
+                </li>
+								</ul>
                 <a class="close" href="#">close</a>
               </div>
             </div>
             </li>
-            <!-- slide-block -->					<li class="slide-block">
+            <!-- slide-block -->
+					<li class="slide-block">
             <div class="title-box">
               <a class="open" href="#">Principle 6</a><span>Maintain and enhance multiple functions of forest to deliver benefits including biodiversity conservation and ecosystem services</span>
             </div>
             <div class="block"></div>
             </li>
-            <!-- slide-block -->					<li class="slide-block">
+            <!-- slide-block -->
+					<li class="slide-block">
             <div class="title-box">
               <a class="open" href="#">Principle 7</a><span>Minimise indirect adverse impacts on ecosystem services and biodiversity</span>
             </div>
             <div class="block"></div>
-            </li>				</ul>
+            </li>
+          </ul>
           </div>
         </div>
       </div>
