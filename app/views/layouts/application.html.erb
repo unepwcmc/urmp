@@ -11,7 +11,7 @@
     <div id="wrapper">
       <!-- nav -->
       <ul id="nav">
-        <li <%= "class='active'" if controller.controller_name == 'static' %>><a href="#">About</a></li>
+        <li <%= "class='active'" if controller.controller_name == 'static' %>><%= link_to 'About', static_about_path %></li>
         <li <%= "class='active'" if controller.controller_name == 'principles' %>><%= link_to 'Principles', principles_path %></li>
       </ul>
       <!-- main -->
