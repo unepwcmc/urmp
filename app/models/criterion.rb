@@ -6,6 +6,7 @@ class Criterion < ActiveRecord::Base
   has_many :criterion_translations
 
   validates_presence_of :principle, :number
+  validates_uniqueness_of :number
 
   translates :description
 
