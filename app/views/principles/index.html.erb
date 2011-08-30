@@ -22,7 +22,7 @@
                 <p><%= criterion.description %></p>
                 <div class="panel">
                   <% resource_count = criterion.resources.count %>
-                  <em>There  <%= resource_count == 1 ? 'is 1 document' : "are #{resource_count} documents" %> relating to this criteria, <%= link_to "CLICK HERE", criterion_path(criterion), :class => 'click' %></a> to see them</em>
+                  <em>There  <%= resource_count == 1 ? 'is 1 resource' : "are #{resource_count} resources" %> relating to this criteria. <%= link_to "CLICK HERE", criterion_path(criterion), :class => 'click' %></a> to see them</em>
                 </div>
               </div>
             <% end %>
