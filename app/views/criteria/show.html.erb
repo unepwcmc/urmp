@@ -22,7 +22,7 @@
               <ul class="ico-list">
                 <li><a class="un-reed" href="#">un-redd</a></li>
                 <% type = resource.resource_type.try(:name) %>
-                <li><a class="<%= ['guidance','tool'].include?(type) ? type : 'tool' %>" href="#"><%= resource.resource_type.name %></a></li>
+                <li><a class="<%= ['guidance','tool'].include?(type) ? type : 'tool' %>" href="#"><%= type %></a></li>
               </ul>
               <%= link_to "Download", resource_link.resource.link, :class => "download" %>
             </div>
