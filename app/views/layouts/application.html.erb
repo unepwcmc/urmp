@@ -7,8 +7,22 @@
     <%= csrf_meta_tag %>
   </head>
   <body>
+
+    <!-- Image map generated at image-maps.com, use that to update if you need -->
+    <div style="text-align:center; width:964px; margin-left:auto; margin-right:auto;">
+      <img id="Image-Maps_4201108310416189" src="/images/UNREDD-header-no-text-web.png" usemap="#Image-Maps_4201108310416189" border="0" width="964" height="200" alt="" />
+      <map id="_Image-Maps_4201108310416189" name="Image-Maps_4201108310416189">
+      <area shape="rect" coords="4,2,220,80" href="http://www.un-redd.org/" alt="UN-REDD" title="UN-REDD"    />
+      <area shape="rect" coords="795,122,857,192" href="http://www.fao.org/" alt="FAO" title="FAO"    />
+      <area shape="rect" coords="858,122,902,192" href="http://www.undp.org/" alt="UNDP" title="UNDP"    />
+      <area shape="rect" coords="905,123,958,190" href="http://www.unep.org/" alt="UNEP" title="UNEP"    />
+      <area shape="rect" coords="962,198,964,200" href="http://www.image-maps.com/index.php?aff=mapped_users_4201108310416189" alt="Image Map" title="Image Map" />
+      </map>
+    </div>
+
     <!-- wrapper -->
     <div id="wrapper">
+
       <!-- nav -->
       <ul id="nav">
         <li <%= "class='active'" if controller.controller_name == 'static' %>><%= link_to 'About', static_about_path %></li>
