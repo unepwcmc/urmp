@@ -2,7 +2,7 @@ body{
 	margin:0;
 	color:#686868;
 	font:12px/16px Arial, Helvetica, sans-serif;
-	background:#fff url(../images/bg-page.gif) repeat-x;
+	background:#fff url(../images/bg-page.gif) repeat-x 0 200px;
 	min-width:1000px;
 }
 img{border-style:none;}
@@ -45,6 +45,25 @@ q:after{content:''}
 #nav a:hover{
 	color:#253a4d;
 	background:#fff;
+}
+
+/* header */
+div#header-div {
+  position:relative;
+}
+div#header-text {
+  position:relative;
+  top: -78px;
+  left: 10px;
+  width: 280px;
+  float: left;
+  height: 0;
+
+  text-align:left;
+  font-weight: bold;
+  font-size: 12px;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
 }
 /* main */
 #main{padding: 29px 0 25px 13px;}
