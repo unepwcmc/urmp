@@ -145,13 +145,13 @@ p{margin:0 0 10px;}
 }
 .box p{margin:0 0 11px;}
 .panel{
-	background:#fef2d0 url(../images/ico-docs1.gif) no-repeat 11px 8px;
+	background:#F6B314 url(../images/ico-docs.png) no-repeat 11px 8px;
 	padding: 7px 0 7px 32px;
 }
-.panel:hover{background:#fbd567 url(../images/ico-docs-active.gif) no-repeat 10px 8px;}
+.panel:hover {background:#f3A001 url(../images/ico-docs.png) no-repeat 11px 8px;}
 .panel em{
 	color:#10222e;
-	background: url(../images/arrow-title.gif) no-repeat 0 4px;
+	background: url(../images/arrow-title.png) no-repeat 0 4px;
 	padding: 0 0 0 12px;
 }
 .click{
