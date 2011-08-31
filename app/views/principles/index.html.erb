@@ -10,12 +10,16 @@
         <!-- slide-block -->
         <li class="slide-block">
         <div class="title-box">
-          <a class="open" href="#">Principle <%= principle.number %></a><span><%= principle.description %></span>
+          <% if principle.number == 0 %>
+            <a class="open" href="#">All Principles</a><span></span>
+          <% else %>
+            <a class="open" href="#">Principle <%= principle.number %></a><span><%= principle.description %></span>
+          <% end %>
         </div>
         <div class="block">
           <!-- container -->
           <div class="container">
-            <% principle.criteria.each do |criterion| %>
+            <% principle.criteria.order(:number).each do |criterion| %>
               <!-- box -->
               <div class="box">
                 <h3>Criterion <%= criterion.number %></h3>
