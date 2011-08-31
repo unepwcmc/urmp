@@ -7,11 +7,13 @@ RailsAdmin.config do |config|
       field :criterion
       field :resource
       field :reference
+      field :numeric_reference
     end
     edit do
       field :criterion
       field :resource
       field :reference
+      field :numeric_reference
     end
   end
   config.model Resource do

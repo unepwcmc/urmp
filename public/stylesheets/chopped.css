@@ -42,7 +42,7 @@ q:after{content:''}
 	float:left;
 }
 #nav .active a,
-#nav a:hover{
+#nav a:hover {
 	color:#253a4d;
 	background:#fff;
 }
