@@ -19,7 +19,12 @@
             <li>Institution: <span><%= resource.institution.present? ? resource.institution : ' ' %></span></li>
           </ul>
           <div class="section">
-            <p><strong><%= resource_link.numeric_reference %></strong>: <%= resource_link.reference %></p>
+            <p>
+              <% if resource_link.numeric_reference.present? %>
+                <strong><%= resource_link.numeric_reference %></strong>:
+              <% end %>
+              <%= resource_link.reference %>
+            </p>
             <div class="row">
               <ul class="ico-list">
                 <li><a class="un-reed" href="#">un-redd</a></li>
