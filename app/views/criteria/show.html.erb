@@ -16,7 +16,7 @@
           <span class="authors"><span>Authors:</span> <%= resource.author %></span>
           <div class="resource-underbar">
             <ul class="item-list">
-              <li>Publication date: <span><%= resource.resource_date %></span></li>
+              <li>Publication date: <span><%= resource.resource_date.present? ? resource.resource_date : ' ' %></span></li>
               <li>Institution: <span><%= resource.institution.present? ? resource.institution : ' ' %></span></li>
             </ul>
             <ul class="ico-list">
