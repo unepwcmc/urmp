@@ -14,10 +14,21 @@
         <li>
           <h4><%= resource.title %></h4>
           <span class="authors"><span>Authors:</span> <%= resource.author %></span>
-          <ul class="item-list">
-            <li>Publication date: <span><%= resource.resource_date %></span></li>
-            <li>Institution: <span><%= resource.institution.present? ? resource.institution : ' ' %></span></li>
-          </ul>
+          <div class="resource-underbar">
+            <ul class="item-list">
+              <li>Publication date: <span><%= resource.resource_date %></span></li>
+              <li>Institution: <span><%= resource.institution.present? ? resource.institution : ' ' %></span></li>
+            </ul>
+            <ul class="ico-list">
+              <% if resource.made_by_un_redd? %>
+                <li><a class="un-reed" href="#">un-redd</a></li>
+              <% end %>
+              <% type = resource.resource_type.try(:name).to_s.downcase %>
+              <% if ['guidance','tool'].include?(type) %>
+                <li><a class="<%= type %>" href="#"><%= type.humanize %></a></li>
+              <% end %>
+            </ul>
+          </div>
           <div class="section">
             <p>
               <% if resource_link.numeric_reference.present? %>
@@ -26,13 +37,6 @@
               <%= resource_link.reference %>
             </p>
             <div class="row">
-              <ul class="ico-list">
-                <li><a class="un-reed" href="#">un-redd</a></li>
-                <% type = resource.resource_type.try(:name) %>
-                <% if ['guidance','tool'].include?(type) %>
-                  <li><a class="<%= type %>" href="#"><%= type %></a></li>
-                <% end %>
-              </ul>
               <%= link_to "Download", resource_link.resource.link, :class => "download" %>
             </div>
           </div>

@@ -176,10 +176,16 @@ p{margin:0 0 10px;}
 	font-size:11px;
 	padding: 9px 0 4px 12px;
 }
-.item-list{
-	list-style:none;	margin: 0 0 5px 9px;	padding: 4px 0;
-	overflow:hidden;
+div.resource-underbar {
+	padding: 4px 0;
+  margin: 0 0 5px 9px;	
 	background: url(../images/separator2.gif) repeat-x 0 100%;
+  overflow:hidden;
+}
+.item-list{
+	list-style:none;	padding: 4px 0;
+	overflow:hidden;
+  float:left;
 }
 .item-list li{
 	float:left;
@@ -205,27 +211,27 @@ p{margin:0 0 10px;}
 	float:left;
 	padding: 0 11px 0 0;
 }
+
+div.resource-underbar ul.ico-list {
+  float:right;
+}
 .ico-list a{
 	display:block;
 	text-indent:-9999px;
 	overflow:hidden;
-	height:32px;
+	height:22px;
 }
 .un-reed{
-	background: url(../images/ico-list.gif) no-repeat;
-	width: 73px;
-}
-.resource{
-	background: url(../images/ico-list.gif) no-repeat 0 -50px;
-	width:95px;
+	background: url(../images/ico-list.png) no-repeat;
+	width:58px;
 }
 .tool{
-	background: url(../images/ico-list.gif) no-repeat 0 -111px;
-	width:66px;
+	background: url(../images/ico-list.png) no-repeat 0 -23px;
+	width:48px;
 }
 .guidance{
-	background: url(../images/ico-list.gif) no-repeat 0 -168px;
-	width:95px;
+	background: url(../images/ico-list.png) no-repeat 0 -49px;
+	width:82px;
 }
 .download{
 	float:right;
