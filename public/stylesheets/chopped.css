@@ -234,7 +234,7 @@ div.resource-underbar ul.ico-list {
 	width:82px;
 }
 .download{
-	float:right;
+	float:left;
 	text-indent:-9999px;
 	overflow:hidden;
 	background: url(../images/btn-download.png) no-repeat;
