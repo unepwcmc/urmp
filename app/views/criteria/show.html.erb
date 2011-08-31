@@ -1,6 +1,11 @@
 <div id="main">
   <%= link_to "< Back to Principles", principles_path, :class => 'criterion_back' if false %>
 
+  <% if @criterion.principle.number == 0 %>
+    <h2>All Principles</h2>
+  <% else %>
+    <h2>Principle <%= @criterion.principle.number %></h2>
+  <% end %>
   <h1>Criterion <%= @criterion.number %></h1>
   <p><%= @criterion.description%></p>
   <p><strong>Resources:</strong></p>
@@ -21,11 +26,11 @@
             </ul>
             <ul class="ico-list">
               <% if resource.made_by_un_redd? %>
-                <li><a class="un-reed" href="#">un-redd</a></li>
+                <li><span class="un-redd">UN-REDD</a></li>
               <% end %>
               <% type = resource.resource_type.try(:name).to_s.downcase %>
               <% if ['guidance','tool'].include?(type) %>
-                <li><a class="<%= type %>" href="#"><%= type.humanize %></a></li>
+                <li><span class="<%= type %>"><%= type.humanize %></span></li>
               <% end %>
             </ul>
           </div>

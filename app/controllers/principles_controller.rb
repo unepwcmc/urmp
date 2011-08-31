@@ -1,6 +1,6 @@
 class PrinciplesController < ApplicationController
   def index
-    @principles = Principle.all
+    @principles = Principle.order(:number)
   end
 
 end
