@@ -270,6 +270,7 @@ div.resource-underbar ul.ico-list {
 	list-style:none;	margin: 0 0 0 -3px;	padding:0;
 	overflow:hidden;
 	color:#1f3b4f;
+  margin-bottom:15px;
 }
 .product-list li{
 	background: url(../images/bullet1.gif) no-repeat 0 50%;

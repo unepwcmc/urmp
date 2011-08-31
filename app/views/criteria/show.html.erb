@@ -6,8 +6,9 @@
   <% else %>
     <h2>Principle <%= @criterion.principle.number %></h2>
   <% end %>
+  <p><%= @criterion.principle.description unless @criterion.principle.description.nil?%></p>
   <h1>Criterion <%= @criterion.number %></h1>
-  <p><%= @criterion.description%></p>
+  <p><%= @criterion.description %></p>
   <p><strong>Resources:</strong></p>
   <!-- content -->
   <div id="content">
