@@ -1,3 +1,4 @@
+# encoding: UTF-8
 # This file is auto-generated from the current state of the database. Instead
 # of editing this file, please use the migrations feature of Active Record to
 # incrementally modify your database, and then regenerate this schema definition.
@@ -10,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110809114020) do
+ActiveRecord::Schema.define(:version => 20110831093143) do
 
   create_table "criteria", :force => true do |t|
     t.integer  "principle_id"
@@ -77,6 +78,7 @@ ActiveRecord::Schema.define(:version => 20110809114020) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.text     "cached_name"
+    t.text     "numeric_reference"
   end
 
   create_table "resource_types", :force => true do |t|
