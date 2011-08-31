@@ -215,13 +215,13 @@ div.resource-underbar {
 div.resource-underbar ul.ico-list {
   float:right;
 }
-.ico-list a{
+.ico-list span{
 	display:block;
 	text-indent:-9999px;
 	overflow:hidden;
 	height:22px;
 }
-.un-reed{
+.un-redd{
 	background: url(../images/ico-list.png) no-repeat 0 3px;
 	width:58px;
 }
