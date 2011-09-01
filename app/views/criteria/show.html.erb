@@ -37,6 +37,9 @@
           </div>
           <div class="section">
             <p>
+              <%= resource.description %>
+            </p>
+            <p>
               <% if resource_link.numeric_reference.present? %>
                 <strong><%= resource_link.numeric_reference %></strong>:
               <% end %>
