@@ -4,6 +4,10 @@
     <title>Pilot Toolkit for Multiple Benefits – draft version</title>
     <%= stylesheet_link_tag :all %>
     <%= javascript_include_tag :all %>
+    <script>if ( typeof window.JSON === 'undefined' ) { document.write('<script src="javascripts//history.js/scripts/compressed/json2.js"><\/script>'); }</script>
+    <%= javascript_include_tag 'history_js/history.adapter.jquery' %>
+    <%= javascript_include_tag 'history_js/history.js' %>
+    <%= javascript_include_tag 'history_js/history.html4.js' %>
     <%= csrf_meta_tag %>
   </head>
   <body>
