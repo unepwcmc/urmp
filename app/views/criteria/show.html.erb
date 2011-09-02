@@ -53,4 +53,9 @@
       <% end %>
     </ul>
   </div>
+    <% if @criterion.principle.number == 0 %>
+      <%= link_to "< Back to all principles", principles_path(:principle => 0)%>
+    <% else %>
+      <%= link_to "< Back to Principle #{@criterion.principle.number}", principles_path({:principle => @criterion.principle.number }) %>
+    <% end %>
 </div>
