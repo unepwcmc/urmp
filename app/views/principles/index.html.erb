@@ -31,7 +31,7 @@
                     <em>
                       There <%= resource_count == 1 ? 'is 1 resource' : "are #{resource_count} resources" %> relating to <%= criterion.number != 0 ? 'this criteria':'all principles' %>.
                       <% if resource_count > 0 %>
-                        <%= link_to "Click here", criterion_path(criterion.number), :class => 'click' %></a> to see them
+                        <%= link_to "Click here", criterion_path(criterion.number), :class => 'click' %> to see them
                       <% end %>
                     </em>
                   </div>
