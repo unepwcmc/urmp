@@ -27,7 +27,7 @@
             </ul>
             <ul class="ico-list">
               <% if resource.made_by_un_redd? %>
-                <li><span class="un-redd">UN-REDD</a></li>
+                <li><span class="un-redd">UN-REDD</span></li>
               <% end %>
               <% type = resource.resource_type.try(:name).to_s.downcase %>
               <% if ['guidance','tool'].include?(type) %>
