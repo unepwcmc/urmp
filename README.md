@@ -12,3 +12,4 @@ All gems are bundle packaged, please install with `bundle install --path vendor`
 The app is deploy to the standard brightbox staging and production servers. The app is currently awaiting
 public release, so disables google indexing in robots.txt, to renable it, simply remove the after_deploy
 disable_robots task in production.rb
+
