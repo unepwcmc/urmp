@@ -29,7 +29,7 @@
                   <div class="panel">
                     <% resource_count = criterion.resources.count %>
                     <em>
-                      There <%= resource_count == 1 ? 'is 1 resource' : "are #{resource_count} resources" %> relating to <%= criterion.number != 0 ? 'this criteria':'all principles' %>.
+                      There <%= resource_count == 1 ? 'is 1 resource' : "are #{resource_count} resources" %> relating to <%= criterion.number != 0 ? 'this criterion':'all principles' %>.
                       <% if resource_count > 0 %>
                         <%= link_to "Click here", criterion_path(criterion.number), :class => 'click' %> to see them
                       <% end %>

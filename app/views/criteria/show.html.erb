@@ -2,9 +2,9 @@
   <%= link_to "< Back to Principles", principles_path, :class => 'criterion_back' if false %>
 
   <% if @criterion.principle.number == 0 %>
-    <h2>General Resources</h2>
+    <h2><%= link_to "General Resources", principles_path(:principle => 0)%></h2>
   <% else %>
-    <h2>Principle <%= @criterion.principle.number %></h2>
+    <h2><%= link_to "Principle #{@criterion.principle.number}", principles_path({:principle => @criterion.principle.number }) %></h2>
     <p><%= @criterion.principle.description unless @criterion.principle.description.nil?%></p>
     <h1>Criterion <%= @criterion.number %></h1>
     <p><%= @criterion.description %></p>
