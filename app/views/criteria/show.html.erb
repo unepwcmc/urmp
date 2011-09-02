@@ -31,7 +31,7 @@
               <% end %>
               <% type = resource.resource_type.try(:name).to_s.downcase %>
               <% if ['guidance','tool'].include?(type) %>
-                <li><span class="<%= type %>"><%= type.humanize %></span></li>
+                <li><span class="<%= type %>"></span></li>
               <% end %>
             </ul>
           </div>
