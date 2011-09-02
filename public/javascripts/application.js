@@ -18,11 +18,33 @@
       if (id === '0'){
         name = 'All Principles'
       }
-      History.pushState({principle:id}, appName + " - " + name, "?priciple=" + id);
+      History.pushState({principle:id}, appName + " - " + name, "?principle=" + id);
     }
   };
+
+  // Get URL params
+  var getQueryParameter = function(parameterName) {
+    var queryString = window.top.location.search.substring(1);
+    var parameterName = parameterName + "=";
+    if ( queryString.length > 0 ) {
+      begin = queryString.indexOf ( parameterName );
+      if ( begin != -1 ) {
+        begin += parameterName.length;
+        end = queryString.indexOf ( "&" , begin );
+          if ( end == -1 ) {
+          end = queryString.length
+        }
+        return unescape ( queryString.substring ( begin, end ) );
+      }
+    }
+    return "null";
+  }
+
   $(document).ready(function() {
     appName = $('title').html().split('Principle')[0];
+    var currentPrinciple = getQueryParameter('principle');
+    togglePrinciplePanel($('#principle-'+currentPrinciple));
+
     $('ul.slide-list').delegate('div.title-box', 'click', function() {
       togglePrinciplePanel($(this).parent('li'));
       return false;
