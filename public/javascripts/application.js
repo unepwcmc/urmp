@@ -43,7 +43,8 @@
   $(document).ready(function() {
     appName = $('title').html().split('Principle')[0];
     var currentPrinciple = getQueryParameter('principle');
-    togglePrinciplePanel($('#principle-'+currentPrinciple));
+    if (currentPrinciple !== 'null')
+      togglePrinciplePanel($('#principle-'+currentPrinciple));
 
     $('ul.slide-list').delegate('div.title-box', 'click', function() {
       togglePrinciplePanel($(this).parent('li'));
