@@ -24,20 +24,22 @@
 
   // Get URL params
   var getQueryParameter = function(parameterName) {
-    var queryString = window.top.location.search.substring(1);
-    var parameterName = parameterName + "=";
-    if ( queryString.length > 0 ) {
-      begin = queryString.indexOf ( parameterName );
-      if ( begin != -1 ) {
-        begin += parameterName.length;
-        end = queryString.indexOf ( "&" , begin );
-          if ( end == -1 ) {
-          end = queryString.length
-        }
-        return unescape ( queryString.substring ( begin, end ) );
+    var key_val, param, params, _i, _len;
+    // Get all params
+    params = window.location.href.slice(window.location.href.indexOf('?') + 1).split('&');
+
+    // For each key=val
+    for (_i = 0, _len = params.length; _i < _len; _i++) {
+      param = params[_i];
+      key_val = param.split('=');
+
+      // If it's the parameter we're after, return it
+      if (key_val[0] === parameterName) {
+        var result = key_val[1].split('#')[0];
+        return result;
       }
     }
-    return "null";
+    return "";
   }
 
   $(document).ready(function() {
