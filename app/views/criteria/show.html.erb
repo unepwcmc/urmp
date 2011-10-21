@@ -19,11 +19,13 @@
       %>
         <li>
           <h4><%= resource.title %></h4>
-          <span class="authors"><span>Authors:</span> <%= resource.author %></span>
+          <span class="authors">
+            <% if resource.author.present? %><span>Authors:</span> <%= resource.author %><% else %>&nbsp;<% end %>
+          </span>
           <div class="resource-underbar">
             <ul class="item-list">
-              <li>Publication date: <span><%= resource.resource_date.present? ? resource.resource_date : ' ' %></span></li>
-              <li>Institution: <span><%= resource.institution.present? ? resource.institution : ' ' %></span></li>
+              <% if resource.resource_date.present? %><li>Publication date: <span><%= resource.resource_date.present? ? resource.resource_date : ' ' %></span></li><% end %>
+              <% if resource.institution.present? %><li>Institution: <span><%= resource.institution.present? ? resource.institution : ' ' %></span></li><% end %>
             </ul>
             <ul class="ico-list">
               <% if resource.made_by_un_redd? %>
