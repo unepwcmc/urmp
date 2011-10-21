@@ -43,7 +43,7 @@ q:after{content:''}
 }
 #nav .active a,
 #nav a:hover {
-	color:#253a4d;
+	color:#28394E;
 	background:#fff;
 
   -moz-border-radius-topleft: 3px;
@@ -86,7 +86,7 @@ p{margin:0 0 10px;}
 /* conten */
 #content{padding: 8px 0 0 35px;}
 .heading{
-	background:#1e3c4f url(../images/bg-heading.gif) no-repeat;
+	background:#28394E url(../images/bg-heading.gif) no-repeat;
 	color:#fff;
 	font-size:14px;
 	line-height:16px;
@@ -131,7 +131,7 @@ p{margin:0 0 10px;}
 .open{
 	text-decoration:none;
 	font:bold 14px/14px Arial, Helvetica, sans-serif;
-	color:#263b4d;
+	color:#28394E;
 	padding: 0 7px 0 0;
 }
 .slide-list .active .title-box{background:#e4e4e5 url(../images/arrow-active.gif) no-repeat 19px 14px;}
@@ -171,7 +171,7 @@ p{margin:0 0 10px;}
 	font-size:11px;
 }
 .topic-list h4{
-	color:#263b4d;
+	color:#28394E;
 	margin:0 0 5px;
 	background: url(../images/ico-docs2.gif) no-repeat 0 1px;
 	padding: 0 0 0 24px;
