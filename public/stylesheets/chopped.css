@@ -2,7 +2,7 @@ body{
 	margin:0;
 	color:#686868;
 	font:12px/16px Arial, Helvetica, sans-serif;
-	background:#fff url(../images/bg-page.gif) repeat-x 0 244px;
+	background:#fff url(../images/bg-page.png) repeat-x 0 244px;
 	min-width:1000px;
 }
 img{border-style:none;}
@@ -38,13 +38,20 @@ q:after{content:''}
 #nav a{
 	text-decoration:none;
 	color:#fff;
-	padding: 7px 11px 5px;
+  padding: 5px 11px 8px;
 	float:left;
 }
 #nav .active a,
 #nav a:hover {
 	color:#253a4d;
 	background:#fff;
+
+  -moz-border-radius-topleft: 3px;
+  -moz-border-radius-topright: 3px;
+  -moz-border-radius-bottomright: 0px;
+  -moz-border-radius-bottomleft: 0px;
+  -webkit-border-radius: 3px 3px 0px 0px;
+  border-radius: 3px 3px 0px 0px;
 }
 
 /* header */
