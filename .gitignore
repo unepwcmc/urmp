@@ -6,6 +6,7 @@ tmp/
 *.swo
 vendor/ruby
 config/locales/.DS_Store
+config/database.yml
 
 config/.DS_Store
 
