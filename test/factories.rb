@@ -1,33 +1,47 @@
-Factory.define :resource do |f|  
-  f.sequence(:title) { |n| "Resource #{n if n > 1}"}
-  f.association(:resource_type)
-end  
+FactoryGirl.define do
+  factory :resource do
+    sequence(:title) { |n| "Resource #{n if n > 1}"}
+    association(:resource_type)
+  end
+end
 
-Factory.define :resource_type do |f|  
-  f.sequence(:name) { |n| "Type #{n if n > 1}"}
-end  
+FactoryGirl.define do
+  factory :resource_type do
+    sequence(:name) { |n| "Type #{n if n > 1}"}
+  end
+end
 
-Factory.define :principle do |f|  
-  f.sequence(:number) { |n| n}
-end  
+FactoryGirl.define do
+  factory :principle do
+    sequence(:number) { |n| n}
+  end
+end
 
-Factory.define :principle_translation do |f|  
-  f.association :principle
-  f.locale :en
-  f.description "A description"
-end  
+FactoryGirl.define do
+  factory :principle_translation do
+    association :principle
+    locale :en
+    description "A description"
+  end
+end
 
-Factory.define :criterion do |f|  
-  f.sequence(:number) { |n| n}
-  f.association :principle
-end  
+FactoryGirl.define do
+  factory :criterion do
+    sequence(:number) { |n| n}
+    association :principle
+  end
+end
 
-Factory.define :criterion_translation do |f|  
-  f.association :criterion
-  f.locale :en
-  f.description "A description"
-end  
+FactoryGirl.define do
+  factory :criterion_translation do
+    association :criterion
+    locale :en
+    description "A description"
+  end
+end
 
-Factory.define :resource_link do |f|  
-  f.association :resource
+FactoryGirl.define do
+  factory :resource_link do
+    association :resource
+  end
 end
