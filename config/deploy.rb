@@ -1,5 +1,9 @@
 require 'capistrano/ext/multistage'
+
 set :default_stage, 'staging'
+set :repository,  "git@github.com:unepwcmc/urmp.git"
+set :scm, :git
+
 ENV_SET="RAILS_ENV=production"
 
 task :split_refs do
