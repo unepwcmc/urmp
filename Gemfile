@@ -19,19 +19,21 @@ group :development, :test do
 end
 
 group :development do
-  gem 'capistrano'
-  gem 'capistrano-ext'
+  gem 'capistrano', :require => false
+  gem 'capistrano-ext', :require => false
+  gem 'rvm-capistrano', :require => false
+  gem 'capistrano_colors', :require => false
   gem 'brightbox'
 
   gem 'rb-fsevent', :require => false
   gem 'growl'
 end
 
-group :test do  
-  gem "factory_girl_rails"  
-  gem "capybara"  
-  gem "guard-test"  
-end  
+group :test do
+  gem "factory_girl_rails"
+  gem "capybara"
+  gem "guard-test"
+end
 
 #gem 'therubyracer', :require => false
 
