@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110831093143) do
+ActiveRecord::Schema.define(:version => 20110831093142) do
 
   create_table "criteria", :force => true do |t|
     t.integer  "principle_id"

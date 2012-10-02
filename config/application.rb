@@ -41,6 +41,9 @@ module Urmp
 
     #Locales used (can't overwrite I18n.available_locales)
     SITE_LOCALES = [:en, :fr, :es, :id]
+
+    config.assets.enabled = true
+    config.assets.version = '1.0'
   end
 end
 

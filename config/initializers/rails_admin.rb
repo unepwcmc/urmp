@@ -1,4 +1,6 @@
 RailsAdmin.config do |config|
+
+  config.current_user_method { current_user } #auto-generated
   config.model ResourceLink do
     object_label_method do
       :cached_name

@@ -1,6 +1,6 @@
 source 'http://rubygems.org'
 
-gem 'rails', '3.0.10'
+gem 'rails', '3.2.8'
 gem 'rake', '0.8.7'
 
 # Bundle edge Rails instead:
@@ -10,13 +10,23 @@ gem 'pg'
 gem 'globalize3'
 
 gem 'devise' # Devise must be required before RailsAdmin
-gem 'rails_admin', '0.0.1', :git => 'git://github.com/sferik/rails_admin.git', :branch => 'rails-3.0'
+gem 'rails_admin'
 
 gem 'jquery-rails'
 
 group :development, :test do
   gem 'ruby-debug19'
 end
+
+# Needed for the new asset pipeline
+group :assets do
+  gem 'sass-rails'
+  gem 'coffee-rails'
+  gem 'uglifier'
+end
+
+# jQuery is the default JavaScript library in Rails 3.1
+gem 'jquery-rails'
 
 group :development do
   gem 'capistrano', :require => false

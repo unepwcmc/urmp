@@ -1,12 +1,14 @@
 Urmp::Application.routes.draw do
-  get "static/about"
+  mount RailsAdmin::Engine => '/admin', :as => 'rails_admin'
 
+  get "static/about"
   get "criteria/show"
 
   resources :principles, :only => [:index]
   resources :criteria, :only => [:show]
 
   devise_for :users
+
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
