@@ -39,10 +39,15 @@ group :development do
   gem 'growl'
 end
 
+group :development, :test do
+  gem 'guard-rspec'
+  gem 'rspec-rails'
+  gem 'guard-bundler'
+end
+
 group :test do
   gem "factory_girl_rails"
   gem "capybara"
-  gem "guard-test"
 end
 
 #gem 'therubyracer', :require => false

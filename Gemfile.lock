@@ -66,6 +66,7 @@ GEM
       orm_adapter (~> 0.1)
       railties (~> 3.1)
       warden (~> 1.2.1)
+    diff-lcs (1.1.3)
     erubis (2.7.0)
     execjs (1.4.0)
       multi_json (~> 1.0)
@@ -78,11 +79,15 @@ GEM
       activemodel (>= 3.0.0)
       activerecord (>= 3.0.0)
     growl (1.0.3)
-    guard (0.5.1)
-      thor (~> 0.14.6)
-    guard-test (0.3.0)
-      guard (>= 0.2.2)
-      test-unit (~> 2.2)
+    guard (1.4.0)
+      listen (>= 0.4.2)
+      thor (>= 0.14.6)
+    guard-bundler (1.0.0)
+      bundler (~> 1.0)
+      guard (~> 1.1)
+    guard-rspec (2.0.0)
+      guard (>= 1.1)
+      rspec (~> 2.11)
     haml (3.1.7)
     highline (1.6.2)
     hike (1.2.1)
@@ -101,6 +106,7 @@ GEM
       activesupport (>= 3.0.0)
     linecache19 (0.5.12)
       ruby_core_source (>= 0.1.4)
+    listen (0.5.3)
     mail (2.4.4)
       i18n (>= 0.4.0)
       mime-types (~> 1.16)
@@ -162,6 +168,19 @@ GEM
     rdoc (3.12)
       json (~> 1.4)
     remotipart (1.0.2)
+    rspec (2.11.0)
+      rspec-core (~> 2.11.0)
+      rspec-expectations (~> 2.11.0)
+      rspec-mocks (~> 2.11.0)
+    rspec-core (2.11.1)
+    rspec-expectations (2.11.3)
+      diff-lcs (~> 1.1.3)
+    rspec-mocks (2.11.3)
+    rspec-rails (2.11.0)
+      actionpack (>= 3.0)
+      activesupport (>= 3.0)
+      railties (>= 3.0)
+      rspec (~> 2.11.0)
     ruby-debug-base19 (0.11.25)
       columnize (>= 0.3.1)
       linecache19 (>= 0.5.11)
@@ -189,7 +208,6 @@ GEM
       hike (~> 1.2)
       rack (~> 1.0)
       tilt (~> 1.1, != 1.3.0)
-    test-unit (2.3.0)
     thor (0.14.6)
     tilt (1.3.3)
     treetop (1.4.10)
@@ -218,13 +236,15 @@ DEPENDENCIES
   factory_girl_rails
   globalize3
   growl
-  guard-test
+  guard-bundler
+  guard-rspec
   jquery-rails
   pg
   rails (= 3.2.8)
   rails_admin
   rake (= 0.8.7)
   rb-fsevent
+  rspec-rails
   ruby-debug19
   rvm-capistrano
   sass-rails
