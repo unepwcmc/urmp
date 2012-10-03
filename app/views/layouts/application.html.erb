@@ -10,21 +10,23 @@
   <div class="container">
     <%= render :partial => 'shared/header' %>
     <div class="content clearfix">
-    <!-- Two column layout -->
-    <% if content_for?(:main) %>
+      <!-- Two column layout -->
+      <% if content_for?(:main) %>
       <section class="main">
         <%= yield(:main) %>
       </section>
-    <% end %>
+      <% end %>
 
-    <% if content_for?(:sidebar) %>
+      <% if content_for?(:sidebar) %>
       <aside class="sidebar">
         <%= yield(:sidebar) %>
       </aside>
-    <% end %>
+      <% end %>
 
-    <!-- One column layout -->
-    <%= yield %>
+      <!-- One column layout -->
+      <div class="one-col">
+        <%= yield %>
+      </div>
     </div>
     <%= render :partial => 'shared/footer' %>
   </div>
