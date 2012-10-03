@@ -3,7 +3,7 @@ class Criterion < ActiveRecord::Base
   has_many :resource_links
   has_many :resources, :through => :resource_links
 
-  validates_presence_of :principle, :number
+  validates_presence_of :principle, :number, :description
   validates_uniqueness_of :number
 
   rails_admin do
