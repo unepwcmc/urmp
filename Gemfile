@@ -13,6 +13,7 @@ gem 'devise' # Devise must be required before RailsAdmin
 gem 'rails_admin'
 
 gem 'jquery-rails'
+gem 'paperclip'
 
 group :development, :test do
   gem 'ruby-debug19'
@@ -46,7 +47,7 @@ group :development, :test do
 end
 
 group :test do
-  gem "factory_girl_rails"
+  gem "factory_girl_rails", :require => false
   gem "capybara"
   gem 'shoulda-matchers'
 end
