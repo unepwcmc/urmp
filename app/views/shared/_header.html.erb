@@ -7,12 +7,12 @@
 <div class="navigation clearfix">
   <nav class="main">
     <ul>
-      <li><a href="#" class="current first">Home</a></li>
-      <li><a href="#">Safeguards</a></li>
-      <li><a href="#">Mapping and Valuation</a></li>
-      <li><a href="#">Impacts</a></li>
-      <li><a href="#">Factsheets</a></li>
-      <li><a href="#" class="last">FAQ</a></li>
+      <li><%= menu_item('Home', root_path) %></li>
+      <li><%= menu_item('Safeguards', safeguards_path) %></li>
+      <li><%= menu_item('Mapping and Valuation', mapping_path) %></li>
+      <li><%= menu_item('Monitoring', monitoring_path) %></li>
+      <li><%= menu_item('Factsheets', factsheets_path) %></li>
+      <li><%= menu_item('FAQ', faq_path) %></li>
     </ul>
   </nav>
   <div class="search sidebar">
