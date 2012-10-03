@@ -7,8 +7,37 @@
     <%= csrf_meta_tag %>
   </head>
   <body>
-
-      <%= yield %>
-
-  </body>
+  <header>
+    <div class="content">
+      <hgroup>
+        <h1 id="logo"><a href="/">UN-REDD PROGRAMME</a></h1>
+        <h2>The United Nations Collaboration Programme on Reducing Emissions from Deforestation and Forest Degradation in Developing Countries</h2>
+      </hgroup>
+    </div>
+  </header>
+  <nav>
+    <div class="content">
+      <ul>
+        <li><a href="#" class="current">Home</a></li>
+        <li><a href="#">Safeguards</a></li>
+        <li><a href="#">Identification Mapping and Vaaluation</a></li>
+        <li><a href="#">Monitoring impacts</a></li>
+        <li><a href="#">Factsheets</a></li>
+        <li><a href="#">FAQ</a></li>
+      </ul>
+      <div class="search">
+        <input type="text" placeholder="Search Resources/Tools" />
+      </div>
+    </div>
+  </nav> 
+  <div class="content">
+   <%= yield %>
+  </div>
+  <footer>
+    <div class="content">
+      
+    </div>
+  </footer>
+</body>
+</html>
 </html>
