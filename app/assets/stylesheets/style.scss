@@ -10,6 +10,7 @@ header {
   width: 1000px;
   height: 227px;
   background:url('/assets/banner.jpg');
+  @include box-shadow(2px, 2px, 5px, #ccc);
 
   h1, h2 {
     text-indent: -999999px;
@@ -63,7 +64,8 @@ h4 {
 .navigation {
   @include linear-gradient(#e2e2e2, #f7f7f7);
   border-top: 1px solid #bbbbbb;
-  boreder-bottom: 1px solid #bbbbbb;
+  border-bottom: 1px solid #bbbbbb;
+  @include box-shadow(2px, 2px, 5px, #ccc);
 }
 
 nav {
@@ -132,7 +134,7 @@ nav {
   padding-top: 20px;
   border-top: 1px solid #f93443;
   .content {
-    background: #fcfcfc;
+    background: #fcfcfc url('/assets/bg.png');
     padding: 40px 0;
     @include box-shadow(2px, 2px, 5px, #ccc); 
     @include border-radius(0, 0, 5px, 5px);
