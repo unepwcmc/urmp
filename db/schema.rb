@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20121003095817) do
+ActiveRecord::Schema.define(:version => 20121003122240) do
 
   create_table "criteria", :force => true do |t|
     t.integer  "principle_id"
@@ -79,6 +79,7 @@ ActiveRecord::Schema.define(:version => 20121003095817) do
     t.text     "description"
     t.integer  "resource_type_id"
     t.boolean  "made_by_un_redd"
+    t.string   "theme"
   end
 
   create_table "users", :force => true do |t|

@@ -9,7 +9,7 @@ class ResourceLink < ActiveRecord::Base
 
   rails_admin do
   end
-   
+
   # Store a cached name based on the links
   #
   # @return [String] the cached name
