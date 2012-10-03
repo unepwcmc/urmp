@@ -1,0 +1,57 @@
+@mixin border-radius ($radius, $radius1, $radius2, $radius3 ) {
+  -moz-border-radius: $radius $radius1 $radius2 $radius3;
+  -o-border-radius: $radius $radius1 $radius2 $radius3;
+  -webkit-border-radius: $radius $radius1 $radius2 $radius3;
+  border-radius: $radius $radius1 $radius2 $radius3;
+}
+
+@mixin linear-gradient ($color-start, $color-stop) {
+  background: $color-start;
+  background-image: -o-linear-gradient(bottom, $color-start 23%, $color-stop 87%);
+  background-image: -moz-linear-gradient(bottom, $color-start 23%, $color-stop 87%);
+  background-image: -webkit-linear-gradient(bottom, $color-start 23%, $color-stop 87%);
+  background-image: -ms-linear-gradient(bottom, $color-start 23%, $color-stop 87%);
+  
+  background-image: -webkit-gradient(
+    linear,
+    left bottom,
+    left top,
+    color-stop(0.23, $color-start),
+    color-stop(0.87, $color-stop)
+    );
+  
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#{$color-start}', endColorstr='#{$color-stop}',GradientType=0 );
+  background-image: linear-gradient(bottom, $color-start 23%, $color-stop 87%);
+}
+
+@mixin box-shadow-inset ($top, $left, $blur, $color, $inset) {
+  -webkit-box-shadow:$top $left $blur $color $inset;
+  -moz-box-shadow:$top $left $blur $color $inset;
+  -o-box-shadow:$top $left $blur $color $inset;
+  -ms-box-shadow:$top $left $blur $color $inset;
+  box-shadow:$top $left $blur $color $inset;
+}
+
+@mixin box-shadow ($top, $left, $blur, $color) {
+  -webkit-box-shadow:$top $left $blur $color;
+  -moz-box-shadow:$top $left $blur $color;
+  -o-box-shadow:$top $left $blur $color;
+  -ms-box-shadow:$top $left $blur $color;
+  box-shadow:$top $left $blur $color;
+}
+
+@mixin transition ($time) {
+  -webkit-transition: $time;
+  -moz-transition: $time;
+  -o-transition: $time;
+  -ms-transition: $time;
+  transition: $time;
+}
+
+@mixin background-size ($value) {
+  -webkit-background-size: $value;
+  -moz-background-size: $value;
+  -ms-background-size: $value;
+  -o-background-size: $value;
+  background-size: $value;
+}

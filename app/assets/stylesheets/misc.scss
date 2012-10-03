@@ -1,0 +1,46 @@
+/* ~~ Miscellaneous float/clear classes ~~ */
+.floatright { 
+  float: right;
+}
+.floatleft { 
+  float: left;
+}
+.clear { 
+  clear:both;
+}
+.center {
+  text-align: center;
+}
+.transparent {
+  color: transparent !important;
+}
+
+* html .clearfix             { zoom: 1; } /* IE6 */
+
+*:first-child+html .clearfix { zoom: 1; } /* IE7 */
+
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+
+/*HTML 5 support - Sets new HTML 5 tags to display:block so browsers know how to render the tags properly. */
+header, section, footer, aside, nav, article, figure {
+  display: block;
+}
+
+.hidden {
+  display: none;
+}
+
+.nomargin {
+  margin: 0 !important;
+}
+
+.relative {
+  position: relative;
+}
