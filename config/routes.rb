@@ -12,7 +12,9 @@ Urmp::Application.routes.draw do
   root :to => "static_pages#home"
   match "factsheets" => "static_pages#factsheets", :as => "factsheets"
   match "monitoring" => "static_pages#monitorng", :as => "monitoring"
-
+  match "safeguards" => "static_pages#safeguards", :as => "safeguards"
+  match "mapping" => "static_pages#mapping", :as => "mapping"
+  match "faq" => "static_pages#faq", :as => "faq"
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

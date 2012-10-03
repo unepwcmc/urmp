@@ -7,12 +7,12 @@
 <div class="navigation clearfix">
   <nav class="main">
     <ul>
-      <li><%= menu_item('Home', root_path) %></li>
+      <li><%= menu_item('Home', root_path, :root => true, :class => 'first') %></li>
       <li><%= menu_item('Safeguards', safeguards_path) %></li>
       <li><%= menu_item('Mapping and Valuation', mapping_path) %></li>
       <li><%= menu_item('Monitoring', monitoring_path) %></li>
       <li><%= menu_item('Factsheets', factsheets_path) %></li>
-      <li><%= menu_item('FAQ', faq_path) %></li>
+      <li><%= menu_item('FAQ', faq_path, :class => 'last') %></li>
     </ul>
   </nav>
   <div class="search sidebar">
