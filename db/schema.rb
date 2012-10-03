@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20121003132938) do
+ActiveRecord::Schema.define(:version => 20121003135710) do
 
   create_table "criteria", :force => true do |t|
     t.integer  "principle_id"
@@ -20,6 +20,17 @@ ActiveRecord::Schema.define(:version => 20121003132938) do
     t.integer  "number"
     t.text     "description"
   end
+
+  create_table "factsheets", :force => true do |t|
+    t.string   "name"
+    t.integer  "resource_id",             :null => false
+    t.string   "attachment_file_name"
+    t.string   "attachment_content_type"
+    t.integer  "attachment_file_size"
+    t.datetime "attachment_updated_at"
+  end
+
+  add_index "factsheets", ["resource_id"], :name => "index_factsheets_on_resource_id"
 
   create_table "principles", :force => true do |t|
     t.datetime "created_at"
