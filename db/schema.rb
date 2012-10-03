@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20121003122240) do
+ActiveRecord::Schema.define(:version => 20121003132938) do
 
   create_table "criteria", :force => true do |t|
     t.integer  "principle_id"
@@ -40,16 +40,6 @@ ActiveRecord::Schema.define(:version => 20121003122240) do
   end
 
   add_index "rails_admin_histories", ["item", "table", "month", "year"], :name => "index_rails_admin_histories"
-
-  create_table "resource_link_translations", :force => true do |t|
-    t.integer  "resource_link_id"
-    t.string   "locale"
-    t.text     "reference"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
-  add_index "resource_link_translations", ["resource_link_id"], :name => "index_3d7173407008b1615412f5ecb40093e833a1f8f3"
 
   create_table "resource_links", :force => true do |t|
     t.text     "reference"
