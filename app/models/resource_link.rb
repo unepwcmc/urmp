@@ -19,7 +19,7 @@ class ResourceLink < ActiveRecord::Base
       self.cached_name << "#{reference} - "
     end
     self.cached_name << "#{resource.title} - "
-    self.cached_name << "criterion #{criterion.number}"
+    self.cached_name << "#{criterion.name}"
   end
 
 end
