@@ -22,12 +22,8 @@ class ResourceSearch
     Resource.all.map(&:resource_type).uniq
   end
 
-  def search_text
-    "%#{text}%"
-  end
-
   def find
-    @results = Resource.where("title like ? OR description like ?", search_text, search_text)
+    @results = Resource.search("title_contains" => text, "description_contains" => text).all
   end
 
   def results
