@@ -141,12 +141,37 @@ nav {
     .main, .sidebar, .wide {
       background: #fff;
     }
-    article {
+    article, .search-results {
       padding: 10px 30px;
       @include box-shadow(2px, 2px, 5px, #ccc); 
       @include border-radius(0, 0, 5px, 5px);
     }
   }
+}
+
+.search-results {
+   form {
+     fieldset { 
+      height: 150px;
+      margin: 20px auto;
+      padding:10px 20px;
+    }
+   }
+}
+
+.results {
+  background-color: #f7f7f7;
+  min-height: 200px;
+  padding: 30px;
+}
+
+.screenshot {
+  position: relative;
+  float: left;
+  width: 100px;
+  height: 100px;
+  margin: 15px 10px;
+  background-image:url('/assets/sample.png');
 }
 
 footer {
