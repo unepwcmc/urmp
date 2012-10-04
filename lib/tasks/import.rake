@@ -1,7 +1,12 @@
 namespace :urmp do
 
   desc 'Restore all resources'
-  task :restore_all => [:create_principles, :import_criteria, :import_resources, :import_resource_link] do
+  task :restore_all => [:create_admin_user, :create_principles, :import_criteria, :import_resources, :import_resource_link] do
+  end
+
+  desc 'Create admin user'
+  task :create_admin_user => :environment do
+    User.create(:email => 'admin@unredd.com', :password => 'admin123')
   end
 
   desc 'Create principles'
@@ -18,7 +23,7 @@ namespace :urmp do
 
   desc 'Import criteria'
   task :import_criteria => :environment do
-    csv_file_path = "#{Rails.root}/tmp/criteria.csv"
+    csv_file_path = "#{Rails.root}/db/seeds/criteria.csv"
 
     criterion = Criterion.create({ :name => 'All', :number => 0, :description => 'All', :principle =>
                                  Principle.find_by_name('All Principles') })
@@ -40,7 +45,7 @@ namespace :urmp do
 
   desc 'Import resources from CSV'
   task :import_resources => :environment do
-    csv_file_path = "#{Rails.root}/tmp/resources.csv"
+    csv_file_path = "#{Rails.root}/db/seeds/resources.csv"
     CSV.foreach csv_file_path do |row|
 
       resource = Resource.new({
@@ -62,7 +67,7 @@ namespace :urmp do
 
   desc 'Import ResourceLink'
   task :import_resource_link => :environment do
-    csv_file_path = "#{Rails.root}/tmp/resource_link.json"
+    csv_file_path = "#{Rails.root}/db/seeds/resource_link.json"
 
     parsed_data = JSON.parse File.read(csv_file_path)
 
