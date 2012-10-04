@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20121004101713) do
+ActiveRecord::Schema.define(:version => 20121004103720) do
 
   create_table "criteria", :force => true do |t|
     t.integer  "principle_id"
@@ -64,12 +64,6 @@ ActiveRecord::Schema.define(:version => 20121004101713) do
     t.text     "numeric_reference"
   end
 
-  create_table "resource_types", :force => true do |t|
-    t.string   "name"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
   create_table "resources", :force => true do |t|
     t.string   "title"
     t.text     "link"
@@ -80,9 +74,9 @@ ActiveRecord::Schema.define(:version => 20121004101713) do
     t.string   "resource_date"
     t.string   "institution"
     t.text     "description"
-    t.integer  "resource_type_id"
     t.boolean  "made_by_un_redd"
     t.string   "theme"
+    t.string   "resource_type"
   end
 
   create_table "users", :force => true do |t|

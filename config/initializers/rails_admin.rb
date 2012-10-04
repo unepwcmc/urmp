@@ -23,7 +23,6 @@ RailsAdmin.config do |config|
       field :title
       field :author
       field :language
-      field :resource_type
       field :resource_date
       field :institution
       field :description
@@ -34,18 +33,11 @@ RailsAdmin.config do |config|
       field :title
       field :author
       field :language
-      field :resource_type
       field :resource_date
       field :institution
       field :description
       field :link
       field :made_by_un_redd
-    end
-  end
-  config.model ResourceType do
-    visible :false
-    edit do
-      field :name
     end
   end
 end
