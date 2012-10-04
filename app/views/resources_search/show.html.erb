@@ -1,6 +1,6 @@
 <h1 class="header">Search the tools and resources</h1>
 <div class="search-results wide">
-  <%= simple_form_for @search, :url => search_results_path, :method => :get do |f| %>
+  <%= simple_form_for @search, :as => :search, :html => {:novalidate => true}, :url => search_results_path, :method => :get do |f| %>
     <%= f.input :text %>
     <%= f.input :topic, :as => :select, :collection => ResourceSearch.topics %>
     <%= f.input :language, :as => :select, :collection => ResourceSearch.languages %>
@@ -9,13 +9,14 @@
     <%= f.input :tool, :as => :select %>
     <%= f.input :technical_expertise, :as => :select %>
     <%= f.input :technical_expertise, :as => :select %>
+    <%= f.submit 'Search' %>
   <% end %>
 
   <h2>Search Results</h2>
 
   <dl class="results">
   <% @search.results.each do |resource| %>
-    <dt><%= resource.title %></dt>
+    <dt><%= link_to resource.title, resource_path(resource) %></dt>
     <dd class="screenshot">Obrazek</dd>
     <dt><%= resource.description %></dt>
   <% end %>

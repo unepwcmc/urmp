@@ -23,7 +23,11 @@ class ResourceSearch
   end
 
   def find
-    @results = Resource.search("title_contains" => text, "description_contains" => text).all
+    @results = Resource.search(
+      "title_contains" => text,
+      "description_contains" => text,
+      "language_eq" => language
+    ).all
   end
 
   def results
