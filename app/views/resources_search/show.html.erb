@@ -13,11 +13,11 @@
 
   <h2>Search Results</h2>
 
-  <%= @search.results.each do |resource| %>
-    <dl class="results">
-        <dt>Title of tool</dt>
-        <dd class="screenshot">Obrazek</dd>
-        <dd>Brief description of the tool <a title="link to the article" href="#">more...</a> </dd>
-    </dl>
-<% end %>
+  <dl class="results">
+  <% @search.results.each do |resource| %>
+    <dt><%= resource.title %></dt>
+    <dd class="screenshot">Obrazek</dd>
+    <dt><%= resource.description %></dt>
+  <% end %>
+  </dl>
 </div>
