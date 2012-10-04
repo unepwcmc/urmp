@@ -3,6 +3,7 @@ require 'spec_helper'
 describe Factsheet do
 
   it { should validate_presence_of :name}
+  it { should validate_presence_of :resource}
   it { should validate_presence_of :attachment }
   it { should belong_to :resource }
 
@@ -15,6 +16,12 @@ describe Factsheet do
       factsheet.should_not be_valid
       factsheet.attachment = pdf_file
       factsheet.should be_valid
+    end
+  end
+
+  describe "#grouped_by_resource_theme" do
+    it 'gets all factsheets grouped by theme' do
+      fail
     end
   end
 end

@@ -55,6 +55,8 @@ RailsAdmin.config do |config|
     list do
       field :title
       field :author
+      field :theme
+      field :resource_type
       field :language
       field :resource_date
       field :institution
@@ -65,6 +67,8 @@ RailsAdmin.config do |config|
     edit do
       field :title
       field :author
+      field :theme
+      field :resource_type
       field :language
       field :resource_date
       field :institution

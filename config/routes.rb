@@ -1,4 +1,6 @@
 Urmp::Application.routes.draw do
+  get "factsheets/index"
+
   mount RailsAdmin::Engine => '/admin', :as => 'rails_admin'
 
   get "static/about"
@@ -7,11 +9,11 @@ Urmp::Application.routes.draw do
   resources :principles, :only => [:index]
   resources :criteria, :only => [:show]
   resources :resources, :only => [:index, :show]
+  resources :factsheets, :only => [:index, :show]
 
   devise_for :users
 
   root :to => "static_pages#home"
-  match "factsheets" => "static_pages#factsheets", :as => "factsheets"
   match "monitoring" => "static_pages#monitoring", :as => "monitoring"
   match "safeguards" => "static_pages#safeguards", :as => "safeguards"
   match "mapping" => "static_pages#mapping", :as => "mapping"
