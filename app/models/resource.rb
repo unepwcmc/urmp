@@ -13,7 +13,4 @@ class Resource < ActiveRecord::Base
 
   validates :theme, :inclusion => { :in => THEMES }, :allow_nil => true
   validates :resource_type, :inclusion => {:in => TYPES.keys }, :allow_nil => true
-
-  rails_admin do
-  end
 end

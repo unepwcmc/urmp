@@ -18,6 +18,39 @@ RailsAdmin.config do |config|
       field :numeric_reference
     end
   end
+
+  config.model Principle do
+    object_label_method do
+      :name
+    end
+    weight -1
+    list do
+      field :name
+      field :description
+    end
+    edit do
+      field :name
+      field :number
+      field :description
+    end
+  end
+
+  config.model Criterion do
+    object_label_method do
+      :name
+    end
+    list do
+      field :name
+      field :description
+      field :principle
+    end
+    edit do
+      field :name
+      field :description
+      field :principle
+    end
+  end
+
   config.model Resource do
     list do
       field :title

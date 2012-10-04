@@ -7,9 +7,6 @@ class ResourceLink < ActiveRecord::Base
 
   after_validation :store_cached_name
 
-  rails_admin do
-  end
-
   # Store a cached name based on the links
   #
   # @return [String] the cached name

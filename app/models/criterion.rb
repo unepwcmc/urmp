@@ -6,20 +6,5 @@ class Criterion < ActiveRecord::Base
   validates_presence_of :principle, :name, :description
   validates_uniqueness_of :name
 
-  rails_admin do
-    object_label_method do
-      :number
-    end
-    list do
-      field :number
-      field :description
-      field :principle
-    end
-    edit do
-      field :number
-      field :description
-      field :principle
-    end
-  end
 
 end
