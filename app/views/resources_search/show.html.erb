@@ -2,13 +2,15 @@
 <div class="search-results wide">
   <%= simple_form_for @search, :as => :search, :html => {:novalidate => true}, :url => search_results_path, :method => :get do |f| %>
     <%= f.input :text %>
+
     <%= f.input :topic, :as => :select, :collection => ResourceSearch.topics %>
-    <%= f.input :language, :as => :select, :collection => ResourceSearch.languages %>
-    <%= f.input :country, :as => :select %>
     <%= f.input :activity, :as => :select %>
     <%= f.input :tool, :as => :select %>
+
     <%= f.input :technical_expertise, :as => :select %>
-    <%= f.input :technical_expertise, :as => :select %>
+    <%= f.input :country, :as => :select %>
+    <%= f.input :language, :as => :select, :collection => ResourceSearch.languages %>
+
     <%= f.submit 'Search' %>
   <% end %>
 
