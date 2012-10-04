@@ -11,8 +11,8 @@ class Resource < ActiveRecord::Base
   has_many :criteria, :through => :resource_links
   has_one :factsheet
 
-  validates :theme, :inclusion => { :in => THEMES }
-  validates :resource_type, :presence => true, :inclusion => {:in => TYPES.keys }
+  validates :theme, :inclusion => { :in => THEMES }, :allow_nil => true
+  validates :resource_type, :inclusion => {:in => TYPES.keys }, :allow_nil => true
 
   rails_admin do
   end
