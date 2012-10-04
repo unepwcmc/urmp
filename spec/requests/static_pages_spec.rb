@@ -2,13 +2,6 @@ require 'spec_helper'
 
 describe 'Static Pages' do
 
-  shared_examples_for :succesful_page do
-    it 'responds with 200' do
-      visit path
-      page.status_code.should == 200
-    end
-  end
-
   describe 'GET root' do
     let(:path) { root_path }
     it_should_behave_like :succesful_page

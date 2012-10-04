@@ -15,7 +15,8 @@ Urmp::Application.routes.draw do
   match "safeguards" => "static_pages#safeguards", :as => "safeguards"
   match "mapping" => "static_pages#mapping", :as => "mapping"
   match "faq" => "static_pages#faq", :as => "faq"
-  match "search" => "static_pages#search", :as => "search"
+  match "search" => "resources_search#show", :as => "search"
+  match "search_results" => "resources_search#results", :as => "search_results"
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
