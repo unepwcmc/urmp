@@ -14,6 +14,7 @@ gem 'rails_admin'
 
 gem 'jquery-rails'
 gem 'paperclip'
+gem 'simple_form'
 
 group :development, :test do
   gem 'ruby-debug19'
