@@ -1,7 +1,12 @@
 namespace :urmp do
 
+  desc 'Restore all resources'
+  task :restore_all => [:create_principles, :import_criteria, :import_resources, :import_resource_link] do
+  end
+
   desc 'Create principles'
   task :create_principles => :environment do
+    Principle.create(:name => 'All Principles', :description => '-')
     Principle.create(:name => 'Principle 1', :description => 'Apply norms of democratic governance, including those reflected in national commitments and Multilateral Agreements')
     Principle.create(:name => 'Principle 2', :description => 'Respect and protect stakeholder rights, including human rights, statutory and customary rights, and collective rights')
     Principle.create(:name => 'Principle 3', :description => "Promote and enhance forests' contribution to sustainable livelihoods")
@@ -14,6 +19,9 @@ namespace :urmp do
   desc 'Import criteria'
   task :import_criteria => :environment do
     csv_file_path = "#{Rails.root}/tmp/criteria.csv"
+
+    criterion = Criterion.create({ :name => 'All', :number => 0, :description => 'All', :principle =>
+                                 Principle.find_by_name('All Principles') })
 
     CSV.foreach csv_file_path do |row|
       number = row[0]
@@ -52,5 +60,30 @@ namespace :urmp do
     end
   end
 
+  desc 'Import ResourceLink'
+  task :import_resource_link => :environment do
+    csv_file_path = "#{Rails.root}/tmp/resource_link.json"
 
+    parsed_data = JSON.parse File.read(csv_file_path)
+
+    parsed_data.each do |row|
+      resource = Resource.find_by_title(row['resource_link']['resource']['title'])
+      unless resource
+        p "Can't find resource by title, please assign it manually"
+        p row['resource_link']['resource']['title']
+        next
+      end
+
+      criterion = Criterion.find_by_number(row['resource_link']['criterion']['number'])
+      resource_link = ResourceLink.new({
+        :resource => resource,
+        :criterion => criterion,
+        :reference => row['resource_link']['reference'],
+        :cached_name => row['resource_link']['cached_name'],
+        :numeric_reference => row['resource_link']['numeric_reference']
+      })
+
+      resource_link.save!
+    end
+  end
 end
