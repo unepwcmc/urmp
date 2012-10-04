@@ -1,0 +1,30 @@
+<h2><%= @resource.title %></h2>
+
+<p>
+  <%= @resource.description %>
+</p>
+
+<% content_for :sidebar do %>
+    <dl>
+      <dt>Resource</dt>
+      <dd>- ? ? -</dd>
+
+      <dt>Author</dt>
+      <dd><%= @resource.author %></dd>
+
+      <dt>Publication</dt>
+      <dd><%= @resource.resource_date %></dd>
+
+      <dt>Institution</dt>
+      <dd><%= @resource.institution %></dd>
+
+      <dt>Language</dt>
+      <dd><%= @resource.language %></dd>
+
+      <dt><%= link_to 'External link', @resource.link %></dt>
+      <dd></dd>
+
+      <dt>Level of expertise required</dt>
+      <dd>- ? ? -</dd>
+    </dl>
+<% end %>
