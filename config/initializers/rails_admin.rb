@@ -55,6 +55,7 @@ RailsAdmin.config do |config|
     list do
       field :title
       field :author
+      field :picture
       field :theme, :enum do
         enum { Resource::THEMES }
       end
@@ -75,6 +76,7 @@ RailsAdmin.config do |config|
     edit do
       field :title
       field :author
+      field :picture
       field :theme, :enum do
         enum { Resource::THEMES }
       end
