@@ -3,6 +3,7 @@
   <fieldset>
     <%= simple_form_for @search, :as => :search, :html => {:novalidate => true}, :url => search_results_path, :method => :get do |f| %>
 
+
       <%= f.input :text, :label =>  false, :class => 'clearfix' %> 
 
       <p> Further refine search by specifying:</p>
@@ -10,7 +11,7 @@
       <span class="clearfix">
         <%= f.input :topic, :as => :select,  :collection => ResourceSearch.topics, :class => 'wide_select' %>
         <%= f.input :activity, :as => :select, :class => 'wide_select' %>
-        <%= f.input :tool, :as => :select, :class => 'narrow_select' %>
+        <%= f.input :tool, :as => :select, :class => 'narrow_select', :collection => ResourceSearch.tools %>
       </span>
       <span>
         <%= f.input :technical_expertise, :as => :select, :class => 'wide_select' %>
@@ -22,14 +23,16 @@
     <% end %>
   </fieldset>
 
-  <h2>Search Results</h2>
+  <% if @search.results %>
+    <h2>Search Results</h2>
+    <dl class="results">
+    <% @search.results.each do |resource| %>
+      <dt><%= link_to resource.title, resource_path(resource) %></dt>
 
-  <dl class="results">
-  <% @search.results.each do |resource| %>
-    <dt><%= link_to resource.title, resource_path(resource) %></dt>
-    
-    <dd class="description"><%= resource.description %></dd>
-    <dd class="screenshot"></dd>
+      <dd class="description"><%= resource.description %></dd>
+      <dd class="screenshot"></dd>
+    <% end %>
+    </dl>
+    <%= paginate @search.results %>
   <% end %>
-  </dl>
 </div>

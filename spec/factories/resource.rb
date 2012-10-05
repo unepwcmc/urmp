@@ -3,5 +3,9 @@ FactoryGirl.define do
     sequence(:title) { |n| "Resource #{n if n > 1}"}
     theme Resource::THEMES.first
     resource_type Resource::TYPES.keys.first
+    language { ['English', 'Spanish'][rand(2)] }
+    author 'Doswald, N., Dickson, B.'
+    institution 'UNEP-WCMC'
+    link 'http://foo.bar'
   end
 end
