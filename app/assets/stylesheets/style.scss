@@ -97,6 +97,7 @@ nav {
   }
 }
 
+
 .main {
   width: 630px;
   float: left;
@@ -149,30 +150,6 @@ nav {
   }
 }
 
-.search-results {
-   form {
-     fieldset { 
-      height: 150px;
-      margin: 20px auto;
-      padding:10px 20px;
-    }
-   }
-}
-
-.results {
-  background-color: #f7f7f7;
-  min-height: 200px;
-  padding: 30px;
-}
-
-.screenshot {
-  position: relative;
-  float: left;
-  width: 100px;
-  height: 100px;
-  margin: 15px 10px;
-  background-image:url('/assets/sample.png');
-}
 
 footer {
   margin-top: 30px;

@@ -1,5 +1,6 @@
 <h1 class="header">Search the tools and resources</h1>
 <div class="search-results wide">
+  <fieldset>
   <%= simple_form_for @search, :as => :search, :html => {:novalidate => true}, :url => search_results_path, :method => :get do |f| %>
     <%= f.input :text %>
 
@@ -13,14 +14,15 @@
 
     <%= f.submit 'Search' %>
   <% end %>
-
+</fieldset>
   <h2>Search Results</h2>
 
   <dl class="results">
   <% @search.results.each do |resource| %>
     <dt><%= link_to resource.title, resource_path(resource) %></dt>
-    <dd class="screenshot">Obrazek</dd>
-    <dt><%= resource.description %></dt>
+    
+    <dd class="description"><%= resource.description %></dd>
+    <dd class="screenshot"></dd>
   <% end %>
   </dl>
 </div>

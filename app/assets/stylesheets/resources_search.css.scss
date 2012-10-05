@@ -1,3 +1,49 @@
 // Place all the styles related to the ResourcesSearch controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+@import 'mixins';
+
+.search-results {
+  fieldset { 
+    @include border-radius(5px, 5px, 5px, 5px);
+
+    height: 200px;
+    margin: 20px auto;
+    padding:10px 30px;
+  }
+}
+
+.results {
+  @include border-radius(5px, 5px, 5px, 5px);
+  
+  background-color: #f7f7f7;
+  min-height: 200px;
+  padding: 20px 30px;
+
+  dt {
+    font-size: 20px;
+    a {
+      text-decoration: none;
+    }
+  }
+
+  dt, .description { 
+    float: left;
+    margin: 5px 0 5px 175px;
+  }
+
+  .screenshot {
+    margin-bottom: 15px;
+  }
+}
+
+.screenshot {
+  position: relative;
+  
+  width: 150px;
+  height: 150px;
+  margin: 5px 10px;
+  background-image:url('/assets/sample.png');
+}
+
