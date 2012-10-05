@@ -30,7 +30,9 @@
       <dt><%= link_to resource.title, resource_path(resource) %></dt>
 
       <dd class="description"><%= resource.description %></dd>
-      <dd class="screenshot"></dd>
+      <dd class="screenshot">
+        <%= image_tag resource.picture.url(:thumb), :alt => resource.title %>
+      </dd>
     <% end %>
     </dl>
     <%= paginate @search.results %>
