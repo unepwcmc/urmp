@@ -20,8 +20,37 @@ describe Factsheet do
   end
 
   describe "#grouped_by_resource_theme" do
-    it 'gets all factsheets grouped by theme' do
-      fail
+    context "when all factsheets belongs to resource with theme" do
+      let!(:factsheet_1) {
+        create(:factsheet, :resource => create(:resource, :theme => Resource::THEMES.first ))
+      }
+
+      let!(:factsheet_2) {
+        create(:factsheet, :resource => create(:resource, :theme => Resource::THEMES.last ))
+      }
+
+      it 'gets factsheets grouped by theme' do
+        results = Factsheet.grouped_by_resource_theme
+
+        Resource::THEMES.each do |theme|
+          results[theme].should be_present
+        end
+      end
+    end
+
+    context "when there are factsheets withouth theme" do
+      let!(:factsheet_1) {
+        create(:factsheet, :resource => create(:resource, :theme => Resource::THEMES.first ))
+      }
+
+      let!(:factsheet_1) {
+        create(:factsheet, :resource => create(:resource, :theme => nil ))
+      }
+
+      it 'gets factsheets grouped by theme' do
+        results = Factsheet.grouped_by_resource_theme
+        results[nil].should == [factsheet_1]
+      end
     end
   end
 end
