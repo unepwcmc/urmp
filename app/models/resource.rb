@@ -10,7 +10,7 @@ class Resource < ActiveRecord::Base
   has_many :criteria, :through => :resource_links
   has_one :factsheet
   has_attached_file :picture,
-    :default_url => "/images/default_:style_resource_picture.png",
+    :default_url => "/assets/default_:style_resource_picture.png",
     :styles => { :medium => "250x200>", :thumb => "150x150>" }
 
   validates :theme, :inclusion => { :in => THEMES }, :allow_nil => true
