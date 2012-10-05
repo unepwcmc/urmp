@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20121004103720) do
+ActiveRecord::Schema.define(:version => 20121005094038) do
 
   create_table "criteria", :force => true do |t|
     t.integer  "principle_id"
@@ -77,6 +77,10 @@ ActiveRecord::Schema.define(:version => 20121004103720) do
     t.boolean  "made_by_un_redd"
     t.string   "theme"
     t.string   "resource_type"
+    t.string   "picture_file_name"
+    t.string   "picture_content_type"
+    t.integer  "picture_file_size"
+    t.datetime "picture_updated_at"
   end
 
   create_table "users", :force => true do |t|

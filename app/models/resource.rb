@@ -1,5 +1,4 @@
 class Resource < ActiveRecord::Base
-
   THEMES = ['impacts', 'identification'].freeze
   TYPES = {
     'tool' => 'Tool',
@@ -10,7 +9,11 @@ class Resource < ActiveRecord::Base
   has_many :resource_links
   has_many :criteria, :through => :resource_links
   has_one :factsheet
+  has_attached_file :picture,
+    :styles => { :medium => "250x200>", :thumb => "150x150>" }
 
   validates :theme, :inclusion => { :in => THEMES }, :allow_nil => true
   validates :resource_type, :inclusion => {:in => TYPES.keys }, :allow_nil => true
+  validates_attachment :picture,
+    :content_type => { :content_type => ["image/jpg", "image/png", "image/gif"]}
 end
