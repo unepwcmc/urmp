@@ -5,7 +5,7 @@
 </p>
 
 <% content_for :sidebar do %>
-    <dd><%= image_tag @resource.picture.url(:medium) %></dd>
+    <dd><%= image_tag @resource.picture.url(:small) %></dd>
     <dl>
       <dt>Resource</dt>
       <dd>- ? ? -</dd>
@@ -13,19 +13,19 @@
       <dt>Author</dt>
       <dd><%= @resource.author %></dd>
 
-      <dt>Publication</dt>
+      <dt>Publication:</dt>
       <dd><%= @resource.resource_date %></dd>
 
-      <dt>Institution</dt>
+      <dt>Institution:</dt>
       <dd><%= @resource.institution %></dd>
 
-      <dt>Language</dt>
+      <dt>Language: </dt>
       <dd><%= @resource.language %></dd>
 
       <dt><%= link_to 'External link', @resource.link, :class => 'external_link' %></dt>
       <dd></dd>
 
-      <dt>Level of expertise required</dt>
-      <dd>- ? ? -</dd>
+      <dt>Level of expertise required: </dt>
+      <dd><%= @resource.technical_expertise %></dd>
     </dl>
 <% end %>
