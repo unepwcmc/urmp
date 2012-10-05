@@ -7,28 +7,41 @@
 .search-results {
   fieldset { 
     @include border-radius(5px, 5px, 5px, 5px);
-    height: 200px;
     margin: 20px auto;
-    padding:10px 30px;
+    padding:15px 30px;
     form {
       input[type=text] {
         @include border-radius(3px, 3px, 3px, 3px);
 
         border: 1px solid #ccc;
         margin: 10px;
-        padding: 4px;
+        padding: 10px;
         width: 400px;
       }
-
+      input[type=submit] {
+        margin: 15px;
+      }
+      p {
+        font-weight: bold;
+        margin-left: 10px;
+       }
       span {
         display: block;
         float: left;
-        padding: 10px;
-        input[type=select] {
-          margin: 5px;
+        width: 800px;
+        label {
+         display: block;
+        }
+        .select {
+          float: left;
+          margin: 0px 10px 5px 5px;
+          padding: 3px;
+          label {
+            display: block;
+            float: none;
+          }
           .wide_select {
             width: 200px;
-            color: blue;
           }
           .narrow_select{
             width: 100px;
