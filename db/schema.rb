@@ -83,7 +83,7 @@ ActiveRecord::Schema.define(:version => 20121005103915) do
     t.datetime "picture_updated_at"
     t.string   "technical_expertise"
     t.string   "audience"
-    t.string   "acitivity"
+    t.string   "activity"
     t.string   "country"
   end
 
