@@ -8,6 +8,7 @@ class ResourceSearch
   attr_accessor *SEARCH_ATTR
 
   def initialize(attrs={}, page=1)
+    attrs = attrs || {}
     SEARCH_ATTR.each do |attr|
       if val = (attrs[attr] || attrs[attr.to_s])
         instance_variable_set("@#{attr.to_s}", val)
@@ -18,7 +19,6 @@ class ResourceSearch
 
   def self.languages
     prepare_for_select(Resource.all.map(&:language))
-
   end
 
   def self.topics
@@ -39,7 +39,7 @@ class ResourceSearch
   end
 
   def results
-    @results || []
+    @results
   end
 
   def persisted?

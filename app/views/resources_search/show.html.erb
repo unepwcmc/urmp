@@ -15,15 +15,17 @@
     <%= f.submit 'Search' %>
   <% end %>
 </fieldset>
-  <h2>Search Results</h2>
+  <% if @search.results %>
+    <h2>Search Results</h2>
 
-  <dl class="results">
-  <% @search.results.each do |resource| %>
-    <dt><%= link_to resource.title, resource_path(resource) %></dt>
-    
-    <dd class="description"><%= resource.description %></dd>
-    <dd class="screenshot"></dd>
+    <dl class="results">
+    <% @search.results.each do |resource| %>
+      <dt><%= link_to resource.title, resource_path(resource) %></dt>
+
+      <dd class="description"><%= resource.description %></dd>
+      <dd class="screenshot"></dd>
+    <% end %>
+    </dl>
+    <%= paginate @search.results %>
   <% end %>
-  </dl>
-  <%= paginate @search.results %>
 </div>
