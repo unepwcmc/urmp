@@ -63,23 +63,28 @@
   min-height: 200px;
   padding: 20px 30px;
 
-  dt {
-    font-size: 20px;
+  li {
+    list-style-type: none;
+    margin: 10px 0px;
     a {
+      font-size: 20px;
       text-decoration: none;
     }
   }
 
-  dt, .description { 
-    margin: 5px 0 5px 175px;
+  .screenshot {
+    float: left;
+    width: 150px;
+    height: 150px;
+  }
+
+  .text {
+    margin: 0px 10px;
+    float: left;
+    width: 600px;
   }
 }
 
-.screenshot {
-  position: relative;
-  
-  width: 150px;
-  height: 150px;
-  margin: 5px 10px;
+.clearfix {
+  clear:both;
 }
-

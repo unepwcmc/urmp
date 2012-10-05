@@ -30,17 +30,20 @@
 
   <% if @search.results %>
     <h2>Search Results</h2>
-    <dl class="results">
+    <ul class="results">
     <% @search.results.each do |resource| %>
-   
-      <dt><%= link_to resource.title, resource_path(resource) %></dt>
-
-      <dd class="description"><%= resource.description %></dd>
-      <dd class="screenshot">
-         <%= image_tag resource.picture.url(:thumb), :alt => resource.title %>
-      </dd>
+      <li>
+        <div class="screenshot">
+          <%= image_tag resource.picture.url(:thumb), :alt => resource.title %>
+        </div>
+        <div class="text">
+          <div class="title"><%= link_to resource.title, resource_path(resource) %></div>
+          <div class="description"><%= resource.description %></div>
+        </div>
+        <div class="clearfix"></div>
+      </li>
     <% end %>
-    </dl>
+    </ul>
     <%= paginate @search.results %>
   <% end %>
 </div>
