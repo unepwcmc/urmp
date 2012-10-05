@@ -3,8 +3,7 @@
   <fieldset>
     <%= simple_form_for @search, :as => :search, :html => {:novalidate => true}, :url => search_results_path, :method => :get do |f| %>
 
-
-      <%= f.input :text, :label =>  false, :placeholder => "Search for the tool or resource", :class => 'clearfix' %> 
+      <%= f.input :text, :label =>  false, :required => false, :placeholder => "Search for the tool or resource", :class => 'clearfix' %> 
 
       <p> Further refine search by specifying:</p>
 
@@ -19,7 +18,8 @@
         <%= f.input :language, :as => :select, :collection => ResourceSearch.languages, :required => false, :class => 'narrow_select' %>
       </span>
 
-         <%= f.submit 'Search', :class => 'button' %>
+      <%= f.submit 'Search', :class => 'button' %>
+      
     <% end %>
   </fieldset>
 
