@@ -1,16 +1,21 @@
 <h1 class="header">Factsheets</h1>
 <article class="wide">
   <p>These factsheets identify the uses and limitations of individual tools and resources for planning for multiple benefits for REDD+</p>
-  <h4>Monitoring of REDD+ impacts on biodiversity and ecosystem services</h4>
-  <p>Factsheet</p>
 
   <% @factsheets.each do |theme, factsheets| %>
-    <h3><%= theme %><h3>
+    <h3><%= name_for_theme(theme) %></h3>
 
-    <ul>
-    <% factsheets.each do |factsheet| %>
-      <li> <%= link_to factsheet.name, factsheet_path(factsheet) %> <li>
-    <% end %>
-    <ul>
+    <ul class='factsheets'>
+      <% factsheets.each do |factsheet| %>
+        <li>
+        <div class='file'>
+          <%= link_to(image_tag('file.jpeg', :alt => factsheet.name)) %>
+        </div>
+          <%= link_to factsheet.name, factsheet_path(factsheet) %>
+        </li>
+      <% end %>
+    </ul>
+    <div class="clearfix"></div>
   <% end %>
+
 </article>
