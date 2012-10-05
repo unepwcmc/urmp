@@ -15,18 +15,24 @@ class ResourceSearch
   end
 
   def self.languages
-    Resource.all.map(&:language).uniq
+    prepare_for_select(Resource.all.map(&:language))
+
   end
 
   def self.topics
-    Resource.all.map(&:resource_type).uniq
+    prepare_for_select Resource.all.map(&:theme).uniq
+  end
+
+  def self.tools
+    prepare_for_select Resource.all.map(&:resource_type).uniq
   end
 
   def find
     @results = Resource.search(
-      "title_contains" => text,
-      "description_contains" => text,
-      "language_eq" => language
+      "title_or_description_contains" => text,
+      "language_eq" => language,
+      "resource_type_eq" => tool,
+      "theme_eq" => topic
     ).all
   end
 
@@ -36,5 +42,9 @@ class ResourceSearch
 
   def persisted?
     false
+  end
+
+  def self.prepare_for_select(elements)
+    elements.uniq.reject { |e| e.blank? }
   end
 end
