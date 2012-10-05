@@ -2,24 +2,22 @@
 <div class="search-results wide">
   <fieldset>
     <%= simple_form_for @search, :as => :search, :html => {:novalidate => true}, :url => search_results_path, :method => :get do |f| %>
-
-
-      <%= f.input :text, :label =>  false, :class => 'clearfix' %> 
+      <%= f.input :text, :label => false, :required => false, :class => 'clearfix' %> 
 
       <p> Further refine search by specifying:</p>
 
       <span class="clearfix">
-        <%= f.input :topic, :as => :select,  :collection => ResourceSearch.topics, :class => 'wide_select' %>
-        <%= f.input :activity, :as => :select, :class => 'wide_select' %>
-        <%= f.input :tool, :as => :select, :class => 'narrow_select', :collection => ResourceSearch.tools %>
+        <%= f.input :topic, :as => :select, :required => false, :collection => ResourceSearch.topics, :class => 'wide_select' %>
+        <%= f.input :activity, :as => :select, :required => false, :class => 'wide_select' %>
+        <%= f.input :tool, :as => :select, :class => 'narrow_select', :required => false, :collection => ResourceSearch.tools %>
       </span>
       <span>
-        <%= f.input :technical_expertise, :as => :select, :class => 'wide_select' %>
-        <%= f.input :country, :as => :select, :class => 'narrow_select' %>
-        <%= f.input :language, :as => :select, :collection => ResourceSearch.languages, :class => 'narrow_select' %>
+        <%= f.input :technical_expertise, :as => :select, :required => false, :class => 'wide_select' %>
+        <%= f.input :country, :as => :select, :required => false, :class => 'narrow_select' %>
+        <%= f.input :language, :as => :select, :required => false, :collection => ResourceSearch.languages, :class => 'narrow_select' %>
       </span>
 
-         <%= f.submit 'Search', :class => 'button' %>
+      <%= f.submit 'Search', :class => 'button' %>
     <% end %>
   </fieldset>
 
