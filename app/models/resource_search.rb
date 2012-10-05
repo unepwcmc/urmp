@@ -1,11 +1,17 @@
+require 'selectable_fields'
+
 class ResourceSearch
   include ActiveModel::Conversion
   extend ActiveModel::Naming
 
+  include URMP::SelectableFields
+
   SEARCH_ATTR = [:text, :topic, :activity, :tool, :technical_expertise, :country, :language]
-  attr_reader :page
 
   attr_accessor *SEARCH_ATTR
+  attr_reader :page
+
+  selectable_fields [:language, :theme, :resource_type, :country]
 
   def initialize(attrs={}, page=1)
     attrs = attrs || {}
@@ -17,24 +23,13 @@ class ResourceSearch
     @page = page
   end
 
-  def self.languages
-    prepare_for_select(Resource.all.map(&:language))
-  end
-
-  def self.topics
-    prepare_for_select Resource.all.map(&:theme).uniq
-  end
-
-  def self.tools
-    prepare_for_select Resource.all.map(&:resource_type).uniq
-  end
-
   def find
     @results = Resource.search(
       "title_or_description_contains" => text,
       "language_eq" => language,
       "resource_type_eq" => tool,
-      "theme_eq" => topic
+      "theme_eq" => topic,
+      "country_eq" => country
     ).page(page).per(15)
   end
 
@@ -44,9 +39,5 @@ class ResourceSearch
 
   def persisted?
     false
-  end
-
-  def self.prepare_for_select(elements)
-    elements.uniq.reject { |e| e.blank? }
   end
 end
