@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20121005094038) do
+ActiveRecord::Schema.define(:version => 20121005103915) do
 
   create_table "criteria", :force => true do |t|
     t.integer  "principle_id"
@@ -81,6 +81,10 @@ ActiveRecord::Schema.define(:version => 20121005094038) do
     t.string   "picture_content_type"
     t.integer  "picture_file_size"
     t.datetime "picture_updated_at"
+    t.string   "technical_expertise"
+    t.string   "audience"
+    t.string   "acitivity"
+    t.string   "country"
   end
 
   create_table "users", :force => true do |t|

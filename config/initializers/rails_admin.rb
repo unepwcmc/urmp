@@ -63,6 +63,10 @@ RailsAdmin.config do |config|
       field :description
       field :link
       field :made_by_un_redd
+      field :technical_expertise
+      field :audience
+      field :activity
+      field :country
     end
     edit do
       field :title
@@ -75,6 +79,10 @@ RailsAdmin.config do |config|
       field :description
       field :link
       field :made_by_un_redd
+      field :technical_expertise
+      field :audience
+      field :activity
+      field :country
     end
   end
 end
