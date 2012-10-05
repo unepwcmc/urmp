@@ -6,12 +6,12 @@ class ResourceSearch
 
   include URMP::SelectableFields
 
-  SEARCH_ATTR = [:text, :topic, :activity, :tool, :technical_expertise, :country, :language]
+  SEARCH_ATTR = [:text, :theme, :activity, :resource_type, :technical_expertise, :country, :language]
 
   attr_accessor *SEARCH_ATTR
   attr_reader :page
 
-  selectable_fields [:language, :theme, :resource_type, :country]
+  selectable_fields [:language, :theme, :resource_type, :country, :topic]
 
   def initialize(attrs={}, page=1)
     attrs = attrs || {}
@@ -27,8 +27,8 @@ class ResourceSearch
     @results = Resource.search(
       "title_or_description_contains" => text,
       "language_eq" => language,
-      "resource_type_eq" => tool,
-      "theme_eq" => topic,
+      "resource_type_eq" => resource_type,
+      "theme_eq" => theme,
       "country_eq" => country
     ).page(page).per(15)
   end

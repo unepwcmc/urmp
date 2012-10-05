@@ -8,14 +8,19 @@
       <p> Further refine search by specifying:</p>
 
       <span class="clearfix">
-        <%= f.input :topic, :as => :select,  :collection => ResourceSearch.topics, :required => false, :input_html => { :class => 'wide_select' } %>
+        <%= f.input :theme, :as => :select, :label => 'Topic', 
+          :collection => ResourceSearch.themes, :required => false, :input_html => { :class => 'wide_select' } %>
+
         <%= f.input :activity, :as => :select, :required => false, :input_html => { :class => 'wide_select' } %>
-        <%= f.input :tool, :as => :select, :collection => ResourceSearch.tools, :required => false, :input_html => { :class => 'narrow_select' } %>
+
+        <%= f.input :resource_type, :label => 'Tool', :as => :select, 
+          :collection => ResourceSearch.resource_types, :required => false, :input_html => { :class => 'narrow_select' } %>
       </span>
       <span>
         <%= f.input :technical_expertise, :as => :select, :required => false, :input_html => { :class => 'wide_select' } %>
         <%= f.input :country, :as => :select, :required => false, :input_html => { :class => 'narrow_select' } %>
-        <%= f.input :language, :as => :select, :collection => ResourceSearch.languages, :required => false, :input_html => { :class => 'narrow_select' } %>
+        <%= f.input :language, :as => :select,
+          :collection => ResourceSearch.languages, :required => false, :input_html => { :class => 'narrow_select' } %>
       </span>
 
       <%= f.submit 'Search', :class => 'button clearfix' %>
