@@ -6,7 +6,7 @@
 
     <%= f.input :topic, :as => :select, :collection => ResourceSearch.topics %>
     <%= f.input :activity, :as => :select %>
-    <%= f.input :tool, :as => :select %>
+    <%= f.input :tool, :as => :select, :collection => ResourceSearch.tools %>
 
     <%= f.input :technical_expertise, :as => :select %>
     <%= f.input :country, :as => :select %>
