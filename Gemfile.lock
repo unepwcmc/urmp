@@ -259,6 +259,7 @@ DEPENDENCIES
   guard-bundler
   guard-rspec
   jquery-rails
+  kaminari
   meta_search
   paperclip
   pg

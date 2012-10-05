@@ -4,7 +4,7 @@ class ResourcesSearchController < ApplicationController
   end
 
   def results
-    @search = ResourceSearch.new(params[:search])
+    @search = ResourceSearch.new(params[:search], params[:page])
     @search.find
 
     render :show

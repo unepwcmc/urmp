@@ -3,15 +3,17 @@ class ResourceSearch
   extend ActiveModel::Naming
 
   SEARCH_ATTR = [:text, :topic, :activity, :tool, :technical_expertise, :country, :language]
+  attr_reader :page
 
   attr_accessor *SEARCH_ATTR
 
-  def initialize(attrs={})
+  def initialize(attrs={}, page=1)
     SEARCH_ATTR.each do |attr|
       if val = (attrs[attr] || attrs[attr.to_s])
         instance_variable_set("@#{attr.to_s}", val)
       end
     end
+    @page = page
   end
 
   def self.languages
@@ -33,7 +35,7 @@ class ResourceSearch
       "language_eq" => language,
       "resource_type_eq" => tool,
       "theme_eq" => topic
-    ).all
+    ).page(page).per(15)
   end
 
   def results

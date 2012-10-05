@@ -16,6 +16,7 @@ gem 'jquery-rails'
 gem 'paperclip'
 gem 'simple_form'
 gem 'meta_search'
+gem 'kaminari'
 
 group :development, :test do
   gem 'ruby-debug19'
