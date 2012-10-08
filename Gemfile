@@ -27,6 +27,7 @@ group :assets do
   gem 'sass-rails'
   gem 'coffee-rails'
   gem 'uglifier'
+  gem 'therubyracer'
 end
 
 # jQuery is the default JavaScript library in Rails 3.1
