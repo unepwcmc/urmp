@@ -1,12 +1,14 @@
-<h2><%= @resource.title %></h2>
-
-<p>
+<<% content_for :main do %>
+<h1 class="header"><%= @resource.title %></h1>
+<article>
   <%= @resource.description %>
-</p>
+</article>
+<% end %>
 
 <% content_for :sidebar do %>
-    <dd><%= image_tag @resource.picture.url(:small) %></dd>
-    <dl>
+
+    <div><%= image_tag @resource.picture.url(:small), :class => 'resource_image' %></div>
+    <dl class="resource_details">
       <dt>Resource</dt>
       <dd>- ? ? -</dd>
 
@@ -22,8 +24,8 @@
       <dt>Language: </dt>
       <dd><%= @resource.language %></dd>
 
-      <dt><%= link_to 'External link', @resource.link, :class => 'external_link' %></dt>
-      <dd></dd>
+      <dt>External link to project:</dt>
+      <dd><%= link_to 'External link', @resource.link, :class => 'external_link' %></dd>
 
       <dt>Level of expertise required: </dt>
       <dd><%= @resource.technical_expertise %></dd>

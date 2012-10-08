@@ -1,3 +1,26 @@
 // Place all the styles related to the Resources controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+@import 'mixins';
+
+.resource_image {
+  position: relative;
+  margin: 10px auto;
+  display: block;
+
+}
+
+.resource_details {
+  border-top: 1px solid #bbbbbb;
+  padding: 15px 20px;
+  dt{
+  font-weight: bold;
+  color: #1559A7; 
+  }
+  dd {
+  margin: 0 0 10px 0;
+  text-align: left;
+  }
+}
