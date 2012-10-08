@@ -147,6 +147,9 @@ nav {
       padding: 10px 30px;
       @include box-shadow(2px, 2px, 5px, #ccc); 
       @include border-radius(0, 0, 5px, 5px);
+      ol li {
+      margin: 5px 0 5px 15px;
+      }
     }
   }
 }
