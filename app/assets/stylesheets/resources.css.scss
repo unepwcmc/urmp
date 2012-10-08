@@ -5,20 +5,26 @@
 
 @import 'mixins';
 
+.resource_sidebar {
+  padding: 10px !important;
+}
+
 .resource_image {
   position: relative;
-  margin: 10px auto;
+  margin: 10px 0;
   display: block;
 
 }
 
 .resource_details {
-  border-top: 1px solid #bbbbbb;
-  padding: 15px 20px;
+  
+  padding: 5px 0px;
+
   dt{
   font-weight: bold;
   color: #1559A7; 
   }
+
   dd {
   margin: 0 0 10px 0;
   text-align: left;

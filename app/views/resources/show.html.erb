@@ -1,4 +1,4 @@
-<<% content_for :main do %>
+<% content_for :main do %>
 <h1 class="header"><%= @resource.title %></h1>
 <article>
   <%= @resource.description %>
@@ -6,8 +6,8 @@
 <% end %>
 
 <% content_for :sidebar do %>
-
-    <div><%= image_tag @resource.picture.url(:small), :class => 'resource_image' %></div>
+  <article class="resource_sidebar"> 
+   <%= image_tag @resource.picture.url(:small), :class => 'resource_image' %>
     <dl class="resource_details">
       <dt>Resource</dt>
       <dd>- ? ? -</dd>
@@ -30,4 +30,5 @@
       <dt>Level of expertise required: </dt>
       <dd><%= @resource.technical_expertise %></dd>
     </dl>
+  </article>
 <% end %>
