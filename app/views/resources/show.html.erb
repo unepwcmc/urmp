@@ -1,3 +1,4 @@
+<%= link_to "back to results page", :back, :class => "back-link" %>
 <% content_for :main do %>
 <h1 class="header"><%= @resource.title %></h1>
 <article>
@@ -5,17 +6,17 @@
   <p><%= @resource.description %></p>
 
   <h3>REDD+ relevance</h3>
-  <p></p>
+  <p><%= @resource.relevance %></p>
 
   <h3>REDD+ Activities</h3>
-  <p></p>
+  <p><%= @resource.activity %></p>
   
 </article>
 <% end %>
 
 <% content_for :sidebar do %>
   <article class="resource_sidebar"> 
-   <%= image_tag @resource.picture.url(:small), :class => 'resource_image' %>
+   <%= image_tag @resource.picture.url(:medium), :class => 'resource_image' %>
     <dl class="resource_details">
       <dt>Resource</dt>
       <dd>- ? ? -</dd>

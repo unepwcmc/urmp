@@ -151,6 +151,24 @@ nav {
   }
 }
 
+.back-link {
+  font-weight: bold;
+  margin: 5px 0 5px 15px;
+}
+
+.faq-link {
+  @include linear-gradient(#e2e2e2, #f7f7f7);
+  @include border-radius(8px, 8px, 8px, 8px);
+
+  width: 450px;
+  margin: 40px auto 20px auto;
+  padding: 10px;
+  color: #1559A7;
+  text-align: center;
+  display: block;
+  font-size: 16px;
+  text-decoration: none;
+}
 
 footer {
   margin-top: 30px;

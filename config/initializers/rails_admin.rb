@@ -66,6 +66,7 @@ RailsAdmin.config do |config|
       field :resource_date
       field :institution
       field :description
+      field :relevance
       field :link
       field :made_by_un_redd
       field :technical_expertise
@@ -87,6 +88,7 @@ RailsAdmin.config do |config|
       field :resource_date
       field :institution
       field :description
+      field :relevance
       field :link
       field :made_by_un_redd
       field :technical_expertise
