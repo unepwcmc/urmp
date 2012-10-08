@@ -42,7 +42,7 @@ h1, h2, h3 {
 }
 
 h3  {
-  margin: 15px 0;
+  margin: 20px 0;
   color: #1559A7;
 } 
 
@@ -147,12 +147,10 @@ nav {
       padding: 10px 30px;
       @include box-shadow(2px, 2px, 5px, #ccc); 
       @include border-radius(0, 0, 5px, 5px);
-      ol li {
-      margin: 5px 0 5px 15px;
-      }
     }
   }
 }
+
 
 .back-link {
   font-weight: bold;
