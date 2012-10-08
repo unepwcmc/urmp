@@ -22,6 +22,7 @@ set :deploy_via,    :remote_cache
 set :keep_releases, 2
 
 set :bundle_cmd, "LANG='en_US.UTF-8' LC_ALL='en_US.UTF-8' bundle"
+set :bundle_dir,          fetch(:release_path)+"/vendor"
 
 server domain, :app, :web, :db, :primary => true
 
