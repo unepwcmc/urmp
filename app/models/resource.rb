@@ -16,5 +16,5 @@ class Resource < ActiveRecord::Base
   validates :theme, :inclusion => { :in => THEMES }, :allow_nil => true
   validates :resource_type, :inclusion => {:in => TYPES.keys }, :allow_nil => true
   validates_attachment :picture,
-    :content_type => { :content_type => ["image/jpg", "image/png", "image/gif"]}
+    :content_type => { :content_type => /image/ }
 end
