@@ -2,21 +2,9 @@
 <article class="wide">
   <p>These factsheets identify the uses and limitations of individual tools and resources for planning for multiple benefits for REDD+</p>
 
-  <% @factsheets.each do |theme, factsheets| %>
-  <h3><%= name_for_theme(theme) %></h3>
-
-  <table class='factsheets'>
-    <% factsheets.in_groups_of(4) do |factsheets_group| %>
-        <tr>
-        <% factsheets_group.compact.each do |factsheet| %>
-          <td class="item">
-          <%= link_to(image_tag('file.png', :alt => factsheet.name), :class => 'file') %>
-
-          <%= link_to factsheet.name, factsheet_path(factsheet) %>
-          </td>
-        <% end %>
-        </tr>
-    <% end %>
-  </table>
+  <% Resource::THEMES.each do |theme| %>
+    <%=render :partial => 'factsheet_section', :locals => {:theme => theme.to_s, :factsheets => @factsheets[theme.to_s] || [] } %>
   <% end %>
+  <%=render :partial => 'factsheet_section', :locals => {:theme => nil, :factsheets => @factsheets[nil] || [] } %>
+
 </article>
