@@ -3,19 +3,22 @@
   <p>These factsheets identify the uses and limitations of individual tools and resources for planning for multiple benefits for REDD+</p>
 
   <% @factsheets.each do |theme, factsheets| %>
-    <h3><%= name_for_theme(theme) %></h3>
+  <h3><%= name_for_theme(theme) %></h3>
 
-    <ul class='factsheets'>
-      <% factsheets.each do |factsheet| %>
-        <li>
-        <div class='file'>
-          <%= link_to(image_tag('file.png', :alt => factsheet.name)) %>
-        </div>
-          <%= link_to factsheet.name, factsheet_path(factsheet) %>
-        </li>
+  <table class='factsheets'>
+    <% factsheets.each_with_index do |factsheet, index| %>
+      <% if (index == 0) || (((index+1) % 5) == 0) %>
+        <tr>
       <% end %>
-    </ul>
-    <div class="clearfix"></div>
-  <% end %>
+        <td class="item">
+        <%= link_to(image_tag('file.png', :alt => factsheet.name), :class => 'file') %>
 
+        <%= link_to factsheet.name, factsheet_path(factsheet) %>
+         </td>
+      <% if (((index+1) % 4) == 0) %>
+        </tr>
+      <% end %>  
+    <% end %>
+  </table>
+  <% end %>
 </article>

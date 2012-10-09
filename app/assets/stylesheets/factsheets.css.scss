@@ -2,17 +2,25 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-.factsheets {
-  li {
-    list-style-type: none;
-    width: 105px;
-    float: left;
-    margin: 5px 20px;
-    text-align: center;
+@import 'mixins';
 
-    .file {
-      width: 102px;
-      height: 102px;
+.factsheets {
+  margin: 20px auto;
+  .item {
+    width: 150px;
+    height: 70px;
+    margin: 20px 10px;
+    padding: 5px 20px;
+    vertical-align: top;
+    text-align: center;
+    img {
+      margin: 5px auto 10px auto;
+      display: block;
+      opacity: 0.8;
+      &:hover {
+        opacity:1;
+      }
     }
   }
 }
+
