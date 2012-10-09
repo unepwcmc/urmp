@@ -16,7 +16,7 @@ class Resource < ActiveRecord::Base
   validates :theme, :inclusion => { :in => THEMES }, :allow_nil => true
   validates :resource_type, :inclusion => {:in => TYPES.keys }, :allow_nil => true
   validates_attachment :picture,
-    :content_type => { :content_type => /image/ }
+    :content_type => { :content_type => ["image/png", "image/jpg", "image/jpeg", "image/gif"] }
 
   attr_accessor :delete_picture
   before_validation { self.picture.clear if self.delete_picture == '1' }
