@@ -23,6 +23,10 @@ set :keep_releases, 4
 
 set :bundle_cmd, "LANG='en_US.UTF-8' LC_ALL='en_US.UTF-8' bundle"
 
+set :default_environment, {
+  'PATH' => "/usr/local/bin:$PATH",
+}
+
 server domain, :app, :web, :db, :primary => true
 
 namespace :deploy do
