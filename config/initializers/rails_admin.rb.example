@@ -1,4 +1,4 @@
-# RailsAdmin config file. Generated on October 02, 2012 17:40
+# RailsAdmin config file. Generated on October 09, 2012 15:25
 # See github.com/sferik/rails_admin for more informations
 
 RailsAdmin.config do |config|
@@ -27,10 +27,10 @@ RailsAdmin.config do |config|
   # config.default_items_per_page = 20
 
   # Exclude specific models (keep the others):
-  # config.excluded_models = ['Criterion', 'CriterionTranslation', 'Principle', 'PrincipleTranslation', 'Resource', 'ResourceLink', 'ResourceType', 'User']
+  # config.excluded_models = ['Criterion', 'Factsheet', 'Principle', 'Resource', 'ResourceLink', 'User']
 
   # Include specific models (exclude the others):
-  # config.included_models = ['Criterion', 'CriterionTranslation', 'Principle', 'PrincipleTranslation', 'Resource', 'ResourceLink', 'ResourceType', 'User']
+  # config.included_models = ['Criterion', 'Factsheet', 'Principle', 'Resource', 'ResourceLink', 'User']
 
   # Label methods for model instances:
   # config.label_methods << :description # Default is [:name, :title]
@@ -63,8 +63,6 @@ RailsAdmin.config do |config|
   #     configure :principle, :belongs_to_association 
   #     configure :resource_links, :has_many_association 
   #     configure :resources, :has_many_association 
-  #     configure :criterion_translations, :has_many_association 
-  #     configure :translations, :has_many_association         # Hidden 
 
   #   # Found columns:
 
@@ -73,6 +71,8 @@ RailsAdmin.config do |config|
   #     configure :created_at, :datetime 
   #     configure :updated_at, :datetime 
   #     configure :number, :integer 
+  #     configure :description, :text 
+  #     configure :name, :string 
 
   #   # Cross-section configuration:
   
@@ -100,25 +100,26 @@ RailsAdmin.config do |config|
   # end
 
 
-  ###  CriterionTranslation  ###
+  ###  Factsheet  ###
 
-  # config.model 'CriterionTranslation' do
+  # config.model 'Factsheet' do
 
-  #   # You can copy this to a 'rails_admin do ... end' block inside your criterion_translation.rb model definition
+  #   # You can copy this to a 'rails_admin do ... end' block inside your factsheet.rb model definition
   
   #   # Found associations:
 
-  #     configure :criterion, :belongs_to_association 
+  #     configure :resource, :belongs_to_association 
 
   #   # Found columns:
 
   #     configure :id, :integer 
-  #     configure :criterion_id, :integer         # Hidden 
-  #     configure :locale, :enum 
-  #     configure :description, :text 
-  #     configure :created_at, :datetime 
-  #     configure :updated_at, :datetime 
-  #     configure :cached_name, :string 
+  #     configure :name, :string 
+  #     configure :resource_id, :integer         # Hidden 
+  #     configure :attachment_file_name, :string         # Hidden 
+  #     configure :attachment_content_type, :string         # Hidden 
+  #     configure :attachment_file_size, :integer         # Hidden 
+  #     configure :attachment_updated_at, :datetime         # Hidden 
+  #     configure :attachment, :paperclip 
 
   #   # Cross-section configuration:
   
@@ -155,8 +156,6 @@ RailsAdmin.config do |config|
   #   # Found associations:
 
   #     configure :criteria, :has_many_association 
-  #     configure :principle_translations, :has_many_association 
-  #     configure :translations, :has_many_association         # Hidden 
 
   #   # Found columns:
 
@@ -164,52 +163,8 @@ RailsAdmin.config do |config|
   #     configure :created_at, :datetime 
   #     configure :updated_at, :datetime 
   #     configure :number, :integer 
-
-  #   # Cross-section configuration:
-  
-  #     # object_label_method :name     # Name of the method called for pretty printing an *instance* of ModelName
-  #     # label 'My model'              # Name of ModelName (smartly defaults to ActiveRecord's I18n API)
-  #     # label_plural 'My models'      # Same, plural
-  #     # weight 0                      # Navigation priority. Bigger is higher.
-  #     # parent OtherModel             # Set parent model for navigation. MyModel will be nested below. OtherModel will be on first position of the dropdown
-  #     # navigation_label              # Sets dropdown entry's name in navigation. Only for parents!
-  
-  #   # Section specific configuration:
-  
-  #     list do
-  #       # filters [:id, :name]  # Array of field names which filters should be shown by default in the table header
-  #       # items_per_page 100    # Override default_items_per_page
-  #       # sort_by :id           # Sort column (default is primary key)
-  #       # sort_reverse true     # Sort direction (default is true for primary key, last created first)
-  #     end
-  #     show do; end
-  #     edit do; end
-  #     export do; end
-  #     # also see the create, update, modal and nested sections, which override edit in specific cases (resp. when creating, updating, modifying from another model in a popup modal or modifying from another model nested form)
-  #     # you can override a cross-section field configuration in any section with the same syntax `configure :field_name do ... end`
-  #     # using `field` instead of `configure` will exclude all other fields and force the ordering
-  # end
-
-
-  ###  PrincipleTranslation  ###
-
-  # config.model 'PrincipleTranslation' do
-
-  #   # You can copy this to a 'rails_admin do ... end' block inside your principle_translation.rb model definition
-  
-  #   # Found associations:
-
-  #     configure :principle, :belongs_to_association 
-
-  #   # Found columns:
-
-  #     configure :id, :integer 
-  #     configure :principle_id, :integer         # Hidden 
-  #     configure :locale, :enum 
   #     configure :description, :text 
-  #     configure :created_at, :datetime 
-  #     configure :updated_at, :datetime 
-  #     configure :cached_name, :string 
+  #     configure :name, :string 
 
   #   # Cross-section configuration:
   
@@ -245,9 +200,9 @@ RailsAdmin.config do |config|
   
   #   # Found associations:
 
-  #     configure :resource_type, :belongs_to_association 
   #     configure :resource_links, :has_many_association 
   #     configure :criteria, :has_many_association 
+  #     configure :factsheet, :has_one_association 
 
   #   # Found columns:
 
@@ -261,8 +216,19 @@ RailsAdmin.config do |config|
   #     configure :resource_date, :string 
   #     configure :institution, :string 
   #     configure :description, :text 
-  #     configure :resource_type_id, :integer         # Hidden 
   #     configure :made_by_un_redd, :boolean 
+  #     configure :theme, :string 
+  #     configure :resource_type, :string 
+  #     configure :picture_file_name, :string         # Hidden 
+  #     configure :picture_content_type, :string         # Hidden 
+  #     configure :picture_file_size, :integer         # Hidden 
+  #     configure :picture_updated_at, :datetime         # Hidden 
+  #     configure :picture, :paperclip 
+  #     configure :technical_expertise, :string 
+  #     configure :audience, :string 
+  #     configure :activity, :string 
+  #     configure :country, :string 
+  #     configure :relevance, :text 
 
   #   # Cross-section configuration:
   
@@ -311,49 +277,6 @@ RailsAdmin.config do |config|
   #     configure :updated_at, :datetime 
   #     configure :cached_name, :text 
   #     configure :numeric_reference, :text 
-
-  #   # Cross-section configuration:
-  
-  #     # object_label_method :name     # Name of the method called for pretty printing an *instance* of ModelName
-  #     # label 'My model'              # Name of ModelName (smartly defaults to ActiveRecord's I18n API)
-  #     # label_plural 'My models'      # Same, plural
-  #     # weight 0                      # Navigation priority. Bigger is higher.
-  #     # parent OtherModel             # Set parent model for navigation. MyModel will be nested below. OtherModel will be on first position of the dropdown
-  #     # navigation_label              # Sets dropdown entry's name in navigation. Only for parents!
-  
-  #   # Section specific configuration:
-  
-  #     list do
-  #       # filters [:id, :name]  # Array of field names which filters should be shown by default in the table header
-  #       # items_per_page 100    # Override default_items_per_page
-  #       # sort_by :id           # Sort column (default is primary key)
-  #       # sort_reverse true     # Sort direction (default is true for primary key, last created first)
-  #     end
-  #     show do; end
-  #     edit do; end
-  #     export do; end
-  #     # also see the create, update, modal and nested sections, which override edit in specific cases (resp. when creating, updating, modifying from another model in a popup modal or modifying from another model nested form)
-  #     # you can override a cross-section field configuration in any section with the same syntax `configure :field_name do ... end`
-  #     # using `field` instead of `configure` will exclude all other fields and force the ordering
-  # end
-
-
-  ###  ResourceType  ###
-
-  # config.model 'ResourceType' do
-
-  #   # You can copy this to a 'rails_admin do ... end' block inside your resource_type.rb model definition
-  
-  #   # Found associations:
-
-  #     configure :resources, :has_many_association 
-
-  #   # Found columns:
-
-  #     configure :id, :integer 
-  #     configure :name, :string 
-  #     configure :created_at, :datetime 
-  #     configure :updated_at, :datetime 
 
   #   # Cross-section configuration:
   

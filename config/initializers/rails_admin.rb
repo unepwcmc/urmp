@@ -1,7 +1,10 @@
 RailsAdmin.config do |config|
 
+  config.main_app_name = ['Urmp', 'Admin']
   config.current_user_method { current_user } #auto-generated
-  config.model ResourceLink do
+  config.audit_with :history, 'User'
+
+  config.model 'ResourceLink' do
     object_label_method do
       :cached_name
     end
@@ -19,7 +22,7 @@ RailsAdmin.config do |config|
     end
   end
 
-  config.model Principle do
+  config.model 'Principle' do
     object_label_method do
       :name
     end
@@ -35,7 +38,7 @@ RailsAdmin.config do |config|
     end
   end
 
-  config.model Criterion do
+  config.model 'Criterion' do
     object_label_method do
       :name
     end
@@ -51,7 +54,7 @@ RailsAdmin.config do |config|
     end
   end
 
-  config.model Resource do
+  config.model 'Resource' do
     list do
       field :title
       field :author

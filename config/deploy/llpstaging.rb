@@ -19,24 +19,30 @@ set :user,          "rubydev"
 set :deploy_to,     "/var/www/#{application}"
 set :use_sudo,      false
 set :deploy_via,    :remote_cache
-set :keep_releases, 2
+set :keep_releases, 4
 
 set :bundle_cmd, "LANG='en_US.UTF-8' LC_ALL='en_US.UTF-8' bundle"
+
+set :default_environment, {
+  'PATH' => "/usr/local/bin:$PATH",
+}
 
 server domain, :app, :web, :db, :primary => true
 
 namespace :deploy do
-
   desc "Restart Application"
   task :restart, :roles => :app do
     run "touch #{current_path}/tmp/restart.txt"
   end
+end
 
-  desc "Symlink shared files/directories"
-  task :symlink_shared do
-    cmd = "ln -nfs #{shared_path}/config/database.yml #{release_path}/config/database.yml"
-    run cmd
+namespace :db do
+  desc <<-DESC
+    Updates the symlink for database.yml file to the just deployed release.
+  DESC
+  task :symlink, :except => { :no_release => true } do
+    run "ln -nfs #{shared_path}/config/database.yml #{release_path}/config/database.yml"
   end
 end
 
-before 'deploy:assets:precompile', 'deploy:symlink_shared'
+after 'deploy:finalize_update', 'db:symlink'
