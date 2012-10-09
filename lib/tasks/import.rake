@@ -1,6 +1,6 @@
 namespace :urmp do
 
-  desc 'Restore all resources'
+  desc 'Create demo user and restore: principles, criteria, resources and resource_link'
   task :restore_all => [:create_admin_user, :create_principles, :import_criteria, :import_resources, :import_resource_link] do
   end
 

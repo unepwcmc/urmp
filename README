@@ -12,3 +12,18 @@ All gems are bundle packaged, install with `bundle install --path vendor`
 The app is deployed to the standard brightbox staging and production servers. The app is currently awaiting
 public release, so disables google indexing in robots.txt, to renable it, simply remove the after_deploy
 disable_robots task in production.rb
+
+## New website deploy and data migration
+
+Because of changes in data structure, there was made a dump of
+existing production data to the csv/json files, and stored in db/seeds/ dir.
+
+There is a rake task that restores it:
+
+  rake urmp:restore_all
+
+This task creates demo user, and loads existing data, that was exported from prod env:
+* principles
+* criteria
+* resources
+* resource_links
