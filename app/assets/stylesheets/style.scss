@@ -20,8 +20,10 @@ header {
 
 a {
   color: #1559A7;
+  text-decoration: none;
   &:hover, &.current {
     color: #4893CD;
+    text-decoration: underline;
   }
 }
 
@@ -153,8 +155,10 @@ nav {
 
 
 .back-link {
-  font-weight: bold;
-  margin: 5px 0 5px 15px;
+  
+  margin: 75px 0 5px 0;
+  display: block;
+  color: #1559A7;
 }
 
 .faq-link {
@@ -171,7 +175,22 @@ nav {
   font-weight: bold;
   font-size: 13px;
 
-  
+}
+
+.pagination {
+  text-align: center;
+  padding: 10px 0;
+  .prev {
+    padding-right: 10px;
+  }
+  .next {
+    padding-left: 10px;
+  }
+  .page {
+    padding: 0 3px;
+    font-size: 18px;
+  }
+
 }
 
 footer {
