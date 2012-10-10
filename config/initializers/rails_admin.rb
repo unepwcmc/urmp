@@ -100,4 +100,14 @@ RailsAdmin.config do |config|
       field :country
     end
   end
+
+  config.model 'Factsheet' do
+    edit do
+      field :name
+      field :attachment do
+        help 'Required'
+      end
+      field :resource
+    end
+  end
 end
