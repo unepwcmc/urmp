@@ -2,7 +2,7 @@
 
 body {
   font: 13px/20px 'Arial', sans-serif;
-  color: #666666;
+  color: $text-gray;
 }
 
 header {
@@ -19,10 +19,10 @@ header {
 }
 
 a {
-  color: #1559A7;
+  color: $dark-blue;
   text-decoration: none;
   &:hover, &.current {
-    color: #4893CD;
+    color: $hover-blue;
     text-decoration: underline;
   }
 }
@@ -35,7 +35,7 @@ h1, h2, h3 {
   margin: 0;
   padding: 0;
   &.header {
-    @include linear-gradient(#f93443, #fb5461);
+    @include linear-gradient($red, $light-red);
     color: #fff;
     font-size: 16px;
     text-shadow: -1px 1px 0 #000;
@@ -45,7 +45,7 @@ h1, h2, h3 {
 
 h3  {
   margin: 20px 0;
-  color: #1559A7;
+  color: $dark-blue;
 } 
 
 h4 {
@@ -65,7 +65,7 @@ h4 {
 }
 
 .navigation {
-  @include linear-gradient(#e2e2e2, #f7f7f7);
+  @include linear-gradient($light-gray, $dirty-white);
   border-top: 1px solid #bbbbbb;
   border-bottom: 1px solid #bbbbbb;
   @include box-shadow(2px, 2px, 5px, #ccc);
@@ -136,7 +136,7 @@ nav {
   margin: 0 auto;
   margin-top: 20px;
   padding-top: 20px;
-  border-top: 1px solid #f93443;
+  border-top: 1px solid $red;
   .content {
     background: #fcfcfc url('/assets/bg.png');
     padding: 40px 0;
@@ -155,14 +155,12 @@ nav {
 
 
 .back-link {
-  
   margin: 75px 0 5px 0;
   display: block;
-  color: #1559A7;
 }
 
 .faq-link {
-  @include linear-gradient(#e2e2e2, #f7f7f7);
+  @include linear-gradient($light-gray, $dirty-white);
   @include border-radius(8px, 8px, 8px, 8px);
 
   width: 350px;
@@ -174,7 +172,6 @@ nav {
   text-decoration: none;
   font-weight: bold;
   font-size: 13px;
-
 }
 
 .pagination {
@@ -196,7 +193,7 @@ nav {
 footer {
   margin-top: 30px;
   padding-top: 20px;
-  border-top: 1px solid #f93443;
+  border-top: 1px solid $red;
   padding: 5px 30px;
   p {
     margin-top: 5px;

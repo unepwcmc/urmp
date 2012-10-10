@@ -1,3 +1,12 @@
+$dark-blue: #1559A7;
+$hover-blue: #4893CD;
+$red: #f93443;
+$light-red: #fb5461;
+$text-gray: #666666;
+$light-gray: #E2E2E2;
+$dirty-white: #F7F7F7;
+
+
 @mixin border-radius ($radius, $radius1, $radius2, $radius3 ) {
   -moz-border-radius: $radius $radius1 $radius2 $radius3;
   -o-border-radius: $radius $radius1 $radius2 $radius3;
