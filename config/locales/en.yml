@@ -12,4 +12,8 @@ en:
       factsheets: 'Factsheets'
       faq: 'FAQ'
     footer:
+      left:
+        html: 'For problems using this website, please contact: <a href="mailto:unepinformaticsteam@unep-wcmc.com">unepinformaticsteam@unep-wcmc.com</a>'
+      right:
+        html: 'Copyright &copy; 2009 UN-REDD Programme. All Rights Reserved'
     sidebar:
