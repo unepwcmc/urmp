@@ -1,0 +1,8 @@
+en:
+  site:
+    factsheets:
+      header: 'Factsheets'
+      description: 'These factsheets identify the uses and limitations of individual tools and resources for planning for multiple benefits for REDD+'
+      impacts_theme: 'Monitoring of REDD+ impacts of biodiversity and ecosystem services'
+      identification_theme: 'Identification, mapping, and valuation of biodiveristy and ecoxystem services'
+      no_theme: 'All the rest'

@@ -1,9 +1,9 @@
 module FactsheetsHelper
   def name_for_theme(theme)
     {
-      'impacts' => 'Monitoring of REDD+ impacts of biodiversity and ecosystem services',
-      'identification' => 'Identification, mapping, and valuation of biodiveristy and ecoxystem services',
-      nil => 'All the rest'
+      'impacts' => t('site.factsheets.impacts_theme'),
+      'identification' => t('site.factsheets.identification_theme'),
+      nil => t('site.factsheets.no_theme')
     }[theme]
   end
 end

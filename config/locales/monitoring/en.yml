@@ -1,0 +1,29 @@
+en:
+  site:
+    static:
+      monitoring:
+        header: 'Monitoring the impacts of REDD+ on ecosystem services and biodiversity'
+        content:
+          html: "
+ <p> Monitoring is necessary to measure success and adaptively manage REDD+ implementation to meet multiple goals. Monitoring of REDD+ and ecosystem services and biodiversity will contribute to a national Safeguards Information System <a href='#'>link  to latest obligations</a>.
+
+  <ul>
+    <li>
+      What problems do countries face when planning how to monitor multiple benefits from  
+      REDD+ and designing and SIS?
+    </li> 
+    <li>
+      A structured guide to how countries can develop their system to monitor the impacts 
+      of REDD+ on ecosystem services ond biodiversity, with reference to SIS 
+    </li>
+    <li>
+      At appropriate stages, in narrative form, key resources such as the draft monitoring guidelines 
+      on REDD+ impacts on ecosysem services and biodiversity will be referenced 
+    </li>
+  </ul>
+</p>
+
+<!--  the faq answers are in the sidebar instead
+<a href='/faq' class='faq-link'>View the Multiple Benefits FAQ for Monitoring Land Use</a>
+-->
+"

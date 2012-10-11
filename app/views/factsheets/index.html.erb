@@ -1,10 +1,9 @@
-<h1 class="header">Factsheets</h1>
+<h1 class="header"><%= t('site.factsheets.header') %></h1>
 <article class="wide">
-  <p>These factsheets identify the uses and limitations of individual tools and resources for planning for multiple benefits for REDD+</p>
+  <p><%= t('site.factsheets.description') %></p>
 
   <% Resource::THEMES.each do |theme| %>
     <%=render :partial => 'factsheet_section', :locals => {:theme => theme.to_s, :factsheets => @factsheets[theme.to_s] || [] } %>
   <% end %>
   <%=render :partial => 'factsheet_section', :locals => {:theme => nil, :factsheets => @factsheets[nil] || [] } %>
-
 </article>
