@@ -12,7 +12,7 @@ class ResourceSearch
   attr_accessor *SEARCH_ATTR
   attr_reader :page, :results_per_page
 
-  selectable_fields [:language, :theme, :resource_type, :country, :topic]
+  selectable_fields [:language, :theme, :resource_type, :country, :activity, :technical_expertise]
 
   def initialize(attrs={}, page=1)
     @page = page
@@ -32,7 +32,9 @@ class ResourceSearch
       "language_eq" => language,
       "resource_type_eq" => resource_type,
       "theme_eq" => theme,
-      "country_eq" => country
+      "country_eq" => country,
+      "technical_expertise_eq" => technical_expertise,
+      "activity_eq" => activity
     ).page(page).per(results_per_page)
   end
 
