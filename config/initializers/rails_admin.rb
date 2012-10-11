@@ -78,14 +78,18 @@ RailsAdmin.config do |config|
       field :country
     end
     edit do
-      field :title
+      field :title do
+        help 'Required'
+      end
       field :author
       field :picture
       field :theme, :enum do
         enum { Resource::THEMES }
+        help 'Required'
       end
       field :resource_type, :enum do
         enum { Resource::TYPES.keys }
+        help 'Required'
       end
       field :language
       field :resource_date
