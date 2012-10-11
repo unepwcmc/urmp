@@ -2,4 +2,14 @@
 # See http://github.com/svenfuchs/rails-i18n/tree/master/rails%2Flocale for starting points.
 
 en:
-  hello: "Hello world"
+  site:
+    header: 'The United Nations Collaboration Programme on Reducing Emissions from Deforestation and Forest Degradation in Developing Countries'
+    top_menu:
+      home: 'Home'
+      safeguards: 'Safeguards'
+      mappging: 'Mapping and Valuation'
+      monitoring: 'Monitoring'
+      factsheets: 'Factsheets'
+      faq: 'FAQ'
+    footer:
+    sidebar:
