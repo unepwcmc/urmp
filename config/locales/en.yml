@@ -17,3 +17,14 @@ en:
       right:
         html: 'Copyright &copy; 2009 UN-REDD Programme. All Rights Reserved'
     sidebar:
+      key_resources:
+        header: 'Key Resources'
+        item_1:
+          html: '<a href=#>Resource</a>'
+      faq:
+        header: 'FAQ'
+        item_1:
+          html: '<a href="/faq#multiple-benfits">What are multiple benefits?</a>'
+        item_2:
+          html: '<a href="/faq#cancun-safeguards">What are Cancun Safeguards?</a>'
+
