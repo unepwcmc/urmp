@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20121106103033) do
+ActiveRecord::Schema.define(:version => 20121106103821) do
 
   create_table "criteria", :force => true do |t|
     t.integer  "principle_id"
@@ -80,12 +80,12 @@ ActiveRecord::Schema.define(:version => 20121106103033) do
   end
 
   create_table "resource_types_resources", :id => false, :force => true do |t|
-    t.integer "resource_types_id"
     t.integer "resource_id"
+    t.integer "resource_type_id"
   end
 
   add_index "resource_types_resources", ["resource_id"], :name => "index_resource_types_resources_on_resource_id"
-  add_index "resource_types_resources", ["resource_types_id"], :name => "index_resource_types_resources_on_resource_types_id"
+  add_index "resource_types_resources", ["resource_type_id"], :name => "index_resource_types_resources_on_resource_type_id"
 
   create_table "resources", :force => true do |t|
     t.string   "title"
