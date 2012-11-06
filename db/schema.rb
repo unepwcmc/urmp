@@ -11,7 +11,21 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20121106105358) do
+ActiveRecord::Schema.define(:version => 20121106110515) do
+
+  create_table "countries", :force => true do |t|
+    t.string   "name"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
+  create_table "countries_resources", :id => false, :force => true do |t|
+    t.integer "country_id"
+    t.integer "resource_id"
+  end
+
+  add_index "countries_resources", ["country_id"], :name => "index_countries_resources_on_country_id"
+  add_index "countries_resources", ["resource_id"], :name => "index_countries_resources_on_resource_id"
 
   create_table "criteria", :force => true do |t|
     t.integer  "principle_id"
@@ -106,7 +120,6 @@ ActiveRecord::Schema.define(:version => 20121106105358) do
     t.string   "technical_expertise"
     t.string   "audience"
     t.string   "activity"
-    t.string   "country"
     t.text     "relevance"
   end
 

@@ -70,12 +70,12 @@ RailsAdmin.config do |config|
       field :relevance
       field :topics
       field :scales
+      field :countries
       field :link
       field :made_by_un_redd
       field :technical_expertise
       field :audience
       field :activity
-      field :country
     end
     edit do
       field :title do
@@ -95,12 +95,12 @@ RailsAdmin.config do |config|
       field :relevance
       field :topics
       field :scales
+      field :countries
       field :link
       field :made_by_un_redd
       field :technical_expertise
       field :audience
       field :activity
-      field :country
     end
   end
 
