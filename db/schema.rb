@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20121106103821) do
+ActiveRecord::Schema.define(:version => 20121106105358) do
 
   create_table "criteria", :force => true do |t|
     t.integer  "principle_id"
@@ -110,19 +110,33 @@ ActiveRecord::Schema.define(:version => 20121106103821) do
     t.text     "relevance"
   end
 
-  create_table "topics", :force => true do |t|
+  create_table "resources_scales", :id => false, :force => true do |t|
+    t.integer "scale_id"
+    t.integer "resource_id"
+  end
+
+  add_index "resources_scales", ["resource_id"], :name => "index_resources_scales_on_resource_id"
+  add_index "resources_scales", ["scale_id"], :name => "index_resources_scales_on_scale_id"
+
+  create_table "resources_topics", :id => false, :force => true do |t|
+    t.integer "topic_id"
+    t.integer "resource_id"
+  end
+
+  add_index "resources_topics", ["resource_id"], :name => "index_topics_resources_on_resource_id"
+  add_index "resources_topics", ["topic_id"], :name => "index_topics_resources_on_topic_id"
+
+  create_table "scales", :force => true do |t|
     t.string   "name"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
   end
 
-  create_table "topics_resources", :id => false, :force => true do |t|
-    t.integer "topic_id"
-    t.integer "resource_id"
+  create_table "topics", :force => true do |t|
+    t.string   "name"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
   end
-
-  add_index "topics_resources", ["resource_id"], :name => "index_topics_resources_on_resource_id"
-  add_index "topics_resources", ["topic_id"], :name => "index_topics_resources_on_topic_id"
 
   create_table "users", :force => true do |t|
     t.string   "email",                                 :default => "", :null => false
