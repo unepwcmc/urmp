@@ -71,6 +71,7 @@ RailsAdmin.config do |config|
       field :topics
       field :scales
       field :countries
+      field :redd_activities
       field :link
       field :made_by_un_redd
       field :technical_expertise
@@ -96,6 +97,7 @@ RailsAdmin.config do |config|
       field :topics
       field :scales
       field :countries
+      field :redd_activities
       field :link
       field :made_by_un_redd
       field :technical_expertise

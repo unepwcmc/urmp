@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20121106110515) do
+ActiveRecord::Schema.define(:version => 20121106111137) do
 
   create_table "countries", :force => true do |t|
     t.string   "name"
@@ -76,6 +76,20 @@ ActiveRecord::Schema.define(:version => 20121106110515) do
   end
 
   add_index "rails_admin_histories", ["item", "table", "month", "year"], :name => "index_rails_admin_histories"
+
+  create_table "redd_activities", :force => true do |t|
+    t.string   "name"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
+  create_table "redd_activities_resources", :id => false, :force => true do |t|
+    t.integer "redd_activity_id"
+    t.integer "resource_id"
+  end
+
+  add_index "redd_activities_resources", ["redd_activity_id"], :name => "index_redd_activities_resources_on_redd_activity_id"
+  add_index "redd_activities_resources", ["resource_id"], :name => "index_redd_activities_resources_on_resource_id"
 
   create_table "resource_links", :force => true do |t|
     t.text     "reference"
