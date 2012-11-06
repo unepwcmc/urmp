@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20121106100712) do
+ActiveRecord::Schema.define(:version => 20121106103033) do
 
   create_table "criteria", :force => true do |t|
     t.integer  "principle_id"
@@ -109,6 +109,20 @@ ActiveRecord::Schema.define(:version => 20121106100712) do
     t.string   "country"
     t.text     "relevance"
   end
+
+  create_table "topics", :force => true do |t|
+    t.string   "name"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
+  create_table "topics_resources", :id => false, :force => true do |t|
+    t.integer "topic_id"
+    t.integer "resource_id"
+  end
+
+  add_index "topics_resources", ["resource_id"], :name => "index_topics_resources_on_resource_id"
+  add_index "topics_resources", ["topic_id"], :name => "index_topics_resources_on_topic_id"
 
   create_table "users", :force => true do |t|
     t.string   "email",                                 :default => "", :null => false

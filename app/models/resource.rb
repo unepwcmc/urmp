@@ -7,6 +7,7 @@ class Resource < ActiveRecord::Base
 
   has_and_belongs_to_many :languages
   has_and_belongs_to_many :resource_types
+  has_and_belongs_to_many :topics
 
   has_attached_file :picture,
     :default_url => "/assets/default_:style_resource_picture.png",

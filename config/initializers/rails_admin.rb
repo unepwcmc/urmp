@@ -68,6 +68,7 @@ RailsAdmin.config do |config|
       field :institution
       field :description
       field :relevance
+      field :topics
       field :link
       field :made_by_un_redd
       field :technical_expertise
@@ -91,6 +92,7 @@ RailsAdmin.config do |config|
       field :institution
       field :description
       field :relevance
+      field :topics
       field :link
       field :made_by_un_redd
       field :technical_expertise
