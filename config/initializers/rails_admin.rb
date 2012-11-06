@@ -65,7 +65,7 @@ RailsAdmin.config do |config|
       field :resource_type, :enum do
         enum { Resource::TYPES.keys }
       end
-      field :language
+      field :languages
       field :resource_date
       field :institution
       field :description
@@ -91,7 +91,7 @@ RailsAdmin.config do |config|
         enum { Resource::TYPES.keys }
         help 'Required'
       end
-      field :language
+      field :languages
       field :resource_date
       field :institution
       field :description

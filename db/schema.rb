@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20121008102315) do
+ActiveRecord::Schema.define(:version => 20121106093914) do
 
   create_table "criteria", :force => true do |t|
     t.integer  "principle_id"
@@ -32,6 +32,15 @@ ActiveRecord::Schema.define(:version => 20121008102315) do
   end
 
   add_index "factsheets", ["resource_id"], :name => "index_factsheets_on_resource_id"
+
+  create_table "languages", :force => true do |t|
+    t.string "name"
+  end
+
+  create_table "languages_resources", :id => false, :force => true do |t|
+    t.integer "language_id"
+    t.integer "resource_id"
+  end
 
   create_table "principles", :force => true do |t|
     t.datetime "created_at"

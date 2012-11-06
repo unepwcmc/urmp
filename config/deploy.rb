@@ -10,7 +10,7 @@ ENV_SET="RAILS_ENV=production"
 
 task :split_refs do
   #Compile coffeescript and jammit
-  run "cd #{deploy_to}/current && #{ENV_SET} rake urmp:split_ref"
+  #run "cd #{deploy_to}/current && #{ENV_SET} rake urmp:split_ref"
 end
 
 

@@ -9,6 +9,8 @@ class Resource < ActiveRecord::Base
   has_many :resource_links
   has_many :criteria, :through => :resource_links
   has_one :factsheet
+  has_and_belongs_to_many :languages
+
   has_attached_file :picture,
     :default_url => "/assets/default_:style_resource_picture.png",
     :styles => { :medium => "250x200>", :thumb => "150x150>" }
