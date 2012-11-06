@@ -76,5 +76,62 @@ describe ResourceSearch do
         resource_search.results.should_not include (resource_3)
       end
     end
+
+    context 'when searching by scale' do
+      let(:scale_to_find) { create(:scale) }
+      let(:other_scale) { create(:scale) }
+      let(:resource_1) { create(:resource, :scales => [scale_to_find]) }
+      let(:resource_2) { create(:resource, :scales => [other_scale, scale_to_find]) }
+      let(:resource_3) { create(:resource, :scales => [other_scale]) }
+      let(:attrs) do { 'scales' => scale_to_find.id } end
+
+      before { resource_1; resource_2; resource_3 }
+
+      it 'looks by scale' do
+        resource_search.find.size.should == 2
+
+        resource_search.results.should include (resource_1)
+        resource_search.results.should include (resource_2)
+        resource_search.results.should_not include (resource_3)
+      end
+    end
+
+    context 'when searching by country' do
+      let(:country_to_find) { create(:country) }
+      let(:other_country) { create(:country) }
+      let(:resource_1) { create(:resource, :countries => [country_to_find]) }
+      let(:resource_2) { create(:resource, :countries => [other_country, country_to_find]) }
+      let(:resource_3) { create(:resource, :countries => [other_country]) }
+      let(:attrs) do { 'countries' => country_to_find.id } end
+
+      before { resource_1; resource_2; resource_3 }
+
+      it 'looks by country' do
+        resource_search.find.size.should == 2
+
+        resource_search.results.should include (resource_1)
+        resource_search.results.should include (resource_2)
+        resource_search.results.should_not include (resource_3)
+      end
+    end
+
+    context 'when searching by redd_activity' do
+      let(:redd_activity_to_find) { create(:redd_activity) }
+      let(:other_redd_activity) { create(:redd_activity) }
+      let(:resource_1) { create(:resource, :redd_activities => [redd_activity_to_find]) }
+      let(:resource_2) { create(:resource, :redd_activities => [other_redd_activity, redd_activity_to_find]) }
+      let(:resource_3) { create(:resource, :redd_activities => [other_redd_activity]) }
+      let(:attrs) do { 'redd_activities' => redd_activity_to_find.id } end
+
+      before { resource_1; resource_2; resource_3 }
+
+      it 'looks by redd_activity' do
+        resource_search.find.size.should == 2
+
+        resource_search.results.should include (resource_1)
+        resource_search.results.should include (resource_2)
+        resource_search.results.should_not include (resource_3)
+      end
+    end
   end
 end
