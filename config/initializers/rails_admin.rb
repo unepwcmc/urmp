@@ -59,9 +59,6 @@ RailsAdmin.config do |config|
       field :title
       field :author
       field :picture
-      field :theme, :enum do
-        enum { Resource::THEMES }
-      end
       field :languages
       field :resource_types
       field :resource_date
@@ -83,10 +80,6 @@ RailsAdmin.config do |config|
       end
       field :author
       field :picture
-      field :theme, :enum do
-        enum { Resource::THEMES }
-        help 'Required'
-      end
       field :languages
       field :resource_types
       field :resource_date
