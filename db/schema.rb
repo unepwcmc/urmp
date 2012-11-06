@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20121106111137) do
+ActiveRecord::Schema.define(:version => 20121106113230) do
 
   create_table "countries", :force => true do |t|
     t.string   "name"
@@ -133,7 +133,6 @@ ActiveRecord::Schema.define(:version => 20121106111137) do
     t.datetime "picture_updated_at"
     t.string   "technical_expertise"
     t.string   "audience"
-    t.string   "activity"
     t.text     "relevance"
   end
 

@@ -9,7 +9,7 @@
     <p><%= @resource.relevance %></p>
 
     <h3>REDD+ Activities</h3>
-    <p><%= @resource.activity %></p>
+    <p><%= @resource.redd_activities.map(&:name).join(',') %></p>
 
     <%= link_to "< back to results page", :back, :class => "back-link" %>
   </article>

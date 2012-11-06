@@ -11,19 +11,19 @@
         <%= f.input :theme, :as => :select, :label => 'Topic', 
           :collection => ResourceSearch.themes, :required => false, :input_html => { :class => 'wide_select' } %>
 
-          <%= f.input :activity, :as => :select,
-           :collection => ResourceSearch.activities, :required => false, :input_html => { :class => 'wide_select' } %>
+        <%= f.input :redd_activities, :as => :select,
+          :collection => ReddActivity.all, :required => false, :input_html => { :class => 'wide_select' } %>
 
-        <%= f.input :resource_type, :label => 'Tool', :as => :select, 
-          :collection => ResourceSearch.resource_types, :required => false, :input_html => { :class => 'narrow_select' } %>
+        <%= f.input :resource_types, :label => 'Tool', :as => :select, 
+          :collection => ResourceType.all, :required => false, :input_html => { :class => 'narrow_select' } %>
       </span>
       <span class="clearfix">
         <%= f.input :technical_expertise, :as => :select,
         :collection => ResourceSearch.technical_expertises,  :required => false, :input_html => { :class => 'wide_select' } %>
-        <%= f.input :country, :as => :select,
-          :collection => ResourceSearch.countries, :required => false, :input_html => { :class => 'narrow_select' } %>
-        <%= f.input :language, :as => :select,
-          :collection => ResourceSearch.languages, :required => false, :input_html => { :class => 'narrow_select' } %>
+        <%= f.input :countries, :as => :select,
+          :collection => Country.all, :required => false, :input_html => { :class => 'narrow_select' } %>
+        <%= f.input :languages, :as => :select,
+          :collection => Language.all, :required => false, :input_html => { :class => 'narrow_select' } %>
       </span>
 
       <%= f.submit 'Search', :class => 'button clearfix' %>

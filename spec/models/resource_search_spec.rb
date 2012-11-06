@@ -55,11 +55,11 @@ describe ResourceSearch do
     end
 
     context 'when searching by resource_type' do
-      let(:resource_type) { Resource::TYPES.keys.first }
-      let(:resource_type_last) { Resource::TYPES.keys.last }
-      let(:resource_1) { create(:resource, :resource_type => resource_type) }
-      let(:resource_2) { create(:resource, :resource_type => resource_type_last) }
-      let(:attrs) do { 'resource_type' => resource_type } end
+      let(:resource_type) { create(:resource_type) }
+      let(:resource_type_last) { create(:resource_type) }
+      let(:resource_1) { create(:resource, :resource_types => [resource_type]) }
+      let(:resource_2) { create(:resource, :resource_types => [resource_type_last]) }
+      let(:attrs) do { 'resource_types' => resource_type.id } end
 
       before { resource_1; resource_2 }
 

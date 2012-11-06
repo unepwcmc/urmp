@@ -76,7 +76,6 @@ RailsAdmin.config do |config|
       field :made_by_un_redd
       field :technical_expertise
       field :audience
-      field :activity
     end
     edit do
       field :title do
@@ -102,7 +101,6 @@ RailsAdmin.config do |config|
       field :made_by_un_redd
       field :technical_expertise
       field :audience
-      field :activity
     end
   end
 
