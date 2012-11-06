@@ -8,8 +8,8 @@
       <p> Further refine search by specifying:</p>
 
       <span class="clearfix">
-        <%= f.input :theme, :as => :select, :label => 'Topic', 
-          :collection => ResourceSearch.themes, :required => false, :input_html => { :class => 'wide_select' } %>
+        <%= f.input :topics, :as => :select, :label => 'Topic', 
+          :collection => Topic.all, :required => false, :input_html => { :class => 'wide_select' } %>
 
         <%= f.input :redd_activities, :as => :select,
           :collection => ReddActivity.all, :required => false, :input_html => { :class => 'wide_select' } %>

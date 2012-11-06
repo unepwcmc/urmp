@@ -10,7 +10,7 @@ describe 'Resource' do
 
       page.should have_content resource.title
       page.should have_content resource.description
-      page.should have_content resource.language
+      page.should have_content resource.languages.map(&:name).join(',')
       page.should have_content resource.institution
       page.should have_selector 'a.external_link'
     end

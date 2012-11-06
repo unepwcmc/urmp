@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20121106113230) do
+ActiveRecord::Schema.define(:version => 20121106134205) do
 
   create_table "countries", :force => true do |t|
     t.string   "name"
@@ -121,12 +121,10 @@ ActiveRecord::Schema.define(:version => 20121106113230) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.string   "author"
-    t.string   "language"
     t.string   "resource_date"
     t.string   "institution"
     t.text     "description"
     t.boolean  "made_by_un_redd"
-    t.string   "theme"
     t.string   "picture_file_name"
     t.string   "picture_content_type"
     t.integer  "picture_file_size"

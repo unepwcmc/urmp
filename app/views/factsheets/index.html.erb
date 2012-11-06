@@ -2,8 +2,7 @@
 <article class="wide">
   <p><%= t('site.factsheets.description') %></p>
 
-  <% Resource::THEMES.each do |theme| %>
-    <%=render :partial => 'factsheet_section', :locals => {:theme => theme.to_s, :factsheets => @factsheets[theme.to_s] || [] } %>
+  <% @factsheets.each do |theme, factsheets| %>
+    <%=render :partial => 'factsheet_section', :locals => {:theme => theme.to_s, :factsheets => factsheets } %>
   <% end %>
-  <%=render :partial => 'factsheet_section', :locals => {:theme => nil, :factsheets => @factsheets[nil] || [] } %>
 </article>

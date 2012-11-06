@@ -32,7 +32,7 @@
       <dd><%= @resource.institution %></dd>
 
       <dt>Language: </dt>
-      <dd><%= @resource.language %></dd>
+      <dd><%= @resource.languages.map(&:name).join(',') %></dd>
 
       <dt>External link:</dt>
       <dd><%= link_to 'Link', @resource.link, :class => 'external_link' %></dd>
