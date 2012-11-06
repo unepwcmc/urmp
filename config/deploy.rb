@@ -1,6 +1,6 @@
 require 'capistrano/ext/multistage'
 
-set :rake, 'bundle exec rake'
+set :rake, 'rake'
 
 set :default_stage, 'staging'
 set :repository,  "git@github.com:unepwcmc/urmp.git"

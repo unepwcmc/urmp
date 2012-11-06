@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20121106093914) do
+ActiveRecord::Schema.define(:version => 20121106100712) do
 
   create_table "criteria", :force => true do |t|
     t.integer  "principle_id"
@@ -73,6 +73,20 @@ ActiveRecord::Schema.define(:version => 20121106093914) do
     t.text     "numeric_reference"
   end
 
+  create_table "resource_types", :force => true do |t|
+    t.string   "name"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
+  create_table "resource_types_resources", :id => false, :force => true do |t|
+    t.integer "resource_types_id"
+    t.integer "resource_id"
+  end
+
+  add_index "resource_types_resources", ["resource_id"], :name => "index_resource_types_resources_on_resource_id"
+  add_index "resource_types_resources", ["resource_types_id"], :name => "index_resource_types_resources_on_resource_types_id"
+
   create_table "resources", :force => true do |t|
     t.string   "title"
     t.text     "link"
@@ -85,7 +99,6 @@ ActiveRecord::Schema.define(:version => 20121106093914) do
     t.text     "description"
     t.boolean  "made_by_un_redd"
     t.string   "theme"
-    t.string   "resource_type"
     t.string   "picture_file_name"
     t.string   "picture_content_type"
     t.integer  "picture_file_size"

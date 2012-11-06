@@ -62,10 +62,8 @@ RailsAdmin.config do |config|
       field :theme, :enum do
         enum { Resource::THEMES }
       end
-      field :resource_type, :enum do
-        enum { Resource::TYPES.keys }
-      end
       field :languages
+      field :resource_types
       field :resource_date
       field :institution
       field :description
@@ -87,11 +85,8 @@ RailsAdmin.config do |config|
         enum { Resource::THEMES }
         help 'Required'
       end
-      field :resource_type, :enum do
-        enum { Resource::TYPES.keys }
-        help 'Required'
-      end
       field :languages
+      field :resource_types
       field :resource_date
       field :institution
       field :description
