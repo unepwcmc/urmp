@@ -1,4 +1,10 @@
-<h1 class="header"><%= t('site.static.faq.header') %></h1>
-<article class="wide">
-  <%= t('site.static.faq.content.html') %>
-</article>
+<% content_for :main do %>
+  <h1 class="header"><%= t('site.static.faq.header') %></h1>
+  <article>
+    <%= t('site.static.faq.content.html') %>
+  </article>
+<% end %>
+
+<% content_for :sidebar do %>
+   <%= render :partial => '/shared/sidebar' %>
+<% end %>

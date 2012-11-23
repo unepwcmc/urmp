@@ -1,8 +1,14 @@
-<h1 class="header"><%= t('site.factsheets.header') %></h1>
-<article class="wide">
-  <p><%= t('site.factsheets.description') %></p>
+<% content_for :main do %>
+  <h1 class="header"><%= t('site.factsheets.header') %></h1>
+  <article class="wide">
+    <p><%= t('site.factsheets.description') %></p>
 
-  <% @factsheets.each do |theme, factsheets| %>
-    <%=render :partial => 'factsheet_section', :locals => {:theme => theme.to_s, :factsheets => factsheets } %>
-  <% end %>
-</article>
+    <% @factsheets.each do |theme, factsheets| %>
+      <%=render :partial => 'factsheet_section', :locals => {:theme => theme.to_s, :factsheets => factsheets } %>
+    <% end %>
+  </article>
+<% end %>
+
+<% content_for :sidebar do %>
+   <%= render :partial => '/shared/sidebar' %>
+<% end %>

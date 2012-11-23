@@ -56,6 +56,9 @@ ActiveRecord::Schema.define(:version => 20121106134205) do
     t.integer "resource_id"
   end
 
+  add_index "languages_resources", ["language_id"], :name => "index_languages_resources_on_language_id"
+  add_index "languages_resources", ["resource_id"], :name => "index_languages_resources_on_resource_id"
+
   create_table "principles", :force => true do |t|
     t.datetime "created_at"
     t.datetime "updated_at"
