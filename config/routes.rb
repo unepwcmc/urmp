@@ -16,7 +16,7 @@ Urmp::Application.routes.draw do
   root :to => "static_pages#home"
   match "monitoring" => "static_pages#monitoring", :as => "monitoring"
   match "safeguards" => "static_pages#safeguards", :as => "safeguards"
-  match "mapping" => "static_pages#mapping", :as => "mapping"
+  match "assesments" => "static_pages#assesments", :as => "assesments"
   match "faq" => "static_pages#faq", :as => "faq"
   match "search" => "resources_search#show", :as => "search"
   match "search_results" => "resources_search#results", :as => "search_results"

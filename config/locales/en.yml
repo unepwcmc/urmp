@@ -7,10 +7,11 @@ en:
     top_menu:
       home: 'Home'
       safeguards: 'Safeguards'
-      mapping: 'Assesments'
+      assesments: 'Assesments'
       monitoring: 'Monitoring'
       factsheets: 'Factsheets'
       faq: 'FAQ'
+      resources: 'Resources'
     footer:
       left:
         html: 'For problems using this website, please contact: <a href="mailto:unepinformaticsteam@unep-wcmc.com">unepinformaticsteam@unep-wcmc.com</a>'
