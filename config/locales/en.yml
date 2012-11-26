@@ -7,7 +7,7 @@ en:
     top_menu:
       home: 'Home'
       safeguards: 'Safeguards'
-      mappging: 'Mapping and Valuation'
+      mapping: 'Assesments'
       monitoring: 'Monitoring'
       factsheets: 'Factsheets'
       faq: 'FAQ'
@@ -17,6 +17,12 @@ en:
       right:
         html: 'Copyright &copy; 2009 UN-REDD Programme. All Rights Reserved'
     sidebar:
+      links:
+        header: "Important Links"
+        item_1:
+          html: '<a href=#>Back to UN-REDD Multiple Benefits main page</a>'
+        item_2:
+          html: '<a href=#>Back to UN-REDD homepage</a>'
       key_resources:
         header: 'Key Resources'
         item_1:
