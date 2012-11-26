@@ -41,8 +41,9 @@ h1, h2, h3 {
     padding: 10px 20px;
     background: {
       image:url('redtitle_bar_background.png');
-      position: center right;
+      position: bottom right;
       repeat: no-repeat;
+      color: #f93342;
     }
   }
 }
@@ -87,13 +88,13 @@ nav {
       a {
         display: block;
         float: left;
-        padding: 1px 15px;
+        padding: 1px 13px;
         border-right: 1px solid #cccccc;
         font-size: 14px;
         font-weight: bold;
         text-decoration: none;
         &.first {
-          padding-left: 0;
+          padding-left: 2px;
         }
         &.last {
           padding-right: 0;
