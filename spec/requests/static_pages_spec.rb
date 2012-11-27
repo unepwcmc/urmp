@@ -22,8 +22,8 @@ describe 'Static Pages' do
     it_should_behave_like :succesful_page
   end
 
-  describe 'GET /mapping' do
-    let(:path) { mapping_path }
+  describe 'GET /assesments' do
+    let(:path) { assesments_path }
     it_should_behave_like :succesful_page
   end
 
