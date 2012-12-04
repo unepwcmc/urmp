@@ -9,6 +9,11 @@
     @include border-radius(5px, 5px, 5px, 5px);
     margin: 20px auto;
     padding:15px 30px;
+    p {
+      padding: 0px 0px 20px;
+      border-bottom: 1px solid;
+    }
+    
     form {
       input[type=text] {
         @include border-radius(3px, 3px, 3px, 3px);
@@ -28,6 +33,8 @@
         font-weight: bold;
         font-size: 16px;
         margin-left: 10px;
+        border-bottom: none;
+        padding: 0px;
        }
       span {
         display: block;

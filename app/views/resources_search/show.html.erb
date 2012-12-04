@@ -1,6 +1,11 @@
 <h1 class="header">Search the tools and resources</h1>
+
 <div class="search-results wide">
   <fieldset>
+    <p>
+      Here you can search a database with descriptions of nearly 100 different resources relevant to multiple benefits and safeguards under REDD+, including softwares, other tools, guidances and information sources. The descriptions include information on the relevance of the tool in a REDD+ context, among other things. About 30 of the tools are described in more detail in a <%= link_to 'factsheet', factsheets_path %>.
+    </p>  
+    
     <%= simple_form_for @search, :as => :search, :html => {:novalidate => true}, :url => search_results_path, :method => :get do |f| %>
 
       <%= f.input :text, :label =>  false, :required => false, :placeholder => "Search for the tool or resource", :class => 'clearfix' %> 

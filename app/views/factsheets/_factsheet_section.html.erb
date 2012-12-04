@@ -1,5 +1,7 @@
 <h3><%= name_for_theme(theme) %></h3>
 
+<!-- Version with the factsheets displayed as icons.
+
 <table class='factsheets'>
   <% factsheets.in_groups_of(4) do |factsheets_group| %>
     <tr>
@@ -13,3 +15,15 @@
     </tr>
   <% end %>
 </table>
+
+-->
+
+<!-- List of all factsheets -->
+
+<ul>
+  <% factsheets.each do |factsheet| %>
+    <li> 
+        <%= link_to factsheet.name, factsheet_path(factsheet) %>
+    </li>
+  <% end %> 
+</ul>
