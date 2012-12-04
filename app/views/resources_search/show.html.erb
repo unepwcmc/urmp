@@ -23,14 +23,10 @@
           :collection => ResourceType.all, :required => false, :input_html => { :class => 'narrow_select' } %>
       </span>
       <span class="clearfix">
-        <%= f.input :technical_expertise, :as => :select,
-        :collection => ResourceSearch.technical_expertises,  :required => false, :input_html => { :class => 'wide_select' } %>
         <%= f.input :countries, :as => :select,
           :collection => Country.all, :required => false, :input_html => { :class => 'narrow_select' } %>
         <%= f.input :languages, :as => :select,
           :collection => Language.all, :required => false, :input_html => { :class => 'narrow_select' } %>
-        <%= f.input :scales, :as => :select, :label => 'Scale of analysis',
-          :collection => Scale.all, :required => false, :input_html => { :class => 'narrow_select' } %>
       </span>
 
       <%= f.submit 'Search', :class => 'button clearfix' %>
