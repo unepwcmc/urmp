@@ -1,6 +1,6 @@
 class FactsheetsController < ApplicationController
   def index
-    @factsheets = Factsheet.grouped_by_resource_topic
+    @factsheets = Factsheet.order('name ASC')
   end
 
   def show

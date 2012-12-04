@@ -3,9 +3,13 @@
   <article class="wide">
     <p><%= t('site.factsheets.description') %></p>
 
-    <% @factsheets.each do |theme, factsheets| %>
-      <%=render :partial => 'factsheet_section', :locals => {:theme => theme.to_s, :factsheets => factsheets } %>
+    <ul>
+    <% @factsheets.each do |factsheet| %>
+      <li>
+        <%= link_to factsheet.name.capitalize, factsheet_path(factsheet) %>
+      </li>
     <% end %>
+    </ul>
   </article>
 <% end %>
 
