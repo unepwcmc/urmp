@@ -23,7 +23,7 @@ describe 'Static Pages' do
   end
 
   describe 'GET /assesments' do
-    let(:path) { assesments_path }
+    let(:path) { assesment_path }
     it_should_behave_like :succesful_page
   end
 
