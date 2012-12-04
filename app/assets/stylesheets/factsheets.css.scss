@@ -5,22 +5,14 @@
 @import 'mixins';
 
 .factsheets {
-  margin: 20px 0;
-  .item {
-    width: 150px;
-    height: 70px;
-    margin: 20px 10px;
-    padding: 5px 20px;
-    vertical-align: top;
-    text-align: center;
-    img {
-      margin: 5px auto 10px auto;
-      display: block;
-      opacity: 0.8;
-      &:hover {
-        opacity:1;
-      }
-    }
-  }
+  list-style-type: none;
+
+  .file img { 
+    margin: -25px; 
+    padding: 0 25px 20px 0;
+   }
+  
+  li { margin: 20px 0; }
+ 
 }
 

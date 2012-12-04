@@ -13,7 +13,7 @@
       padding: 0px 0px 20px;
       border-bottom: 1px solid;
     }
-    
+
     form {
       input[type=text] {
         @include border-radius(3px, 3px, 3px, 3px);
@@ -73,7 +73,7 @@
   li {
     list-style-type: none;
     margin: 20px 0px;
-    min-height: 100px;
+    height: 150px;
     a {
       font-size: 20px;
       text-decoration: none;

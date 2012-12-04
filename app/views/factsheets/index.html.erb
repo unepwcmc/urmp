@@ -2,11 +2,11 @@
   <h1 class="header"><%= t('site.factsheets.header') %></h1>
   <article class="wide">
     <p><%= t('site.factsheets.description') %></p>
-
-    <ul>
+    <ul class="factsheets">
     <% @factsheets.each do |factsheet| %>
       <li>
-        <%= link_to factsheet.name.capitalize, factsheet_path(factsheet) %>
+        <%= link_to(image_tag('file.png', :alt => factsheet.name), factsheet_path(factsheet), :class => 'file') %>
+        <%= link_to factsheet.name.capitalize, factsheet_path(factsheet) %> 
       </li>
     <% end %>
     </ul>
