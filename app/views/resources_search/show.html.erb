@@ -14,7 +14,7 @@
 
       <span class="clearfix">
         <%= f.input :topics, :as => :select, :label => 'Topic', 
-          :collection => Topic.all, :required => false, :input_html => { :class => 'wide_select' } %>
+          :collection => Topic.all, :required => false, :input_html => { :class => 'wide_select tool' } %>
 
         <%= f.input :redd_activities, :as => :select,
           :collection => ReddActivity.all, :required => false, :input_html => { :class => 'wide_select' } %>
@@ -39,9 +39,11 @@
     <ul class="results">
     <% @search.results.each do |resource| %>
       <li class="clearfix">
+        <div class="container_img">
         <%= image_tag resource.picture.url(:thumb), :alt => resource.title %>
+        </div>
         <div class="text">
-          <div class="title"><%= link_to resource.title, resource_path(resource) %></div>
+          <div class="title"><%= link_to resource.title, resource_path(resource), :class => 'tooltip' %></div>
           <div class="description"><%= resource.description %></div>
         </div>
       </li>

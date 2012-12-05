@@ -78,14 +78,26 @@
       font-size: 20px;
       text-decoration: none;
     }
+
+    div.container_img {
+      position:relative;
+      float:left;
+      overflow: hidden;
+      width: 150px;
+      height: 150px;
+    }
+
+    div.container_img img{
+      position:absolute;
+      top:50%;  
+      left: 50%;  
+      float: left;
+      display: block;
+      border: 1px solid $light-gray;
+    }
   }
 
-  img {
-    float: left;
-    margin-right: 15px;
-    display: block;
-    border: 1px solid $light-gray;
-  }
+
 
   .text {
     margin-right: 15px;
@@ -97,3 +109,4 @@
 .clearfix {
   clear:both;
 }
+
