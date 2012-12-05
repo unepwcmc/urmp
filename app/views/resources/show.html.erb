@@ -9,7 +9,7 @@
     <p><%= display_html(@resource.relevance) %></p>
 
     <h3>REDD+ Activities</h3>
-    <p><%= @resource.redd_activities.map(&:name).join(',') %></p>
+    <p><%= @resource.redd_activities.map(&:name).join(', ') %></p>
 
     <%= link_to "< back to results page", :back, :class => "back-link" %>
   </article>
@@ -24,10 +24,10 @@
     </div>
     <dl class="resource_details">
       <dt>Resource type</dt>
-      <dd><%= @resource.resource_types.map(&:name).join(',') %></dd>
+      <dd><%= @resource.resource_types.map(&:name).join(', ') %></dd>
 
       <dt>Topic</dt>
-      <dd><%= @resource.topics.map(&:name).join(',') %></dd>
+      <dd><%= @resource.topics.map(&:name).join(', ') %></dd>
 
       <dt>Author</dt>
       <dd><%= @resource.author %></dd>
@@ -39,7 +39,7 @@
       <dd><%= @resource.institution %></dd>
 
       <dt>Language: </dt>
-      <dd><%= @resource.languages.map(&:name).join(',') %></dd>
+      <dd><%= @resource.languages.map(&:name).join(', ') %></dd>
 
       <dt>External link:</dt>
       <dd><%= link_to @resource.link, @resource.link, :class => 'external_link' %></dd>
