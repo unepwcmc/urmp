@@ -17,7 +17,11 @@
 
 <% content_for :sidebar do %>
   <article class="resource_sidebar"> 
-   <%= image_tag @resource.picture.url(:medium), :class => 'resource_image' %>
+    <div class='sidebar-img-container'>
+      <div class='container_img'>
+        <%= image_tag @resource.picture.url(:medium), :class => 'resource_image' %>
+      </div>
+    </div>
     <dl class="resource_details">
       <dt>Resource type</dt>
       <dd><%= @resource.resource_types.map(&:name).join(',') %></dd>

@@ -5,6 +5,20 @@
 
 @import 'mixins';
 
+.sidebar-img-container{
+  position:relative;
+  height: 202px;
+
+  .container_img img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    float: left;
+    display: block;
+    border: 1px solid #E2E2E2;
+  }
+}
+
 .resource_sidebar {
   padding: 9px !important;
 }
