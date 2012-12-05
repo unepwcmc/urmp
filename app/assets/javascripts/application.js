@@ -12,6 +12,10 @@
 //
 //= require jquery
 //
+//= require ./jquery.tipTip.minified
+//= require ./resources_search
 //= require_self
-//
 
+$(function(){
+  $(".tip-tip").tipTip();
+});
