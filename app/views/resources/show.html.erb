@@ -19,8 +19,11 @@
   <article class="resource_sidebar"> 
    <%= image_tag @resource.picture.url(:medium), :class => 'resource_image' %>
     <dl class="resource_details">
-      <dt>Resource</dt>
+      <dt>Resource type</dt>
       <dd><%= @resource.resource_types.map(&:name).join(',') %></dd>
+
+      <dt>Topic</dt>
+      <dd><%= @resource.topics.map(&:name).join(',') %></dd>
 
       <dt>Author</dt>
       <dd><%= @resource.author %></dd>
@@ -35,7 +38,7 @@
       <dd><%= @resource.languages.map(&:name).join(',') %></dd>
 
       <dt>External link:</dt>
-      <dd><%= link_to 'Link', @resource.link, :class => 'external_link' %></dd>
+      <dd><%= link_to @resource.link, @resource.link, :class => 'external_link' %></dd>
 
       <dt>Level of expertise required: </dt>
       <dd><%= @resource.technical_expertise %></dd>
