@@ -17,6 +17,8 @@ gem 'paperclip'
 gem 'simple_form'
 gem 'meta_search'
 gem 'kaminari'
+gem 'bootstrap-wysihtml5-rails', :require => 'bootstrap-wysihtml5-rails',
+                                :git => 'git://github.com/Nerian/bootstrap-wysihtml5-rails.git'
 
 group :development, :test do
   gem 'ruby-debug19'

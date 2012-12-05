@@ -43,7 +43,7 @@
         </div>
         <div class="text">
           <div class="title"><%= link_to resource.title, resource_path(resource), :class => 'tooltip' %></div>
-          <div class="description"><%= resource.description %></div>
+          <div class="description"><%= display_html(resource.description) %></div>
         </div>
       </li>
     <% end %>

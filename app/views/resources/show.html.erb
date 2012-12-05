@@ -3,10 +3,10 @@
   <h1 class="header"><%= @resource.title %></h1>
   <article>
     <h3>Overview</h3>
-    <p><%= @resource.description %></p>
+    <p><%= display_html(@resource.description) %></p>
 
     <h3>REDD+ relevance</h3>
-    <p><%= @resource.relevance %></p>
+    <p><%= display_html(@resource.relevance) %></p>
 
     <h3>REDD+ Activities</h3>
     <p><%= @resource.redd_activities.map(&:name).join(',') %></p>

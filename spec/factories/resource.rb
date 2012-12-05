@@ -4,5 +4,6 @@ FactoryGirl.define do
     author 'Doswald, N., Dickson, B.'
     institution 'UNEP-WCMC'
     link 'http://foo.bar'
+    description 'YEAH'
   end
 end

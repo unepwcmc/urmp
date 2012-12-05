@@ -34,7 +34,9 @@ RailsAdmin.config do |config|
     edit do
       field :name
       field :number
-      field :description
+      field :description, :text do
+        bootstrap_wysihtml5 true
+      end
     end
   end
 
@@ -49,7 +51,9 @@ RailsAdmin.config do |config|
     end
     edit do
       field :name
-      field :description
+      field :description, :text do
+        bootstrap_wysihtml5 true
+      end
       field :principle
     end
   end
@@ -84,8 +88,12 @@ RailsAdmin.config do |config|
       field :resource_types
       field :resource_date
       field :institution
-      field :description
-      field :relevance
+      field :description, :text do
+        bootstrap_wysihtml5 true
+      end
+      field :relevance, :text do
+        bootstrap_wysihtml5 true
+      end
       field :topics
       field :scales
       field :countries
