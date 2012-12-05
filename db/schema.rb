@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20121106134205) do
+ActiveRecord::Schema.define(:version => 20121205121457) do
 
   create_table "countries", :force => true do |t|
     t.string   "name"
@@ -123,7 +123,7 @@ ActiveRecord::Schema.define(:version => 20121106134205) do
     t.text     "link"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.string   "author"
+    t.text     "author"
     t.string   "resource_date"
     t.string   "institution"
     t.text     "description"
