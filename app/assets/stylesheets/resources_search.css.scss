@@ -38,11 +38,6 @@
        }
       span {
         display: block;
-        float: left;
-        width: 680px;
-        label {
-         display: block;
-        }
         .select {
           float: left;
           margin: 0px 10px 5px 5px;
@@ -50,6 +45,23 @@
           label {
             display: block;
             float: none;
+            .tip-tip {
+                display: block;
+                width: 20px;
+                height: 20px;
+                padding-left: 10px;
+                background-image:image-url('question.png');
+                background-repeat: no-repeat;
+                text-indent: -99999px;
+                &:hover {
+                  cursor: help;
+                }
+             }
+
+            span {
+             float:left;
+             padding-bottom: 5px;    
+            }
           }
           .wide_select {
             width: 200px;
@@ -96,8 +108,6 @@
       border: 1px solid $light-gray;
     }
   }
-
-
 
   .text {
     margin-right: 15px;
