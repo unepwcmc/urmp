@@ -13,13 +13,12 @@
       <p> Further refine search by specifying:</p>
 
       <span class="clearfix">
-        <%= f.input :topics, :as => :select, :label => 'Topic', 
-          :collection => Topic.all, :required => false, :input_html => { :class => 'wide_select tool' } %>
-
+        <%= f.input :topics, :as => :select, :label => 'Topic',
+          :collection => Topic.all, :required => false, :input_html => { :class => 'wide_select' } %>
         <%= f.input :redd_activities, :as => :select,
           :collection => ReddActivity.all, :required => false, :input_html => { :class => 'wide_select' } %>
 
-        <%= f.input :resource_types, :label => 'Tool', :as => :select, 
+        <%= f.input :resource_types, :label => 'Tool', :as => :select,
           :collection => ResourceType.all, :required => false, :input_html => { :class => 'narrow_select' } %>
       </span>
       <span class="clearfix">
