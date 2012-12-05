@@ -5,11 +5,11 @@ en:
   simple_form:
     labels:
       search:
-        topics: '<span>Topic</span><span class="tip">?</span><span class="tip-body">Help</span>'
-        resource_types: '<span>Tool</span><span class="tip">?</span><span class="tip-body">Help</span>'
-        redd_activities: '<span>Redd Activities</span><span class="tip">?</span><span class="tip-body">Help</span>'
-        countries: '<span>Countries</span><span class="tip">?</span><span class="tip-body">Help</span>'
-        languages: '<span>Languages</span><span class="tip">?</span><span class="tip-body">Help</span>'
+        topics: '<span>Topic</span><span class="tip-tip" title="Help">?</span>'
+        resource_types: '<span>Tool</span><span class="tip-tip" title="Help">?</span>'
+        redd_activities: '<span>Redd Activities</span><span class="tip-tip" title="Help">?</span>'
+        countries: '<span>Countries</span><span class="tip-tip" title="Help">?</span>'
+        languages: '<span>Languages</span><span class="tip-tip" title="Help">?</span>'
   site:
     header: 'The United Nations Collaboration Programme on Reducing Emissions from Deforestation and Forest Degradation in Developing Countries'
     top_menu:
