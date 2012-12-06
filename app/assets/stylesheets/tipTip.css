@@ -25,10 +25,11 @@
 }
 
 #tiptip_content {
-	font-size: 11px;
+	font-size: 12px;
 	color: #fff;
 	text-shadow: 0 0 2px #000;
-	padding: 4px 8px;
+	padding: 15px 15px;
+	letter-spacing: 0.01em;
 	border: 1px solid rgba(255,255,255,0.25);
 	background-color: rgb(25,25,25);
 	background-color: rgba(25,25,25,0.92);
