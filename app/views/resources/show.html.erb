@@ -11,6 +11,10 @@
     <h3>REDD+ Activities</h3>
     <p><%= @resource.redd_activities.map(&:name).join(', ') %></p>
 
+    <%# if @resource.factsheet %>
+      <%#= link_to @resource.factsheet.name, factsheet_path(@resource.factsheet) %>
+    <%# end %>
+
     <%= link_to "< back to results page", :back, :class => "back-link" %>
   </article>
 <% end %>

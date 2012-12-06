@@ -9,6 +9,7 @@ class Resource < ActiveRecord::Base
   has_and_belongs_to_many :scales
   has_and_belongs_to_many :countries
   has_and_belongs_to_many :redd_activities
+  belongs_to :factsheet
 
   has_attached_file :picture,
     :default_url => "/assets/default_:style_resource_picture.png",

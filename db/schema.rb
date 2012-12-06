@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20121205121457) do
+ActiveRecord::Schema.define(:version => 20121206154807) do
 
   create_table "countries", :force => true do |t|
     t.string   "name"
@@ -135,6 +135,7 @@ ActiveRecord::Schema.define(:version => 20121205121457) do
     t.string   "technical_expertise"
     t.string   "audience"
     t.text     "relevance"
+    t.integer  "factsheet_id"
   end
 
   create_table "resources_scales", :id => false, :force => true do |t|

@@ -95,6 +95,7 @@ RailsAdmin.config do |config|
         bootstrap_wysihtml5 true
       end
       field :topics
+      field :factsheet
       field :scales
       field :countries
       field :redd_activities
