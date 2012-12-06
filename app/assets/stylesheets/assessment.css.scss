@@ -1,0 +1,8 @@
+@import 'mixins';
+
+.process {
+  list-style-type: none;
+  margin: 20px 0;
+
+  li { margin: 0 0 5px 0;  }
+}
