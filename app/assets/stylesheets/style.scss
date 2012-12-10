@@ -147,7 +147,7 @@ nav {
     padding: 40px 0;
     @include box-shadow(2px, 2px, 5px, #ccc); 
     @include border-radius(0, 0, 5px, 5px);
-    .main, .sidebar, .wide {
+    .main, .sidebar article, .wide {
       background: #fff;
     }
     article, .search-results {
