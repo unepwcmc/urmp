@@ -39,6 +39,16 @@ en:
       faq:
         header: 'FAQ'
         item_1:
-          html: '<a href="/faq#multiple-benfits">What are multiple benefits?</a>'
+          html: '<a href="/faq#biodiversity-and-ecosystem-services">What are biodiversity and ecosystem services?</a>'
         item_2:
+          html: '<a href="/faq#multiple-benfits">What are multiple benefits?</a>'
+        item_3:
           html: '<a href="/faq#cancun-safeguards">What are Cancun Safeguards?</a>'
+        item_4:
+          html: '<a href="/faq#safeguards-and-multiple-benefits">How do safeguards and multiple benefits relate in the context of REDD+?</a>'
+        item_5:
+          html: '<a href="/faq#SEPC-and-safeguards">How do the UN-REDD Social and Environmental Principles and Criteria (SEPC) relate to the Cancun safeguards?</a>'
+        item_6:
+          html: '<a href="/faq#guidance-frameworks">Can several guidance frameworks for interpreting and implementing the Cancun safeguards be used simultaneously (e.g. FCPF SESA, UN-REDD SEPC, REDD+ SES)? </a>'
+        item_7:
+          html: '<a href="/faq#REDD-strategies">Is capacity building available on developing a national approach to safeguards, or including multiple benefits in REDD+ strategies?</a>'
