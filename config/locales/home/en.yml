@@ -2,27 +2,48 @@ en:
   site:
     static:
       home:
-        header: 'Decision support on biodiversity and ecosystem services in REDD+'
+        header: 'REDD+ Beyond Carbon'
         content:
           html: "
 <p>
-REDD+ has the potential to deliver multiple benefits including climate mitigation, biodiversity conservation and ecosystem services. However countries face complex challenges in balancing different possible objectives for REDD+ and careful planning is required to mitigate and enhance benefits.
+Decision support on biodiversity and ecosystem services under REDD+
 </p>
 
 <p>
-This website provides a guide to tools and resources that can help to ensure that environmental risks and opportunities are taken account in decision making. The guide includes searchable directory of tools and resources which can assist in planning for multiple benefits.
+The REDD+ mechanism has the potential to bring multiple benefits, both environmental and social,
+to countries that choose to implement it, in addition to its main purpose of mitigating global climate
+change. This website offers a guide to resources that can help to ensure that REDD+ delivers
+environmental benefits and that environmental risks are reduced. It aims to assist REDD+ planners,
+policy makers and their technical advisors, especially those working on REDD+ strategies, land-use
+planning for REDD+, and the implementation of the UNFCCC’s Cancun safeguards.
 </p>
 <p>
-The website is targeted at national REDD+ planners and their technical advisors who are seeking to integrate multiple benefits into their strategies and promote and support the <a href='/'>Cancun safeguards</a>. The guide is split into three core themes:
-
-<ol>
-  <li><a href='/safeguards'>Applying REDD+ safeguards</a></li>
-  <li><a href='/assesment'>Indemnification mapping and valuation of multiple benefits</a></li>
-  <li><a href='/monitoring'>Monitoring REDD+ Impacts</a></li>
-</ol>
+Forests provide a range of ecosystem services, and host the biodiversity that underpins these
+services. Ecosystem services include carbon sequestration, water and local climatic regulation,
+cultural benefits, and production of food, fuel and fibre. When actions under the REDD+ mechanism
+prevents loss or degradation of forest ecosystems and biodiversity, or improves their condition,
+multiple benefits will result, including protected or enhanced ecosystem services.
 </p>
 <p>
-Should you have any further questions on REDD+ multiple benefits not answered by this site or have problems using the tools and resources within it, please email <a href='mailto:safeguards@unep-wcmc.org'>safeguards@unep-wcmc.org</a> This email needs to be replaced with someone's email or CCB.
+Ecosystem services and biodiversity of different forests vary, and they will also respond differently to
+forest management actions. What environmental benefits and risks that may result from REDD+ in
+a forest will therefore depend on the location and type of REDD+ actions undertaken. Implementing
+REDD+ thus requires an investment in planning by countries, to balance different national objectives,
+decide what benefits are prioritized, and identify risks that may arise from proposed actions. The
+UN-REDD Programme supports countries in their efforts to integrate multiple benefit considerations
+into their REDD+ strategies and development plans.
+</p>
+<p>
+On this site, you can find a guide to key tools in three areas for which UN-REDD provide support:<br>
+1) Applying REDD+ safeguards, 2) Identification, mapping and valuation of environmental risks and
+benefits and 3) Monitoring REDD+ impacts on biodiversity and ecosystem services. Furthermore,
+you can search a library of tools and resources that have been identified as relevant to REDD+
+safeguards or multiple benefits. A collection of factsheets provides more detailed information on
+selected tools.
+</p>
+<p>
+We welcome queries on REDD+ multiple benefits, or suggestions for improvements of this website.
+Please e-mail <a href='mailto:ccb@unep-wcmc.org'>ccb@unep-wcmc.org</a>.
 </p>
 "
 
