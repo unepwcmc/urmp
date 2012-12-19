@@ -1,9 +1,21 @@
-<h1 class="header">Search the tools and resources</h1>
+<h1 class="header">Search</h1>
 
 <div class="search-results wide">
   <fieldset>
     <p>
-      Here you can search a database with descriptions of nearly 100 different resources relevant to multiple benefits and safeguards under REDD+, including softwares, other tools, guidances and information sources. The descriptions include information on the relevance of the tool in a REDD+ context, among other things. About 30 of the tools are described in more detail in a <%= link_to 'factsheet', factsheets_path %>.
+      Here you can search a library with descriptions of nearly 100 different resources relevant to
+      multiple benefits and safeguards under REDD+, including software, other tools, guidance
+      documents and information sources.
+    </p>
+    <p>
+      Some of these resources have been developed by UN-REDD, but most are from a variety of different
+      institutions. Many have potential, but have not yet been tested or applied by REDD+ countries. The
+      purpose of this library is to guide you to a growing selection of resources that may be of use in your
+      work on multiple benefits and safeguards for REDD+.
+    </p>
+    <p class="line">
+      The descriptions of the resources include information on the relevance of the tool in a REDD+
+      context, among other things. About 30 of the tools are described in more detail in a factsheet.
     </p>  
     
     <%= simple_form_for @search, :as => :search, :html => {:novalidate => true}, :url => search_results_path, :method => :get do |f| %>

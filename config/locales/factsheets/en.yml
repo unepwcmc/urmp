@@ -1,8 +1,8 @@
 en:
   site:
     factsheets:
-      header: 'Factsheets'
-      description: 'These factsheets identify the uses and limitations of individual tools and resources for planning for multiple benefits for REDD+'
+      header: 'UN-REDD Factsheets series'
+      description: 'The factsheets below have been developed to introduce a number of key resources useful for planning for multiple benefits and environmental safeguards under REDD+. The resources have beendeveloped by different institutions, including a few by UN-REDD. The purpose of the factsheets is to identify the uses andlimitations of individual tools, how they relate to the REDD+ context, and what is required to apply them.'
       impacts_theme: 'Monitoring of REDD+ impacts of biodiversity and ecosystem services'
       identification_theme: 'Identification, mapping, and valuation of biodiveristy and ecoxystem services'
       no_theme: 'All the rest'

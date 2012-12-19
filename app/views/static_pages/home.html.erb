@@ -6,5 +6,14 @@
 <% end %>
 
 <% content_for :sidebar do %>
-   <%= render :partial => '/shared/sidebar' %>
+   <%= render :partial => '/shared/links_sidebar' %>
+   <h2 class="header margin-top"><%= t('site.sidebar.key_resources.header') %></h2>
+    <article>
+      <ul>
+        <li><%= t('site.sidebar.key_resources.item_1.html') %></li>
+        <li><%= t('site.sidebar.key_resources.item_2.html') %></li>
+        <li><%= t('site.sidebar.key_resources.item_3.html') %></li>
+      </ul>
+    </article>
+   <%= render :partial => '/shared/faq_sidebar' %>
 <% end %>

@@ -2,37 +2,65 @@ en:
   site:
     static:
       assessment:
-        header: 'Land-use planning: identification, mapping and valuation'
+        header: 'Assessment: identification, mapping and valuation'
         content:
           html: "
   <p>
-    In order to apply REDD+ safeguards, and more broadly address the challenge of optimal decision making in the face of multiple risks and opportunities, countries will need to understand the risks and opportunities  associated with different REDD+ options when implemented in different parts of the landscape. Carbon, biodiversity and ecosystem servicies are unevenly distributed across the landscape and the costs of maintaining them will therefore vary.
+    Biodiversity and ecosystem services, including carbon stocks, are generally distributed unevenly over
+    a landscape, due to the spatial variability of the social and biophysical processes which affect their
+    abundance and distribution. A land-use decision in one place is likely to have effects elsewhere. In
+    order to choose among REDD+ options and decide where they should be implemented, countries
+    will need to understand the risks and opportunities associated with applying the different REDD+
+    options, and how they will affect safeguards and multiple benefits in different parts of a landscape,
+    a country or a region. Land use planning tools applied together with adequate data can inform
+    decision making in this respect.
   </p>
+
   <p>
-    To help countries decide where to locate their REDD+ activities, five processes are described below that will enable countries to carry out robust, informed decision making. Tools are highlighted where relevant which may assist with or simplify a  process a country undertaking.
+    Five activities are described below that can help countries to carry out robust, informed decision
+    making. Particularly relevant tools and other resources which may be of use in these activities are
+    highlighted. Further information about tools that are relevant for the different processes can be
+    found through the search links at the bottom of this page.  
   </p>
 
-  <h3>Process</h3>
+  <p>
+    Assessment activities:
+    <ul>
+      <li>
+        Identify national priorities, including existing environmental goals, development goals,
+        and targets set for REDD+. REDD+ influences not only the forestry sector, but a range of
+        other national priorities as well, including rural development and biodiversity targets.
+        The sections of BeRT that cover Principle 4 of the SEPC may assist in bringing these
+        different goals together, and develop actions that address them coherently.
+      </li>
+      <li>
+        Map indicator data which represents these priorities. The UN-REDD mapping manual
+        and associated Exploring Multiple Benefits toolbox can assist in mapping carbon and
+        bringing it together with other relevant data on biodiversity and multiple benefits, to
+        inform land use planning and decision making for REDD+.
+      </li>
+      <li>
+        Assess potential for and cost of different REDD+ interventions in different areas.
+        The REDD Abacus Software is one example that can be of use, which analyzes the
+        opportunity costs of land use change in a landscape.
+      </li>
+      <li>
+        Conduct economic valuation of risks, benefits, and alternative approaches to deciding
+        on priorities. For example, this paper describes how an economic assessment of REDD+
+        options including its benefits and risks from impacts on non-carbon ecosystems services
+        and biodiversity can be undertaken.
+      </li>
+      <li>
+        Identify the potential for enhancing multiple benefits and minimize trade-offs with
+        REDD+ activities. Marxan is a land-use planning tool developed for conservation
+        purposes, which may also be applied in a REDD+ context. It can be used to identify cost-
+        effective spatial solutions that attain a number of targets (such as reducing carbon
+        emissions, conserving biodiversity and protecting or restoring areas important for
+        ecosystem services).
+      </li>
+    </ul>
 
-    <ol class='process'>
-      <li>
-          1. Identify national priorities, such as existing environmental goals or those set for REDD+
-        </p>
-      </li>
-      <li>
-        <p>
-        2. Map indicator data which represents these priorities. The UN-REDD mapping manual and associated Exploring Multiple Benefits tool can assist in mapping carbon and bringing it together with other relevant data <a href='#'>link to mapping audiance and tool box</a>
-        </p>
-      </li>
-      <li>
-        <p>
-        3. Assess potential for and cost of different REDD+ interventions in different areas
-        </p>
-      </li>
-      <li>
-        <p>
-        4. Economic valuation of risks and benefits, and alternative approaches. An analysis of how value could be attached to risks and benefits is described in the following paper <a href='#'>link to bioecon paper different types of value</a>
-        </p>
-      </li>
-    </ol>
+  <p>
+    View all resources in the library specifically relevant to mapping, valuation, quantification and costing.
+  </p>
 "

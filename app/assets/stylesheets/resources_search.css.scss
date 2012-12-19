@@ -9,7 +9,7 @@
     @include border-radius(5px, 5px, 5px, 5px);
     margin: 20px auto;
     padding:15px 30px;
-    p {
+    p.line {
       padding: 0px 0px 20px;
       border-bottom: 1px solid;
     }
@@ -33,7 +33,7 @@
         font-weight: bold;
         font-size: 16px;
         margin-left: 10px;
-        border-bottom: none;
+        border-bottom: 0px;
         padding: 0px;
        }
       span {

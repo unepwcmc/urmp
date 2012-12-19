@@ -5,8 +5,8 @@ en:
   simple_form:
     labels:
       search:
-        topics: '<span>Topic</span><span class="tip-tip" title="This filter will display resources that cover the following topics:<br><b>REDD+ Safeguards:</b> Addressing social and environmental issues as identified by the Cancun Agreement (Decision 1/CP.16)<br><b>Mapping:</b> Identifying the spatial distribution of areas important for ecosystems services and biodiversity.<br><b>Quantification of ecosystem services/biodiversity:</b> Identifying and measuring the extent of ecosystem services or biodiversity<br><b>Valuation of ecosystem services/biodiversity:</b> Identifying the benefits of ecosystem services or biodiversity and the societal value of these beyond their financial value <br><b>Costing of ecosystem services:</b> Identifying the economic costs of land management and of the provision of ecosystem services.<br> <b>Monitoring:</b> Supporting the development and implementation of a monitoring system for biodiversity or ecosystem services indicators">?</span>'
-        resource_types: '<span>Resource type</span><span class="tip-tip" title="This filter will display resources of the following types:<br><b>Economic simulation model:</b> A tool that models economic decision making processes (e.g. on land use) and simulate outcomes based on equilibrium market prices from equating supply and demand in one or more markets.<br><b>Spreadsheet application:</b> A computer program used to create and manipulate spreadsheets to perform calculations and data analysis<br><b>Web-based application:</b> An application which is accessed and run through the internet<br><b>GIS application:</b> Applications to analyse and manage spatially referenced data<br><b>Software:</b> Software not defined by above categories<br><b>Guidance:</b> Structured guidance documents that can assist with assessments, decision-making processes or actions related to multiple benefits and safeguards under REDD+</br><b>Information material:</b> Information documents that can inform on topics related to multiple benefits and safeguards under REDD+">?</span>'
+        topics: '<span>Topic</span><span class="tip-tip" title="<p>This filter will display resources that cover the following topics:</p><p><b>REDD+ Safeguards:</b> Addressing social and environmental issues as identified by the Cancun Agreement (Decision 1/CP.16)</p><p><b>Mapping:</b> Identifying the spatial distribution of areas important for ecosystems services and biodiversity.</p><p><b>Quantification of ecosystem services/biodiversity:</b> Identifying and measuring the extent of ecosystem services or biodiversity</p><p><b>Valuation of ecosystem services/biodiversity:</b> Identifying the benefits of ecosystem services or biodiversity and the societal value of these beyond their financial value</p><p><b>Costing of ecosystem services:</b> Identifying the economic costs of land management and of the provision of ecosystem services.</p><p><b>Monitoring:</b> Supporting the development and implementation of a monitoring system for biodiversity or ecosystem services indicators</p>">?</span>'
+        resource_types: '<span>Resource type</span><span class="tip-tip" title="<p>This filter will display resources of the following types:</p><p><b>Economic simulation model:</b> A tool that models economic decision making processes (e.g. on land use) and simulate outcomes based on equilibrium market prices from equating supply and demand in one or more markets.</p><p><b>Spreadsheet application:</b> A computer program used to create and manipulate spreadsheets to perform calculations and data analysis</p><p<<b>Web-based application:</b> An application which is accessed and run through the internet</p><p><b>GIS application:</b> Applications to analyse and manage spatially referenced data</p><p><b>Software:</b> Software not defined by above categories</p><p><b>Guidance:</b> Structured guidance documents that can assist with assessments, decision-making processes or actions related to multiple benefits and safeguards under REDD+</p><p><b>Information material:</b> Information documents that can inform on topics related to multiple benefits and safeguards under REDD+</p>">?</span>'
         redd_activities: '<span>REDD+ activity</span><span class="tip-tip" title="This filter allows you to search for tools that are relevant to the five different activities relevant to REDD+ as defined under UNFCCC:<ul><li>Reducing emissions from deforestation</li><li>Reducing emissions from forest degradation</li><li>Sustainable management of forests</li><li>Conservation of forest carbon stocks</li><li>Enhancement of forest carbon stocks</li></ul>">?</span>'
         countries: '<span>Country specific</span><span class="tip-tip" title="Some resources are developed for a specific country context, and such resources can be filtered here. Most resources are of relevance to many countries, and these will not be displayed when this filter is applied.">?</span>'
         languages: '<span>Languages</span><span class="tip-tip" title="This filter allows you to find resources in a particular language. The description will be in English, but the resource itself is in the language specified.">?</span>'
@@ -35,7 +35,35 @@ en:
       key_resources:
         header: 'Key Resources'
         item_1:
-          html: '<a href=#>Resource</a>'
+          html: '<a href=#>UN-REDD Policy Brief on multiple benefits English - Fran&ccedil;ais - Espa&ntilde;ol</a>'
+        item_2:
+          html: "<a href=#>'Beyond Carbon' brochure</a>"
+        item_3:
+          html: '<a href=#>REDD+ safeguard related text from UNFCCC COP 16 (Cancun) and COP 17 (Durban) decisions</a>'
+        item_4:
+          html: '<a href=#>UN-REDD Programme Social and Environmental Principles and Criteria (SEPC)</a>'
+        item_5:
+          html: "<a href=#>UN-REDD Programme Benefits and Risks Tool (BeRT)</a>"
+        item_6:
+          html: '<a href=#>The Strategic Environmental and Social Assessment (SESA) used by the Forest Carbon Partnership Facility (FCPF) of the World Bank</a>'
+        item_7:
+          html: '<a href=#>REDD+ Social & Environmental Standards (REDD+ SES)</a>'
+        item_8:
+          html: "<a href=#>Mapping Biodiversity Benefits from REDD+: The Democratic Republic of the Congo</a>"
+        item_9:
+          html: '<a href=#>Carbon, biodiversity & ecosystem services: exploring co-benefits in Ecuador</a>'
+        item_10:
+          html: '<a href=#>Carbon, biodiversity & ecosystem services: exploring co-benefits in Tanzania</a>'
+        item_11:
+          html: "<a href=#>Options for REDD+ action: what are their effects on forests and people? An introduction for stakeholders in Central Sulawesi</a>"
+        item_12:
+          html: '<a href=#>Using spatial information to promote multiple benefits from REDD+ in Indonesia. Acompendium of maps for Central Sulawesi Province</a>'
+        item_13:
+          html: '<a href=#>DRAFT: Guidelines for monitoring the impacts of REDD+ on biodiversity and ecosystem services</a>'
+        item_14:
+          html: '<a href=#>Methods for assessing and monitoring change in the ecosystem-derived benefits of afforestation, reforestation and forest restoration</a>'
+        item_15:
+          html: "<a href=#>Monitoring for REDD+: carbon stock change and multiple benefits</a>"
       faq:
         header: 'FAQ'
         item_1:
