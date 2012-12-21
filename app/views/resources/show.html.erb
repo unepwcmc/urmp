@@ -23,7 +23,8 @@
   <article class="resource_sidebar"> 
     <div class='sidebar-img-container'>
       <div class='big_container_img'>
-        <%= image_tag @resource.picture.url(:medium), :class => 'resource_image' %>
+
+        <%= tag :img, :"data-src" => @resource.picture.url(:medium), :class => 'resource_image' %>
       </div>
     </div>
     <dl class="resource_details">
