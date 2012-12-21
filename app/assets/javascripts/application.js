@@ -14,6 +14,7 @@
 //
 //= require ./jquery.tipTip.minified
 //= require ./resources_search
+//= require ./resources
 //= require_self
 
 $(function(){
