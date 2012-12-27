@@ -5,6 +5,6 @@ module ApplicationHelper
   end
 
   def display_html(text)
-    text.html_safe.truncate(400) if text.present?
+    text.html_safe if text.present?
   end
 end
