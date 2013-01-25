@@ -24,46 +24,40 @@ en:
       left:
         html: 'If you have any questions or issues using this website, please contact: <a href="mailto:ccb@unep-wcmc.org">ccb@unep-wcmc.org</a>'
       right:
-        html: 'Copyright &copy; 2009 UN-REDD Programme. All Rights Reserved'
+        html: 'Copyright &copy; 2013 UN-REDD Programme. All Rights Reserved'
     sidebar:
       links:
-        header: "UN-REDD home"
+        header: 'UN-REDD Programme home'
         item_1:
-          html: '<a href="http://www.un-redd.org/AboutUNREDDProgramme/GlobalActivities/New_Multiple_Benefits/tabid/1016/Default.aspx">Back to UN-REDD Multiple Benefits main page</a>'
+          html: '<a href="http://www.un-redd.org/AboutUNREDDProgramme/GlobalActivities/New_Multiple_Benefits/tabid/1016/Default.aspx">Back to UN-REDD Programme Multiple Benefits main page</a>'
         item_2:
-          html: '<a href="http://www.un-redd.org">Back to UN-REDD homepage</a>'
+          html: '<a href="http://www.un-redd.org">Back to UN-REDD Programme homepage</a>'
       key_resources:
         header: 'Key Resources'
         item_1:
-          html: '<a href=#>UN-REDD Policy Brief on multiple benefits English - Fran&ccedil;ais - Espa&ntilde;ol</a>'
+          html: 'UN-REDD Programme Policy Brief on multiple benefits <a href="http://www.unredd.net/index.php?option=com_docman&task=doc_download&gid=8533&Itemid=53">English</a> - <a href="http://www.unredd.net/index.php?option=com_docman&task=doc_download&gid=8772&Itemid=53">Fran&ccedil;ais</a> - <a href="http://www.unredd.net/index.php?option=com_docman&task=doc_download&gid=8728&Itemid=53">Espa&ntilde;ol</a>'
         item_2:
-          html: "<a href=#>'Beyond Carbon' brochure</a>"
+          html: '<a href="/resources/21">&acute;Beyond Carbon&acute; brochure</a>'
         item_3:
-          html: '<a href=#>REDD+ safeguard related text from UNFCCC COP 16 (Cancun) and COP 17 (Durban) decisions</a>'
+          html: 'REDD+ safeguard related text from UNFCCC <a href="http://unfccc.int/resource/docs/2010/cop16/eng/07a01.pdf#page=26">COP 16 (Cancun)</a> and <a href="http://unfccc.int/resource/docs/2011/cop17/eng/09a02.pdf#page=16">COP 17 (Durban)</a> decisions'
         item_4:
-          html: '<a href=#>UN-REDD Programme Social and Environmental Principles and Criteria (SEPC)</a>'
+          html: '<a href="http://www.unredd.net/index.php?option=com_docman&task=doc_download&gid=9167&Itemid=53">UN-REDD Programme Policy Brief on safeguards</a>'
         item_5:
-          html: "<a href=#>UN-REDD Programme Benefits and Risks Tool (BeRT)</a>"
+          html: '<a href="/resources/46">UN-REDD Programme Social and Environmental Principles and Criteria (SEPC)</a>'
         item_6:
-          html: '<a href=#>The Strategic Environmental and Social Assessment (SESA) used by the Forest Carbon Partnership Facility (FCPF) of the World Bank</a>'
+          html: '<a href="/resources/12">UN-REDD Programme Benefits and Risks Tool (BeRT)</a>'
         item_7:
-          html: '<a href=#>REDD+ Social & Environmental Standards (REDD+ SES)</a>'
+          html: '<a href="http://www.un-redd.org/Stakeholder_Engagement/Guidelines_On_Stakeholder_Engagement/tabid/55619/Default.aspx">Stakeholder Engagement Guidelines</a>'
         item_8:
-          html: "<a href=#>Mapping Biodiversity Benefits from REDD+: The Democratic Republic of the Congo</a>"
+          html: '<a href="http://www.un-redd.org/Stakeholder_Engagement/Guidelines_on_FPIC/tabid/55718/Default.aspx">Free Prior and Informed Consent Guidelines</a>'
         item_9:
-          html: '<a href=#>Carbon, biodiversity & ecosystem services: exploring co-benefits in Ecuador</a>'
+          html: '<a href="http://www.unredd.net/index.php?option=com_docman&task=doc_details&gid=8322&Itemid=53">Guidance on Conducting REDD+ Corruption Risk Assessment</a>'
         item_10:
-          html: '<a href=#>Carbon, biodiversity & ecosystem services: exploring co-benefits in Tanzania</a>'
+          html: '<a href="http://www.un-redd.org/NewsCentre/Support_to_Effective_Governance/tabid/5543/Default.aspx">Participatory Governance Assessments</a>'
         item_11:
-          html: "<a href=#>Options for REDD+ action: what are their effects on forests and people? An introduction for stakeholders in Central Sulawesi</a>"
+          html: '<a href="/resources/49">The Strategic Environmental and Social Assessment (SESA)</a> used by the Forest Carbon Partnership Facility (FCPF) of the World Bank'
         item_12:
-          html: '<a href=#>Using spatial information to promote multiple benefits from REDD+ in Indonesia. Acompendium of maps for Central Sulawesi Province</a>'
-        item_13:
-          html: '<a href=#>DRAFT: Guidelines for monitoring the impacts of REDD+ on biodiversity and ecosystem services</a>'
-        item_14:
-          html: '<a href=#>Methods for assessing and monitoring change in the ecosystem-derived benefits of afforestation, reforestation and forest restoration</a>'
-        item_15:
-          html: "<a href=#>Monitoring for REDD+: carbon stock change and multiple benefits</a>"
+          html: '<a href="/resources/48">REDD+ Social & Environmental Standards (REDD+ SES)</a>'
       faq:
         header: 'FAQ'
         item_1:

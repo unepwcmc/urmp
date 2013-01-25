@@ -2,46 +2,50 @@ en:
   site:
     static:
       home:
-        header: 'REDD+ Beyond Carbon'
+        header: 'Decision support on biodiversity and ecosystem services under REDD+'
         content:
           html: "
+
 <p>
-Decision support on biodiversity and ecosystem services under REDD+
+REDD+ has the potential to bring <a href='/faq#multiple-benfits'>multiple
+benefits</a>, both environmental and social, to countries that choose to
+implement it, including its main purpose of mitigating global climate change.
+<strong>This website offers a guide to resources that can help to ensure that
+REDD+ delivers environmental benefits and that environmental risks are
+reduced.</strong> It aims to assist REDD+ planners, policy makers and their
+technical advisors, especially those working on REDD+ strategies, land-use
+planning for REDD+, and the implementation of the UNFCCC’s  <a href='/faq
+#cancun-safeguards'>Cancun safeguards</a>.
 </p>
 
 <p>
-The REDD+ mechanism has the potential to bring multiple benefits, both environmental and social,
-to countries that choose to implement it, in addition to its main purpose of mitigating global climate
-change. This website offers a guide to resources that can help to ensure that REDD+ delivers
-environmental benefits and that environmental risks are reduced. It aims to assist REDD+ planners,
-policy makers and their technical advisors, especially those working on REDD+ strategies, land-use
-planning for REDD+, and the implementation of the UNFCCC’s Cancun safeguards.
+Forests provide a range of <a href='/faq#biodiversity-and-ecosystem-services'>ecosystem services</a>, and host the
+biodiversity that underpins these services. Ecosystem services include
+climate change mitigation, water regulation, cultural benefits, and
+production of food, fuel and fibre. When REDD+ actions prevent loss or
+degradation of forest ecosystems and biodiversity, or improve their
+condition, multiple benefits will result, including protected or
+enhanced ecosystem services.
+</p>
+
+<p> Ecosystem services and biodiversity of different forests vary, and they
+will also respond differently to forest management actions. What environmental
+benefits and risks that may result from REDD+ will therefore depend on the
+location and type of REDD+ actions undertaken. National planning approaches
+may include: deciding what benefits are prioritized, putting safeguard
+policies in place, identifying risks and benefits that may arise from proposed
+actions and allocating REDD+ actions to locations that secure priority
+benefits at low risk. The UN-REDD Programme supports countries in their
+efforts to integrate these considerations into their REDD+ strategies and
+development plans.
 </p>
 
 <p>
-Forests provide a range of ecosystem services, and host the biodiversity that underpins these
-services. Ecosystem services include carbon sequestration, water and local climatic regulation,
-cultural benefits, and production of food, fuel and fibre. When actions under the REDD+ mechanism
-prevents loss or degradation of forest ecosystems and biodiversity, or improves their condition,
-multiple benefits will result, including protected or enhanced ecosystem services.
-</p>
-
-<p>
-Ecosystem services and biodiversity of different forests vary, and they will also respond differently to
-forest management actions. What environmental benefits and risks that may result from REDD+ in
-a forest will therefore depend on the location and type of REDD+ actions undertaken. Implementing
-REDD+ thus requires an investment in planning by countries, to balance different national objectives,
-decide what benefits are prioritized, and identify risks that may arise from proposed actions. The
-UN-REDD Programme supports countries in their efforts to integrate multiple benefit considerations
-into their REDD+ strategies and development plans.
-</p>
-
-<p>
-On this site, you can find a guide to key tools in three areas for which UN-REDD provide support:<br>
-1) Applying REDD+ safeguards, 2) Identification, mapping and valuation of environmental risks and
-benefits and 3) Monitoring REDD+ impacts on biodiversity and ecosystem services. Furthermore,
-you can search a library of tools and resources that have been identified as relevant to REDD+
-safeguards or multiple benefits. A collection of factsheets provides more detailed information on
+<strong>On this site, you can find a guide to key tools in three areas for which the UN-REDD Programme provides support:</strong><br>
+1) <a href='/safeguards'>Applying REDD+ safeguards</a>, 2) <a href='/assessment'>Identification, mapping and valuation of environmental risks</a> and
+benefits and 3) <a href='/monitoring'>Monitoring REDD+ impacts on biodiversity and ecosystem services</a>. Furthermore,
+you can <a href='/search'>search</a> a library of tools and resources that have been identified as relevant to REDD+
+safeguards or multiple benefits. A collection of <a href='/factsheets'>factsheets</a> provides more detailed information on
 selected tools.
 </p>
 
