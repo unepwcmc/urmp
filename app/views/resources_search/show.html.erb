@@ -3,19 +3,13 @@
 <div class="search-results wide">
   <fieldset>
     <p>
-      Here you can search a library with descriptions of nearly 100 different resources relevant to
-      multiple benefits and safeguards under REDD+, including software, other tools, guidance
-      documents and information sources.
+      Here you can search a growing library of resources relevant to multiple benefits and REDD+ safeguards, including software, other tools, guidance documents and information sources.
     </p>
     <p>
-      Some of these resources have been developed by UN-REDD, but most are from a variety of different
-      institutions. Many have potential, but have not yet been tested or applied by REDD+ countries. The
-      purpose of this library is to guide you to a growing selection of resources that may be of use in your
-      work on multiple benefits and safeguards for REDD+.
+      Some of these resources have been developed by the UN-REDD Programme, but most are from a variety of different institutions. Many have potential for use in a REDD+ context, but have not yet been tested or applied in this way.
     </p>
     <p class="line">
-      The descriptions of the resources include information on the relevance of the tool in a REDD+
-      context, among other things. About 30 of the tools are described in more detail in a factsheet.
+      The descriptions of the resources include information on the relevance of the tool in a REDD+ context, among other things. A number of the tools are described in more detail in a <%= link_to 'factsheet', factsheets_path, :class => 'external_link' %>.
     </p>  
     
     <%= simple_form_for @search, :as => :search, :html => {:novalidate => true}, :url => search_results_path, :method => :get do |f| %>

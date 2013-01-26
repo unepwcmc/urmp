@@ -7,4 +7,12 @@
 
 <% content_for :sidebar do %>
    <%= render :partial => '/shared/links_sidebar' %>
+   <h2 class="header margin-top"><%= t('site.sidebar.key_resources.header') %></h2>
+    <article>
+      <ul>
+        <li><%= t('site.sidebar.key_resources.item_20.html') %></li>
+        <li><%= t('site.sidebar.key_resources.item_21.html') %></li>
+        <li><%= t('site.sidebar.key_resources.item_22.html') %></li>
+      </ul>
+    </article>
 <% end %>
