@@ -267,7 +267,7 @@ DEPENDENCIES
   capistrano_colors
   capybara
   coffee-rails
-  devise (>= 2.1.3)
+  devise (>= 2.2.3)
   factory_girl_rails
   globalize3
   growl

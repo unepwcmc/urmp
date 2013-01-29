@@ -9,7 +9,7 @@ gem 'rake', '0.8.7'
 gem 'pg'
 gem 'globalize3'
 
-gem 'devise', '>= 2.1.3' # Devise must be required before RailsAdmin
+gem 'devise', '>= 2.2.3' # Devise must be required before RailsAdmin
 gem 'rails_admin'
 
 gem 'jquery-rails'
