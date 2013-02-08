@@ -6,7 +6,7 @@
     <% @factsheets.each do |factsheet| %>
       <li>
         <%= link_to(image_tag('file.png', :alt => factsheet.name), factsheet_path(factsheet), :class => 'file') %>
-        <%= link_to factsheet.name.capitalize, factsheet_path(factsheet) %> 
+        <%= link_to factsheet.name, factsheet_path(factsheet) %> 
       </li>
     <% end %>
     </ul>
