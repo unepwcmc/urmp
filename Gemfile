@@ -20,6 +20,8 @@ gem 'kaminari'
 gem 'bootstrap-wysihtml5-rails', :require => 'bootstrap-wysihtml5-rails',
                                 :git => 'git://github.com/Nerian/bootstrap-wysihtml5-rails.git'
 
+gem 'multi_json', '~> 1.5.1'
+
 group :development, :test do
   gem 'ruby-debug19'
 end
