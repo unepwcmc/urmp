@@ -14,4 +14,3 @@ config/.DS_Store
 .DS_Store
 
 *.DS_Store
-/vendor/cache
