@@ -6,7 +6,7 @@ en:
         content:
           html: "
   <p>
-   <a href='/faq #biodiversity-and-ecosystem-services'>Biodiversity and ecosystem services</a>, including carbon stocks, are generally distributed unevenly over a landscape. A land-use decision in one place is likely to have effects elsewhere. In order to choose among REDD+ options and decide where they should be implemented, countries will need to understand the risks and opportunities associated with applying the different REDD+ options, and how they will affect safeguards and multiple benefits when applied in different places.
+   <a href='/faq#biodiversity-and-ecosystem-services'>Biodiversity and ecosystem services</a>, including carbon stocks, are generally distributed unevenly over a landscape. A land-use decision in one place is likely to have effects elsewhere. In order to choose among REDD+ options and decide where they should be implemented, countries will need to understand the risks and opportunities associated with applying the different REDD+ options, and how they will affect safeguards and multiple benefits when applied in different places.
   </p>
 
   <p>Five activities are described below that can help countries to carry
@@ -18,20 +18,20 @@ en:
   <p> <strong>Assessment activities:</strong>
     <ul>
       <li>
-        Identify national priorities, including existing environmental goals, development goals, and targets set for REDD+. REDD+ influences not only the forestry sector, but a range of other national priorities as well, including rural development and biodiversity targets. The sections of <a href='resources/12'>BeRT</a> that cover Principle 4 of the UN-REDD Social and Environmental Principles and Criteria (<a href='resource/46'>SEPC</a>) may assist in developing actions that address these goals coherently.
+        Identify national priorities, including existing environmental goals, development goals, and targets set for REDD+. REDD+ influences not only the forestry sector, but a range of other national priorities as well, including rural development and biodiversity targets. The sections of <a href='resources/12'>BeRT</a> that cover Principle 4 of the UN-REDD Social and Environmental Principles and Criteria (<a href='resources/46'>SEPC</a>) may assist in developing actions that address these goals coherently.
       </li>
       <li>
         Quantify and map indicator data which represents these priorities. The <a href='http://www.un-redd.org/Multiple_Benefits_GIS_Mapping_Toolbox/tabid/79198/Default.aspx'>ExploringMultipleBenefits toolbox and mapping manual</a> can assist in mapping carbon and bringing  it together with other relevant data on biodiversity and multiple benefits, to inform land use planning and decision making for REDD+.
       </li>
       <li>
         Assess potential for and cost of different REDD+ interventions in different areas,
-        including transaction, implementation and opportunity costs. The <a href='/factsheet/1'>REDD Abacus Software</a>, developed by the World Agroforestry Centre, analyzes the opportunity costs of land use change in a landscape.
+        including transaction, implementation and opportunity costs. The <a href='/resources/38'>REDD Abacus Software</a>, developed by the World Agroforestry Centre, analyzes the opportunity costs of land use change in a landscape.
       </li>
       <li>
-        Conduct economic valuation of risks, benefits, and alternative approaches to deciding on priorities. For example, <a href='http://www.bioecon-network.org/pages/14th_2012/Narloch.pdf'>this paper</a> describes how an economic assessment of REDD+ options including its benefits and risks from impacts on non-carbon ecosystems services and biodiversity can be undertaken.
+        Conduct economic valuation of risks, benefits, and alternative approaches to deciding on priorities. For example, this paper, <a href='http://www.bioecon-network.org/pages/14th_2012/Narloch.pdf'>Towards a holistic assessment of national REDD+ options: Accounting for ecosystem service and biodiversity impacts</a>, describes how an economic assessment of REDD+ options including its benefits and risks from impacts on non-carbon ecosystems services and biodiversity can be undertaken.
       </li>      
       <li> 
-        Identify the potential for enhancing multiple benefits and minimizing trade-offs when undertaking REDD+ activities. <a href='/factsheet/10'>Marxan</a> is a land-use planning tool developed for conservation purposes, which may also be applied in a REDD+ context. It can be used to identify cost-effective spatial solutions that attain a number of targets (such as reducing carbon emissions, conserving biodiversity and protecting or restoring areas important for ecosystem services).
+        Identify the potential for enhancing multiple benefits and minimizing trade-offs when undertaking REDD+ activities. <a href='/resources/11'>Marxan</a> is a land-use planning tool developed for conservation purposes, which may also be applied in a REDD+ context. It can be used to identify cost-effective spatial solutions that attain a number of targets (such as reducing carbon emissions, conserving biodiversity and protecting or restoring areas important for ecosystem services).
       </li>     
     </ul>
   </p>  
