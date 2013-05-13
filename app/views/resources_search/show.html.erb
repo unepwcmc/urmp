@@ -9,7 +9,7 @@
       Some of these resources have been developed by the UN-REDD Programme, but most are from a variety of different institutions. Many have potential for use in a REDD+ context, but have not yet been tested or applied in this way.
     </p>
     <p class="line">
-      The descriptions of the resources include information on the relevance of the tool in a REDD+ context, among other things. A number of the tools are described in more detail in a <%= link_to 'factsheet', factsheets_path, :class => 'external_link' %>.
+    The descriptions of the resources include information on the relevance of the tool in a REDD+ context, among other things. A number of the tools are described in more detail in a <%= link_to 'factsheet', "#{faq_path}#factsheets", :class => 'external_link' %>.
     </p>  
     
     <%= simple_form_for @search, :as => :search, :html => {:novalidate => true}, :url => search_results_path, :method => :get do |f| %>
