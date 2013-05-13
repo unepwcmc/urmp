@@ -9,7 +9,7 @@ Urmp::Application.routes.draw do
   resources :principles, :only => [:index]
   resources :criteria, :only => [:show]
   resources :resources, :only => [:index, :show]
-  resources :factsheets, :only => [:index, :show]
+  resources :factsheets, :only => [:show]
 
   devise_for :users
 

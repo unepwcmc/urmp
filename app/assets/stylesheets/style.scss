@@ -111,6 +111,14 @@ nav {
   float: left;
   margin-right: 10px;
   margin-left: 30px;
+
+  h1 {
+    margin-top: 35px;
+
+    &:first-child {
+      margin-top: 0;
+    }
+  }
 }
 
 .sidebar {
@@ -147,7 +155,7 @@ nav {
     padding: 40px 0;
     @include box-shadow(2px, 2px, 5px, #ccc); 
     @include border-radius(0, 0, 5px, 5px);
-    .main, .sidebar article, .wide {
+    article, .wide {
       background: #fff;
     }
     article, .search-results {

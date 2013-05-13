@@ -1,5 +1,5 @@
 class StaticPagesController < ApplicationController
-  def about
+  def faq
+    @factsheets = Factsheet.order('name ASC')
   end
-
 end
