@@ -1,7 +1,47 @@
 <% content_for :main do %>
   <h1 class="header"><%= t('site.static.safeguards.header') %></h1>
+  <article class="image">
+    <%= image_tag "localcommunity.jpg" %>
+  </article>
+
+  <div class="group">
+    <div class="col">
+      <h1 class="header"><%= t('site.static.safeguards.content.sepc_box.title') %></h1>
+      <%= t('site.static.safeguards.content.sepc_box.html') %>
+    </div>
+    <div class="col">
+      <h1 class="header"><%= t('site.static.safeguards.content.cancun_box.title') %></h1>
+      <%= t('site.static.safeguards.content.cancun_box.html') %>
+    </div>
+  </div>
+
+  <div class="clearfix"></div>
+
+  <h1 class="header"><%= t('site.static.safeguards.content.national_approach.title') %></h1>
   <article>
-    <%= t('site.static.safeguards.content.html') %>
+    <p>
+      <div class="image pull-right">
+        <%= image_tag 'safeguards_diagram.png' %>
+        <%= t('site.static.safeguards.content.national_approach.diagram_caption') %>
+      </div>
+      <%= t('site.static.safeguards.content.national_approach.para1') %>
+
+      <h3>The UN-REDD Programme provides support on the two key components of national approaches to safeguards:</h3>
+
+      <div class="image pull-left">
+        <strong><%= t('site.static.safeguards.content.national_approach.plr_caption') %></strong>
+        <%= image_tag 'http://placehold.it/200x144' %>
+      </div>
+
+      <%= t('site.static.safeguards.content.national_approach.para2.html') %>
+
+      <div class="image pull-left">
+        <strong><%= t('site.static.safeguards.content.national_approach.sis_caption') %></strong>
+        <%= image_tag 'sis.jpg' %>
+      </div>
+
+      <%= t('site.static.safeguards.content.national_approach.para3.html') %>
+    </p>
   </article>
 <% end %>
 

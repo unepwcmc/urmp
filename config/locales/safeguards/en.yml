@@ -4,12 +4,61 @@ en:
       safeguards:
         header: 'Applying REDD+ Safeguards'
         content:
-          html: "
+          national_approach:
+            title: "National Approach to Safeguards"
+            diagram_caption: "Elements of a National Approach to Safeguards"
+            sis_caption: "Safeguards Information Systems (SIS)"
+            plr_caption: "Policy, Laws, Regulations (PLRS)"
+            para1:
+              html: "
+A first and crucial step in developing a REDD+ safeguards approach is to
+clearly define its objectives. This entails interpreting what is
+contained in the UNFCCC decisions from the country perspective, and
+considering the specific social and environmental risks as well as
+benefits that might be associated with REDD+ in the country. The SEPC
+can help to add detail to the broad principles set out in the Cancun
+Agreements, so they could be used by countries as a guide during these
+discussions.
+"
+            para2:
+              html: "
+<p>
+  PLRs establish the ‘content’ of the safeguards – in other words, national rules for implementation of REDD+ activities. Elements that may be of use for developing a coherent set of PLRs to address safeguards under REDD+ include a gap analysis to compare existing regulations and measures against the country’s needs in terms of identified risks and benefits.
+</p>
+
+<p>
+  The UN-REDD Programme Benefits and Risks Tool (BeRT), which follows the SEPC, can be adapted to assist with such a gap analysis in a workshop setting. Gaps may then be addressed by creating new, or adapting existing, policies, laws and regulations.
+</p>
+
+<p>
+  Should countries find it useful, the outcome of this process could be captured in a safeguard policy framework, to provide clarity of how the country responds to REDD+ safeguard requirements and objectives.
+</p>
+"
+          para3:
+            html: "
+<p>
+  A safeguards information system providing periodic reports is required under UNFCCC. This system should be transparent, consistent, comprehensive and effective in informing on how safeguards are addressed and respected.
+</p>
+
+<p>
+  SIS should be country-driven, implemented at a national level, and built on existing systems, as appropriate. Indicators will need to be developed to demonstrate the implementation of national safeguards-relevant policies, laws and regulations.
+</p>
+
+<p>
+  A national assessment of existing information sources and systems that can provide information on the indicators is likely to be useful. Based on this, an assessment can be made regarding what types of new information sources and systems need to be developed. The approaches and methodologies applied for collection of information should aim to ensure completeness and consistency of the information over time and space.
+</p>
+"
+          cancun_box:
+            title: "Cancun Safeguards"
+            html: "
 <p>
   In the <a href='http://unfccc.int/resource/docs/2010/cop16/eng/07a01.pdf'>&ldquo;Cancun Agreements&rdquo;</a> of 2010, Parties to the UNFCCC agreed a set of social and
   environmental safeguards to be supported and promoted by countries that implement REDD+ activities. Doing so may require countries to develop new policies, laws and regulations. Parties also agreed that countries should set up a national safeguards information system that is able to provide information on how the safeguards are being addressed. Provision of summary information would be made periodically in National Communications to the UNFCCC. Details on such Safeguards Information Systems (SIS) were further elaborated at COP 17 in <a href='http://unfccc.int/resource/docs/2011/cop17/eng/09a02.pdf#page=16'>Durban</a> 2011.
 </p>
-
+"
+          sepc_box:
+            title: "UN REDD SEPC"
+            html: "
 <p>
 The UN-REDD Programme has developed a set of <a href='/resources/46'>Social and Environmental Principles and Criteria
 (SEPC)</a> as a guiding framework consistent with the Cancun Agreements, to:
@@ -21,57 +70,5 @@ The UN-REDD Programme has developed a set of <a href='/resources/46'>Social and 
       To support countries in developing national approaches to safeguards in line with the decisions made under the UNFCCC
     </li>
   </ol>
-</p>
-
-<p>
-  A first and crucial step in developing a REDD+ safeguards approach is to
-  clearly define its objectives. This entails interpreting what is contained in
-  the UNFCCC decisions from the country perspective, and considering the specific
-  social and environmental risks as well as benefits that might be associated with
-  REDD+ in the country. The SEPC can help to add detail to the broad principles
-  set out in the Cancun Agreements, so they could be used by countries as a guide
-  during these discussions. <strong>The UN-REDD Programme provides support on the two key
-  components of national approaches to safeguards:</strong>
-
-  <ul>
-    <li>
-      <strong>Addressing and respecting safeguards through the implementation of
-      relevant policies, laws and regulations (PLRs).</strong> These PLRs establish the
-      ‘content’ of the safeguards – in other words, national rules for implementation
-      of REDD+ activities. Elements that may be of use for developing a coherent set
-      of PLRs to address safeguards under REDD+ include a gap analysis to compare
-      existing regulations and measures against the country’s needs in terms of
-      identified risks and benefits. The UN-REDD Programme Benefits and Risks Tool
-      (<a href='/resources/12'>BeRT</a>), which follows the SEPC, can be adapted to assist with such a gap
-      analysis in a workshop setting.
-
-      Gaps may then be addressed by creating new, or adapting existing, policies, laws
-      and regulations. Should countries find it useful, the outcome of this process
-      could be captured in a safeguard policy framework, to provide clarity of how the
-      country responds to REDD+ safeguard requirements and objectives.
-    </li>
-    <li> 
-      <strong>Developing a Safeguards Information System (SIS):</strong> A
-      safeguards information system providing periodic reports is required under
-      UNFCCC. This system should be transparent, consistent, comprehensive and
-      effective in informing on how safeguards are addressed and respected.
-
-      SIS should be country-driven, implemented at a national level, and built on
-      existing systems, as appropriate. Indicators will need to be developed to
-      demonstrate the implementation of national safeguards-relevant policies, laws
-      and regulations. A national assessment of existing information sources and
-      systems that can provide information on the indicators is likely to be useful.
-      Based on this, an assessment can be made regarding what types of new information
-      sources and systems need to be developed. The approaches and methodologies
-      applied for collection of information should aim to ensure completeness and
-      consistency of the information over time and space.
-    </li>
-  </ul>
-</p>
-<p>
-  <strong>Resources that are of particular relevance for addressing environmental safeguards have been collected on this website.</strong>
-</p>
-<p>
-  <a href='/search_results?utf8=%E2%9C%93&search%5Btopics%5D=1&commit=Search'>View all resources in the library that are specifically relevant to safeguards.</a>
 </p>
 "
