@@ -1,8 +1,28 @@
 <% content_for :main do %>
   <h1 class="header"><%= t('site.static.home.header') %></h1>
   <article>
-    <%= t('site.static.home.content.html') %>
+    <%= t('site.static.home.intro.html') %>
   </article>
+
+  <h1 class="header">A guide to tools in the three key areas of UN-REDD support</h1>
+  <article class="image" style="height: 250px;">
+    <%= image_tag "forest.jpg" %>
+  </article>
+
+  <div class="group">
+    <div class="col" style="height:881px">
+      <h1 class="header"><%= t('site.static.home.countries.header') %></h1>
+      <%= t('site.static.home.countries.intro.html') %>
+      <%= image_tag "map.jpg" %>
+      <%= t('site.static.home.countries.list.html') %>
+    </div>
+
+    <div class="col" style="height: 881px;">
+      <h1 class="header"><%= t('site.static.home.biodiversity.header') %></h1>
+      <%= image_tag "banana_tree.jpg" %>
+      <%= t('site.static.home.biodiversity.html') %>
+    </div>
+  </div>
 <% end %>
 
 <% content_for :sidebar do %>

@@ -3,9 +3,8 @@ en:
     static:
       home:
         header: 'Decision support on biodiversity and ecosystem services under REDD+'
-        content:
+        intro:
           html: "
-
 <p>
 REDD+ has the potential to bring <a href='/faq#multiple-benfits'>multiple
 benefits</a>, both environmental and social, to countries that choose to
@@ -17,6 +16,10 @@ technical advisors, especially those working on REDD+ strategies, land-use
 planning for REDD+, and the implementation of the UNFCCC’s
 <a href='/faq#cancun-safeguards'>Cancun safeguards</a>.
 </p>
+"
+        biodiversity:
+          header: "Biodiversity, Ecosystem Services and REDD+"
+          html: "
 
 <p>
 Forests provide a range of <a href='/faq#biodiversity-and-ecosystem-services'>ecosystem services</a>, and host the
@@ -39,20 +42,42 @@ benefits at low risk. The UN-REDD Programme supports countries in their
 efforts to integrate these considerations into their REDD+ strategies and
 development plans.
 </p>
-
-<p>
-<strong>On this site, you can find a guide to key tools in three areas for which the UN-REDD Programme provides support:</strong><br>
-1) <a href='/safeguards'>Applying REDD+ safeguards</a>, 2) <a href='/assessment'>Identification, mapping and valuation of environmental risks</a> and
-benefits and 3) <a href='/monitoring'>Monitoring REDD+ impacts on biodiversity and ecosystem services</a>. Furthermore,
-you can <a href='/search'>search</a> a library of tools and resources that have been identified as relevant to REDD+
-safeguards or multiple benefits. A collection of <a href='/factsheets'>factsheets</a> provides more detailed information on
-selected tools.
-</p>
-
-<p>
-We welcome queries on REDD+ multiple benefits, or suggestions for improvements of this website.
-Please e-mail <a href='mailto:ccb@unep-wcmc.org'>ccb@unep-wcmc.org</a>.
-</p>
-
 "
-
+        countries:
+          header: "Countries at a Glance"
+          intro:
+            html: "
+      <p>
+        The UN-REDD Programme currently supports 46 partner countries
+        across Africa, Asia-Pacific and Latin America and the Caribbean.
+        Many of these countries are developing approaches to ensure that
+        their plans for REDD+ take account of the potential risks and
+        opportunities for biodiversity and ecosystem services. Recent
+        outputs are available below. On-going work is highlighted here.
+      </p>
+"
+          list:
+            html: "
+      <ul>
+        <li>
+          Africa
+          <ul>
+            <li>Democratic Republic of Congo</li>
+            <li>Nigeria</li>
+            <li>Tanzania</li>
+          </ul>
+        </li>
+        <li>
+          Asia-Pacific
+          <ul>
+            <li>Cambodia</li>
+          </ul>
+        </li>
+        <li>
+          Latin America and the Caribbean
+          <ul>
+            <li>Ecuador</li>
+          </ul>
+        </li>
+      </ul>
+"

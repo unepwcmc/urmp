@@ -166,16 +166,39 @@ nav {
 
     article.image {
       padding: 0;
-      height: 250px;
+
+      p {
+        margin: 0;
+        padding: 15px 30px;
+      }
 
       img {
         height: 250px;
         width: 630px;
         @include border-radius(0, 0, 5px, 5px);
       }
+
+      &.no-round {
+        img {
+          @include border-radius(0, 0, 0, 0);
+        }
+      }
     }
 
-    .image {
+    article table {
+      tr {
+        td {
+          padding-left: 10px;
+          vertical-align: top;
+
+          &:first-child {
+            padding: 0;
+          }
+        }
+      }
+    }
+
+    article .image {
       font-size: 0.8em;
 
       &.pull-right { margin-left: 20px; }
@@ -200,6 +223,7 @@ nav {
 
   p {
     padding: 15px;
+    padding-top: 0;
   }
 
   ul, ol {
@@ -213,10 +237,19 @@ nav {
     background: white;
     @include box-shadow(2px, 2px, 5px, #ccc);
     @include border-radius(0, 0, 5px, 5px);
-    height: 400px;
 
     &:nth-child(1) { margin-left: 52.3%; }
     &:nth-child(2) { margin-left: -110.4%; }
+  }
+
+  &.same-height {
+    overflow: hidden;
+
+    .col {
+      height: 100%;
+      margin-bottom: -99999px;
+      padding-bottom: 99999px;
+    }
   }
 }
 

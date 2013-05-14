@@ -1,7 +1,13 @@
 <% content_for :main do %>
-<h1 class="header"><%= t('site.static.assessment.header') %></h1>
+  <h1 class="header"><%= t('site.static.assessment.header') %></h1>
+  <article class="image no-round">
+    <%= image_tag "waterfall.jpg" %>
+    <%= t('site.static.assessment.intro.html') %>
+  </article>
+
+  <h1 class="header"><%= t('site.static.assessment.decisions.header') %></h1>
   <article>
-    <%= t('site.static.assessment.content.html') %>
+    <%= t('site.static.assessment.decisions.html') %>
   </article>
 <% end %>
 
