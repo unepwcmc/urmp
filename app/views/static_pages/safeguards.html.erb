@@ -1,15 +1,15 @@
 <% content_for :main do %>
   <h1 class="header"><%= t('site.static.safeguards.header') %></h1>
-  <article class="image">
+  <article style="height: 250px;" class="image">
     <%= image_tag "localcommunity.jpg" %>
   </article>
 
   <div class="group">
-    <div class="col">
+    <div class="col" style="height:400px;">
       <h1 class="header"><%= t('site.static.safeguards.content.sepc_box.title') %></h1>
       <%= t('site.static.safeguards.content.sepc_box.html') %>
     </div>
-    <div class="col">
+    <div class="col" style="height:400px;">
       <h1 class="header"><%= t('site.static.safeguards.content.cancun_box.title') %></h1>
       <%= t('site.static.safeguards.content.cancun_box.html') %>
     </div>
@@ -20,11 +20,7 @@
   <h1 class="header"><%= t('site.static.safeguards.content.national_approach.title') %></h1>
   <article>
     <p>
-      <div class="image pull-right">
-        <%= image_tag 'safeguards_diagram.png' %>
-        <%= t('site.static.safeguards.content.national_approach.diagram_caption') %>
-      </div>
-      <%= t('site.static.safeguards.content.national_approach.para1') %>
+      <%= t('site.static.safeguards.content.national_approach.para1.html') %>
 
       <h3>The UN-REDD Programme provides support on the two key components of national approaches to safeguards:</h3>
 
