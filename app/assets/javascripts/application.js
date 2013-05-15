@@ -13,7 +13,7 @@
 //= require jquery
 //
 //= require ./jquery.tipTip.minified
-//= require ./retina
+//= require retina
 //= require ./resources_search
 //= require ./resources
 //= require faqs
