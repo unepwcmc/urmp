@@ -7,9 +7,6 @@ isElementInViewport = (el) ->
           rect.right <= (window.innerWidth || document. documentElement.clientWidth))
 
 $(document).ready ->
-  id = window.location.hash.replace('faq_', '')
-  $('html, body').scrollTop $("#{id}").offset().top
-
   $(window).scroll () ->
     h4_elements = $('.content .main h4')
     h4 = undefined
@@ -23,3 +20,6 @@ $(document).ready ->
 
     if h4
       window.location.hash = "faq_#{$(h4).attr('id')}"
+
+  id = window.location.hash.replace('faq_', '')
+  $('html, body').scrollTop $("#{id}").offset().top
