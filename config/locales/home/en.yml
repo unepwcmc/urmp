@@ -57,27 +57,27 @@ development plans.
       </p>
 "
           list:
-            html: "
-      <ul>
-        <li>
-          Africa
-          <ul>
-            <li>Democratic Republic of Congo</li>
-            <li>Nigeria</li>
-            <li>Tanzania</li>
-          </ul>
-        </li>
-        <li>
-          Asia-Pacific
-          <ul>
-            <li>Cambodia</li>
-          </ul>
-        </li>
-        <li>
-          Latin America and the Caribbean
-          <ul>
-            <li>Ecuador</li>
-          </ul>
-        </li>
-      </ul>
+            africa:
+              header: "Africa"
+              html: "
+        <ul>
+          <li><a href='http://www.google.com/url?q=http%3A%2F%2Fwww.un-redd.org%2FNewsletter30%2FDRC_MB_Mapping_Report%2Ftabid%2F104377%2FDefault.aspx&sa=D&sntz=1&usg=AFQjCNFQNyVrVty5vmWW1l2O_camUlA_kQ'>Democratic Republic of Congo</a></li>
+          <li><a href='http://www.google.com/url?q=http%3A%2F%2Fwww.unredd.net%2Findex.php%3Foption%3Dcom_docman%26task%3Ddoc_download%26gid%3D3397%26Itemid%3D53&sa=D&sntz=1&usg=AFQjCNHEOW0SoP2DX95mcHv4g_sy9uZo1g'>Nigeria</a></li>
+          <li><a href='http://www.google.com/url?q=http%3A%2F%2Fwww.unredd.net%2Findex.php%3Foption%3Dcom_docman%26task%3Ddoc_download%26gid%3D1239%26Itemid%3D53&sa=D&sntz=1&usg=AFQjCNF8o2VgN2aC6Z2dOMhvkgVjJact3w'>Tanzania</a></li>
+        </ul>
+"
+            asia:
+              header: "Asia"
+              html: "
+        <ul>
+          <li><a href='http://www.google.com/url?q=http%3A%2F%2Fwww.unep-wcmc.org%2Fmedialibrary%2F2010%2F11%2F03%2Fcbf221c3%2FCambodia%2520Summary%2520Report%25202010.pdf&sa=D&sntz=1&usg=AFQjCNEN6TwLLRatm7H786Rbbcu_XamVFg'>Cambodia</a></li>
+        </ul>
+"
+            latin_america:
+              header: "Latin America"
+              html: "
+        <h4>Latin America and the Caribbean</h4>
+        <ul>
+          <li><a href='http://www.google.com/url?q=http%3A%2F%2Fwww.un-redd.org%2FNewsletter24%2FREDD_Multiple_Benefits_Ecuador%2Ftabid%2F55809%2FDefault.aspx&sa=D&sntz=1&usg=AFQjCNHc6kYreqggr06RHUT_x0avQJqwpw'>Ecuador</a></li>
+        </ul>
 "
