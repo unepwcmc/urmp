@@ -14,7 +14,7 @@ Urmp::Application.routes.draw do
   devise_for :users
 
   root :to => "static_pages#home"
-  match "monitoring" => "static_pages#monitoring", :as => "monitoring"
+  match "measurement" => "static_pages#monitoring", :as => "measurement"
   match "safeguards" => "static_pages#safeguards", :as => "safeguards"
   match "assessment" => "static_pages#assessment", :as => "assessment"
   match "faq" => "static_pages#faq", :as => "faq"
