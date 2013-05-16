@@ -61,16 +61,16 @@ development plans.
               header: "Africa"
               html: "
         <ul>
-          <li><a href='http://www.google.com/url?q=http%3A%2F%2Fwww.un-redd.org%2FNewsletter30%2FDRC_MB_Mapping_Report%2Ftabid%2F104377%2FDefault.aspx&sa=D&sntz=1&usg=AFQjCNFQNyVrVty5vmWW1l2O_camUlA_kQ'>Democratic Republic of Congo</a></li>
-          <li><a href='http://www.google.com/url?q=http%3A%2F%2Fwww.unredd.net%2Findex.php%3Foption%3Dcom_docman%26task%3Ddoc_download%26gid%3D3397%26Itemid%3D53&sa=D&sntz=1&usg=AFQjCNHEOW0SoP2DX95mcHv4g_sy9uZo1g'>Nigeria</a></li>
-          <li><a href='http://www.google.com/url?q=http%3A%2F%2Fwww.unredd.net%2Findex.php%3Foption%3Dcom_docman%26task%3Ddoc_download%26gid%3D1239%26Itemid%3D53&sa=D&sntz=1&usg=AFQjCNF8o2VgN2aC6Z2dOMhvkgVjJact3w'>Tanzania</a></li>
+          <li><a href='http://www.un-redd.org/Newsletter30/DRC_MB_Mapping_Report/tabid/104377/Default.aspx'>Democratic Republic of Congo</a></li>
+          <li><a href='http://www.unredd.net/index.php?option=com_docman&task=doc_download&gid=3397&Itemid=53'>Nigeria</a></li>
+          <li><a href='http://www.unredd.net/index.php?option=com_docman&task=doc_download&gid=1239&Itemid=53'>Tanzania</a></li>
         </ul>
 "
             asia:
               header: "Asia"
               html: "
         <ul>
-          <li><a href='http://www.google.com/url?q=http%3A%2F%2Fwww.unep-wcmc.org%2Fmedialibrary%2F2010%2F11%2F03%2Fcbf221c3%2FCambodia%2520Summary%2520Report%25202010.pdf&sa=D&sntz=1&usg=AFQjCNEN6TwLLRatm7H786Rbbcu_XamVFg'>Cambodia</a></li>
+          <li><a href='http://www.unep-wcmc.org/medialibrary/2010/11/03/cbf221c3/Cambodia%20Summary%20Report%202010.pdf'>Cambodia</a></li>
         </ul>
 "
             latin_america:
@@ -78,6 +78,6 @@ development plans.
               html: "
         <h4>Latin America and the Caribbean</h4>
         <ul>
-          <li><a href='http://www.google.com/url?q=http%3A%2F%2Fwww.un-redd.org%2FNewsletter24%2FREDD_Multiple_Benefits_Ecuador%2Ftabid%2F55809%2FDefault.aspx&sa=D&sntz=1&usg=AFQjCNHc6kYreqggr06RHUT_x0avQJqwpw'>Ecuador</a></li>
+          <li><a href='http://www.un-redd.org/Newsletter24/REDD_Multiple_Benefits_Ecuador/tabid/55809/Default.aspx'>Ecuador</a></li>
         </ul>
 "
