@@ -104,6 +104,12 @@ nav {
           padding-right: 0;
           border: none;
         }
+				&.resources {
+					border-right: 1px solid #cccccc;
+					border-left: 1px solid #cccccc;
+					margin-left: 110px;
+					
+				}
       }
     }
   }
