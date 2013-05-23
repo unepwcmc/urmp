@@ -6,15 +6,15 @@ en:
         intro:
           html: "
 <p>
-REDD+ has the potential to bring <a href='/faq#multiple-benfits'>multiple
-benefits</a>, both environmental and social, to countries that choose to
-implement it, including its main purpose of mitigating global climate change.
-<strong>This website offers a guide to resources that can help to ensure that
-REDD+ delivers environmental benefits and that environmental risks are
-reduced.</strong> It aims to assist REDD+ planners, policy makers and their
-technical advisors, especially those working on REDD+ strategies, land-use
-planning for REDD+, and the implementation of the UNFCCC’s
-<a href='/faq#cancun-safeguards'>Cancun safeguards</a>.
+The main purpose of REDD+ is to mitigate global climate change. REDD+
+also has the potential to deliver other benefits, both environmental and
+social, to countries that choose to implement it. <strong>This website
+offers a guide to steps that can be taken to ensure that REDD+ delivers
+benefits and that risks are reduced</strong>, and identifies relevant
+tools and resources.  It aims to assist REDD+ planners, policy makers
+and their technical advisors, especially those working on REDD+
+strategies, land-use planning for REDD+, and the implementation of the
+UNFCCC’s <a href='/faq#cancun-safeguards'>Cancun safeguards</a>.
 </p>
 "
         biodiversity:
@@ -53,7 +53,9 @@ development plans.
         Many of these countries are developing approaches to ensure that
         their plans for REDD+ take account of the potential risks and
         opportunities for biodiversity and ecosystem services. Recent
-        outputs are available below. On-going work is highlighted here.
+        outputs are available below. <a
+        href='http://www.un-redd.org/Newsletter30/DRC_MB_Mapping_Report/tabid/104377/Default.aspx'>On-going
+        work is highlighted here</a>.
       </p>
 "
           list:
@@ -67,14 +69,14 @@ development plans.
         </ul>
 "
             asia:
-              header: "Asia"
+              header: "Asia-Pacfic"
               html: "
         <ul>
-          <li><a href='http://www.unep-wcmc.org/medialibrary/2010/11/03/cbf221c3/Cambodia%20Summary%20Report%202010.pdf'>Cambodia</a></li>
+          <li><a href='http://www.unredd.net/index.php?option=com_docman&task=cat_view&gid=3000&Itemid=53'>Indonesia</a></li>
         </ul>
 "
             latin_america:
-              header: "Latin America"
+              header: "Latin America and the Caribbean"
               html: "
         <ul>
           <li><a href='http://www.un-redd.org/Newsletter24/REDD_Multiple_Benefits_Ecuador/tabid/55809/Default.aspx'>Ecuador</a></li>

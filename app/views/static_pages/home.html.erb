@@ -1,12 +1,8 @@
 <% content_for :main do %>
   <h1 class="header"><%= t('site.static.home.header') %></h1>
-  <article>
-    <%= t('site.static.home.intro.html') %>
-  </article>
-
-  <h1 class="header">A guide to tools in the three key areas of UN-REDD support</h1>
-  <article class="image" style="height: 250px;">
+  <article class="image no-round">
     <%= image_tag "forest.jpg", :retina => true %>
+    <%= t('site.static.home.intro.html') %>
   </article>
 
   <div class="group">

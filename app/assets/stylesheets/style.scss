@@ -55,6 +55,10 @@ h3  {
 
 h4 {
   margin: 0;
+
+  &.blue {
+    color: $dark-blue;
+  }
 }
 
 .button {
@@ -206,8 +210,8 @@ nav {
 
       img {
         display: block;
-        margin-top: 5px;
-        margin-bottom: 5px;
+        margin-top: 15px;
+        margin-bottom: 10px;
       }
     }
   }
@@ -254,9 +258,8 @@ nav {
 }
 
 .col.countries-at-a-glance h4 {
-  margin-left: 15px;
-  margin-bottom: 15px;
-  font-size: 1.1em;
+  margin: 15px 0 15px 15px;
+  font-size: 1.4em;
 }
 
 .back-link {

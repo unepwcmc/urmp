@@ -16,7 +16,7 @@ en:
       home: 'Home'
       safeguards: 'Safeguards'
       assessment: 'Assessment'
-      monitoring: 'Measurement'
+      monitoring: 'Monitoring'
       factsheets: 'Factsheets'
       faq: 'FAQ'
       resources: 'Resources'
@@ -29,9 +29,9 @@ en:
       links:
         header: 'UN-REDD Programme home'
         item_1:
-          html: '<a href="http://www.un-redd.org/AboutUNREDDProgramme/GlobalActivities/New_Multiple_Benefits/tabid/1016/Default.aspx">Back to UN-REDD Programme Multiple Benefits main page</a>'
+          html: '<a href="http://www.un-redd.org/AboutUNREDDProgramme/GlobalActivities/New_Multiple_Benefits/tabid/1016/Default.aspx">UN-REDD Programme Multiple Benefits main page</a>'
         item_2:
-          html: '<a href="http://www.un-redd.org">Back to UN-REDD Programme homepage</a>'
+          html: '<a href="http://www.un-redd.org">UN-REDD Programme homepage</a>'
       key_resources:
         header: 'Key Resources'
         item_1:
