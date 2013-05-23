@@ -17,7 +17,12 @@ Five activities are described below that, individually or in combination, can he
           html: "
 <table>
   <tr>
-    <td><img src='/assets/cacao_pods.jpg' style='width:200px;height:200px;' /></td>
+    <td>
+      <div class='with-caption'>
+        <img src='/assets/cacao_pods.jpg' style='width:200px;height:200px;' />
+        <span>Credit: Shutterstock</span>
+      </div>
+    </td>
     <td>
       <strong>Identify national priorities</strong>, including existing environmental goals, development goals, and targets set for REDD+. REDD+ influences not only the forestry sector, but a range of other national priorities as well, including rural development and biodiversity targets.
 

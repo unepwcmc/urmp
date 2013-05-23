@@ -217,6 +217,19 @@ nav {
   }
 }
 
+.with-caption {
+  position: relative;
+
+  span {
+    font-size: 0.7rem;
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    font-weight: bold;
+    color: white;
+  }
+}
+
 .group {
   padding: 10px 30px;
   margin-top: 25px;

@@ -1,7 +1,10 @@
 <% content_for :main do %>
   <h1 class="header"><%= t('site.static.home.header') %></h1>
   <article class="image no-round">
-    <%= image_tag "forest.jpg", :retina => true %>
+    <div class="with-caption">
+      <%= image_tag "forest.jpg", :retina => true %>
+      <span>Credit: Shutterstock</span>
+    </div>
     <%= t('site.static.home.intro.html') %>
   </article>
 
@@ -12,21 +15,33 @@
       <%= image_tag "map.jpg" %>
 
       <h4><%= t('site.static.home.countries.list.africa.header') %></h4>
-      <%= image_tag "bird_uganda.jpg", :retina => true %>
+      <div class="with-caption">
+        <%= image_tag "bird_uganda.jpg", :retina => true %>
+        <span>Credit: Monika Bertzky</span>
+      </div>
       <%= t('site.static.home.countries.list.africa.html') %>
 
       <h4><%= t('site.static.home.countries.list.asia.header') %></h4>
-      <%= image_tag "waterfall_asia.jpg", :retina => true %>
+      <div class="with-caption">
+        <%= image_tag "waterfall_asia.jpg", :retina => true %>
+        <span>Credit: Blue Sky Studio</span>
+      </div>
       <%= t('site.static.home.countries.list.asia.html') %>
 
       <h4><%= t('site.static.home.countries.list.latin_america.header') %></h4>
-      <%= image_tag "flowers_ecuador.jpg", :retina => true %>
+      <div class="with-caption">
+        <%= image_tag "flowers_ecuador.jpg", :retina => true %>
+        <span>Credit: Monika Bertzky</span>
+      </div>
       <%= t('site.static.home.countries.list.latin_america.html') %>
     </div>
 
     <div class="col" style="height: 1390px;">
       <h1 class="header"><%= t('site.static.home.biodiversity.header') %></h1>
-      <%= image_tag "banana_tree.jpg", :retina => true %>
+      <div class="with-caption">
+        <%= image_tag "banana_tree.jpg", :retina => true %>
+        <span>Credit: Simone Voigt</span>
+      </div>
       <%= t('site.static.home.biodiversity.html') %>
     </div>
   </div>
