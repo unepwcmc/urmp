@@ -1,6 +1,9 @@
 <% content_for :main do %>
   <h1 class="header"><%= t('site.static.monitoring.header') %></h1>
-  <article>
+  <article class="image no-round">
+    <div class="with-caption">
+      <%= image_tag "coffee_plantation.jpg", :retina => true %>
+    </div>
     <%= t('site.static.monitoring.content.html') %>
   </article>
 <% end %>
