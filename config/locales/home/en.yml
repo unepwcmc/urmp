@@ -62,23 +62,34 @@ development plans.
             africa:
               header: "Africa"
               html: "
+        <h5>Democratic Republic of Congo</h5>
         <ul>
-          <li><a href='http://www.un-redd.org/Newsletter30/DRC_MB_Mapping_Report/tabid/104377/Default.aspx'>Democratic Republic of Congo</a></li>
-          <li><a href='http://www.unredd.net/index.php?option=com_docman&task=doc_download&gid=3397&Itemid=53'>Nigeria</a></li>
-          <li><a href='http://www.unredd.net/index.php?option=com_docman&task=doc_download&gid=1239&Itemid=53'>Tanzania</a></li>
+          <li><a href='http://www.unredd.net/index.php?option=com_docman&task=doc_download&gid=7920&Itemid=53'>Mapping potential biodiversity benefits from REDD+. The Democratic Republic of the Congo. 2012.</a> (<a href='http://www.unredd.net/index.php?option=com_docman&task=doc_download&gid=8050&Itemid=53'>French</a>)</li>
+        </ul>
+
+        <h5>Nigeria</h5>
+        <ul>
+          <li><a href='http://www.unredd.net/index.php?option=com_docman&task=doc_download&gid=3397&Itemid=53'> Carbon, biodiversity and ecosystem services: Exploring co-benefits. Nigeria: Preliminary Results. 2010</a></li>
+        </ul>
+
+        <h5>Tanzania</h5>
+        <ul>
+          <li><a href='http://www.unredd.net/index.php?option=com_docman&task=doc_download&gid=1239&Itemid=53'>Carbon, biodiversity and ecosystem services: exploring co-benefits. Tanzania. 2009</a></li>
         </ul>
 "
             asia:
               header: "Asia-Pacific"
               html: "
+        <h5>Indonesia</h5>
         <ul>
-          <li><a href='http://www.unredd.net/index.php?option=com_docman&task=cat_view&gid=3000&Itemid=53'>Indonesia</a></li>
+          <li><a href='http://www.unredd.net/index.php?option=com_docman&task=cat_view&gid=3000&Itemid=53'>Central Sulawesi</a></li>
         </ul>
 "
             latin_america:
               header: "Latin America and the Caribbean"
               html: "
+        <h5>Ecuador</h5>
         <ul>
-          <li><a href='http://www.un-redd.org/Newsletter24/REDD_Multiple_Benefits_Ecuador/tabid/55809/Default.aspx'>Ecuador</a></li>
+          <li><a href='http://www.unredd.net/index.php?option=com_docman&task=doc_download&gid=5761&Itemid=53'>Carbon, Biodiversity & Ecosystem Services: Exploring Co-benefits Ecuador. 2010.</a> (<a href='http://www.unredd.net/index.php?option=com_docman&task=doc_download&gid=6148&Itemid=53'>Spanish</a>)</li>
         </ul>
 "

@@ -104,7 +104,6 @@ nav {
           padding-right: 0;
           border: none;
         }
-				
       }
     }
   }
@@ -275,9 +274,25 @@ nav {
   }
 }
 
-.col.countries-at-a-glance h4 {
-  margin: 15px 0 15px 15px;
-  font-size: 1.4em;
+.col.countries-at-a-glance {
+  li {
+    a:first-child {
+      font-weight: bold;
+    }
+  }
+
+  h4 {
+    margin: 15px 0 15px 15px;
+    font-size: 1.4em;
+  }
+
+  h5 {
+    margin: 5px;
+    margin-left: 10px;
+    font-weight: normal;
+    font-size: 1em;
+    font-style: italic;
+  }
 }
 
 .back-link {
