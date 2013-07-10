@@ -5,15 +5,27 @@ require 'brightbox/passenger'
 
 # The name of your application.  Used for deployment directory and filenames
 # and Apache configs. Should be unique on the Brightbox
+
 set :application, "urmp"
+set :server_name, "urmp.unepwcmc-011.vm.brightbox.net"
+set :sudo_user, "rails"
+set :app_port, "80"
+
+
+set :default_environment, {
+  'PATH' => "/home/rails/.rvm/gems/ruby-1.9.2-p320/bin:/home/rails/.rvm/bin:/home/rails/.rvm/rubies/ruby-1.9.2-p320/bin:$PATH",
+  'RUBY_VERSION' => 'ruby-1.9.2-p320',
+  'GEM_HOME' => '/home/rails/.rvm/gems/ruby-1.9.2-p320',
+  'GEM_PATH' => '/home/rails/.rvm/gems/ruby-1.9.2-p320',
+}
 
 # Primary domain name of your application. Used in the Apache configs
-set :domain, "unepwcmc-005.vm.brightbox.net"
+set :domain, "unepwcmc-011.vm.brightbox.net"
 
 ## List of servers
-role :app, "unepwcmc-005.vm.brightbox.net"
-role :web, "unepwcmc-005.vm.brightbox.net"
-role :db, 'unepwcmc-005.vm.brightbox.net', :primary => true
+role :app, "unepwcmc-011.vm.brightbox.net"
+role :web, "unepwcmc-011.vm.brightbox.net"
+role :db, 'unepwcmc-011.vm.brightbox.net', :primary => true
 # Target directory for the application on the web and app servers.
 set(:deploy_to) { File.join("", "home", user, application) }
 
@@ -28,9 +40,44 @@ set :branch, "master"
 set :scm_username, "unepwcmc-read"
 set :deploy_via, :remote_cache
 
-### Other options you can set ##
-# Comma separated list of additional domains for Apache
-# set :domain_aliases, "www.example.com,dev.example.com"
+desc "Configure VHost"
+task :config_vhost do
+vhost_config =<<-EOF
+server {
+  listen 80;
+  
+  client_max_body_size 4G;
+  server_name #{application}.unepwcmc-011.vm.brightbox.net #{application}.sw01.matx.info;
+  keepalive_timeout 5;
+  root #{deploy_to}/public;
+  passenger_enabled on;
+  rails_env staging;
+  gzip on;
+  location ^~ /assets/ {
+    expires max;
+    add_header Cache-Control public;
+  }
+  
+  if (-f $document_root/system/maintenance.html) {
+    return 503;
+  }
+
+  error_page 500 502 504 /500.html;
+  location = /500.html {
+    root #{deploy_to}/public;
+  }
+
+  error_page 503 @maintenance;
+  location @maintenance {
+    rewrite  ^(.*)$  /system/maintenance.html break;
+  }
+}
+EOF
+put vhost_config, "/tmp/vhost_config"
+sudo "mv /tmp/vhost_config /etc/nginx/sites-available/#{application}"
+sudo "ln -s /etc/nginx/sites-available/#{application} /etc/nginx/sites-enabled/#{application}"
+end
+
 
 ## Local Shared Area
 # These are the list of files and directories that you want
@@ -85,4 +132,5 @@ task :setup_database_configuration do
 end
 
 after "deploy:setup", :setup_database_configuration
+after "deploy:setup", :config_vhost
 after "deploy", "no_index_robots"
