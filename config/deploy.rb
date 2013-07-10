@@ -1,10 +1,13 @@
 require 'capistrano/ext/multistage'
-
 set :rake, 'rake'
 
 set :default_stage, 'staging'
 set :repository,  "git@github.com:unepwcmc/urmp.git"
 set :scm, :git
+
+
+set(:pub_key) { Capistrano::CLI.ui.ask ("Enter Name of Public key: ") }
+ssh_options[:keys] = [File.join(ENV["HOME"], ".ssh", "#{pub_key}")]
 
 ENV_SET="RAILS_ENV=production"
 
@@ -19,3 +22,4 @@ task :no_index_robots do
   run "echo 'User-Agent: *' >> #{current_path}/public/robots.txt"
   run "echo 'Disallow: /' >> #{current_path}/public/robots.txt"
 end
+
