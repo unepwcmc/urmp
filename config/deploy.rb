@@ -1,10 +1,13 @@
 require 'capistrano/ext/multistage'
-
 set :rake, 'rake'
 
 set :default_stage, 'staging'
 set :repository,  "git@github.com:unepwcmc/urmp.git"
 set :scm, :git
+
+set :generate_webserver_config, false
+
+ssh_options[:forward_agent] = true
 
 ENV_SET="RAILS_ENV=production"
 
@@ -19,3 +22,4 @@ task :no_index_robots do
   run "echo 'User-Agent: *' >> #{current_path}/public/robots.txt"
   run "echo 'Disallow: /' >> #{current_path}/public/robots.txt"
 end
+
