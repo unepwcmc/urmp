@@ -51,9 +51,8 @@
 <% end %>
 
 <% content_for :sidebar do %>
-  <%= render :partial => '/shared/links_sidebar' %>
-  <h2 class="header margin-top"><%= t('site.sidebar.key_resources.header') %></h2>
-    <article>
+  <h2 class="header"><%= t('site.sidebar.key_resources.header') %></h2>
+    <article class="margin-bottom">
       <ul>
         <li><%= t('site.sidebar.key_resources.item_4.html') %></li>
         <li><%= t('site.sidebar.key_resources.item_5.html') %></li>
@@ -66,5 +65,6 @@
         <li><%= t('site.sidebar.key_resources.item_12.html') %></li>
       </ul>
     </article>
+	 <%= render :partial => '/shared/links_sidebar' %>
 <% end %>
 
