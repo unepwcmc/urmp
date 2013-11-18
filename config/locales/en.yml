@@ -22,7 +22,7 @@ en:
       resources: 'Resources'
     footer:
       left:
-        html: 'If you have any questions or issues using this website, please contact: <a href="mailto:ccb@unep-wcmc.org">ccb@unep-wcmc.org</a>'
+        html: 'If you have any questions or issues on these topics, please contact: <a href="mailto:ccb@unep-wcmc.org">ccb@unep-wcmc.org</a>'
       right:
         html: 'Copyright &copy; 2013 UN-REDD Programme. All Rights Reserved'
     sidebar:
