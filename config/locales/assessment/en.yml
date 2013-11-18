@@ -9,11 +9,10 @@ en:
  <a href='/faq#biodiversity-and-ecosystem-services'>Biodiversity and ecosystem services</a>, including carbon stocks, are generally distributed unevenly over a landscape. A land-use decision in one place is likely to have effects elsewhere. In order to choose among REDD+ options and decide where they should be implemented, countries will need to understand the risks and opportunities associated with applying the different REDD+ options, and how they will affect safeguards and multiple benefits when applied in different places.
 </p>
 <p>
-Five activities are described below that, individually or in combination, can help countries to carry out robust, informed decision making on REDD+ interventions. Particularly relevant tools and other resources are highlighted. Further relevant tools can be found through the search links at the bottom of this page.
-</p>
+Countries may wish to consider undertaking some or all of the five steps described below, which can contribute to robust, informed decision making on REDD+ interventions. Particularly relevant tools and other resources are highlighted. Further relevant tools can be found through the search links at the bottom of this page.</p>
 "
         decisions:
-          header: 'What can you do to make informed decisions in REDD+ planning?'
+          header: 'Ways to integrate multiple benefits into REDD+ planning'
           html: "
 <table>
   <tr>
@@ -61,18 +60,10 @@ Five activities are described below that, individually or in combination, can he
     <td><img src='/assets/EconVal.jpg' /></td>
     <td>
       Conduct <strong>economic valuation</strong> of risks, benefits, and alternative approaches to deciding on priorities. For example, this paper, <a href='http://www.bioecon-network.org/pages/14th_2012/Narloch.pdf'>Towards a holistic assessment of national REDD+ options: Accounting for ecosystem service and biodiversity impacts</a>, describes how an economic assessment of REDD+ interventions including its benefits and risks from impacts on non-carbon ecosystem services and biodiversity can be undertaken.
-    </td>
-  </tr>
-
-  <tr>
-    <td><img src='/assets/marxan.jpg' /></td>
-    <td>
-      <strong>Identify the potential for enhancing multiple benefits and minimizing trade-offs</strong> when undertaking REDD+ interventions.
-
-      <p>
-        <a href='/resources/11'>Marxan</a> is a land-use planning tool developed for conservation purposes, which may also be applied in a REDD+ context. It can be used to identify cost-effective spatial solutions that attain a number of targets (such as reducing carbon emissions, conserving biodiversity and protecting or restoring areas important for ecosystem services).
-      </p>
-    </td>
+    <br/><br/>
+		<strong>Identify the potential for enhancing multiple benefits and minimizing trade-offs</strong> when undertaking REDD+ interventions.
+    
+		</td>
   </tr>
 </table>
 
