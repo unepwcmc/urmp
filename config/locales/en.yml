@@ -87,10 +87,12 @@ en:
         item_3:
           html: '<a href="/faq#cancun-safeguards">What are Cancun Safeguards?</a>'
         item_4:
-          html: '<a href="/faq#safeguards-and-multiple-benefits">How do safeguards and multiple benefits relate in the context of REDD+?</a>'
+          html: '<a href="/faq#safeguards-and-multiple-benefits">How do REDD+ safeguards and multiple benefits relate?</a>'
         item_5:
-          html: '<a href="/faq#SEPC-and-safeguards">How do the UN-REDD Social and Environmental Principles and Criteria (SEPC) relate to the Cancun safeguards?</a>'
+          html: '<a href="/faq#SEPC-and-safeguards">How does UN-REDD SEPC relate to Cancun?</a>'
         item_6:
-          html: '<a href="/faq#guidance-frameworks">Can several guidance frameworks for interpreting and implementing the Cancun safeguards be used simultaneously (e.g. FCPF SESA, UN-REDD SEPC, REDD+ SES)? </a>'
+          html: '<a href="/faq#guidance-frameworks">Can Cancun safeguards, SESA, SEPC and REDD+ SES be used simultaneously?</a>'
         item_7:
-          html: '<a href="/faq#REDD-strategies">Is capacity building available on developing a national approach to safeguards, or including multiple benefits in REDD+ strategies?</a>'
+          html: '<a href="/faq#REDD-strategies">Is capacity building available on safeguards and multiple benefits?</a>'
+        item_8:
+          html: '<a href="/faq#sis">What is an SIS?</a>'

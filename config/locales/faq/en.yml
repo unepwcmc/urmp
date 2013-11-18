@@ -2,7 +2,7 @@ en:
   site:
     static:
       faq:
-        header: 'Multiple Benefits FAQ'
+        header: 'Multiple Benefits and Safeguards FAQ'
         content:
           html: "
 				
@@ -55,6 +55,17 @@ en:
       2011 (<a href='http://unfccc.int/resource/docs/2011/cop17/eng/09a02.pdf#page=16'>Decision 12/CP.17</a>)
     </p>
   </div>
+	
+	
+	<h4 id='sis'>What is a safeguard information system?</h4>
+	<div>
+	<p>
+	Parties to the UNFCCC agreed that countries should set up a national safeguards information system that is 
+	able to provide information on how the Cancun safeguards are being addressed. Provision of summary information 
+	would be made periodically in National Communications to the UNFCCC. Details on such Safeguards Information Systems (SIS) 
+	were further elaborated at COP 17 in Durban, in 2011 <a href='http://unfccc.int/resource/docs/2011/cop17/eng/09a02.pdf#page=16'>(UNFCCC 12/CP.17)</a>.
+	</p>
+	</div>
 
   <h4 id='safguards-and-multiple-benefits'>How do safeguards and multiple benefits relate in the context of REDD+?</h4>
   <div>

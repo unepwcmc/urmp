@@ -2,19 +2,24 @@ en:
   site:
     static:
       home:
-        header: 'Decision support on biodiversity and ecosystem services under REDD+'
+        header: 'Decision support on safeguards and multiple benefits of REDD+'
         intro:
           html: "
 <p>
-The main purpose of REDD+ is to mitigate global climate change. REDD+
-also has the potential to deliver other benefits, both environmental and
-social, to countries that choose to implement it. <strong>This website
-offers a guide to steps that can be taken to ensure that REDD+ delivers
-benefits and that risks are reduced</strong>, and identifies relevant
-tools and resources.  It aims to assist REDD+ planners, policy makers
-and their technical advisors, especially those working on REDD+
-strategies, land-use planning for REDD+, and the implementation of the
-UNFCCC’s <a href='/faq#cancun-safeguards'>Cancun safeguards</a>.
+The main purpose of REDD+ is to mitigate global climate change. REDD+ also has the potential 
+to deliver other benefits, both environmental and social, to countries that choose to 
+implement it. This website offers an overview of steps that can be taken to ensure that 
+REDD+ delivers benefits and that risks are reduced, covering three areas: </p>
+<ul>
+<li><a href='/safeguards'>Applying REDD+ Safeguards</a></li>
+<li><a href='/monitoring'>Assessment of biodiversity and ecosystem services</a></li>
+<li><a href='/assessment'>Monitoring the impacts of REDD+ on biodiversity and ecosystem services</a></li>
+</ul>
+<p>
+It also includes a library of <a href='/resources'>tools and resources</a>, with descriptions of their relevance to 
+REDD+ planning or implementation.  The website is intended to assist REDD+ planners, 
+policy makers and their technical advisors, especially those working on REDD+ strategies, 
+land-use planning for REDD+, and the implementation of the UNFCCC’s <a href='/faq#cancun-safeguards'>Cancun safeguards</a>.
 </p>
 "
         biodiversity:
@@ -22,25 +27,22 @@ UNFCCC’s <a href='/faq#cancun-safeguards'>Cancun safeguards</a>.
           html: "
 
 <p>
-Forests provide a range of <a href='/faq#biodiversity-and-ecosystem-services'>ecosystem services</a>, and host the
-biodiversity that underpins these services. Ecosystem services include
-climate change mitigation, water regulation, cultural benefits, and
-production of food, fuel and fibre. When REDD+ actions prevent loss or
-degradation of forest ecosystems and biodiversity, or improve their
-condition, multiple benefits will result, including protected or
-enhanced ecosystem services.
+Forests provide a range of <a href='/faq#biodiversity-and-ecosystem-services'>ecosystem services</a>, 
+and host the biodiversity that underpins these services. The services provided by any particular 
+forest may include climate change mitigation, water regulation, cultural benefits, and production 
+of food, fuel or fibre. REDD+ actions can protect or enhance these services by preventing loss or 
+degradation of forest ecosystems and biodiversity, or restoring forest ecosystems.
 </p>
 
-<p> Ecosystem services and biodiversity of different forests vary, and they
-will also respond differently to forest management actions. What environmental
-benefits and risks that may result from REDD+ will therefore depend on the
-location and type of REDD+ actions undertaken. National planning approaches
-may include: deciding what benefits are prioritized, putting safeguard
-policies in place, identifying risks and benefits that may arise from proposed
-actions and allocating REDD+ actions to locations that secure priority
-benefits at low risk. The UN-REDD Programme supports countries in their
-efforts to integrate these considerations into their REDD+ strategies and
-development plans.
+<p>
+Forests vary in their importance for biodiversity and ecosystem services, and also in their 
+likely response to forest management actions. The benefits and risks of REDD+ will thus depend 
+on the location and type of REDD+ actions. Planning approaches to reduce risks and promote 
+benefits may include: identifying priorities for benefits, putting safeguard policies in place, 
+identifying risks and benefits that may arise from specific actions and selecting locations for 
+these that secure high-priority benefits with low risks. The UN-REDD Programme supports 
+countries in their efforts to integrate this thinking into their REDD+ strategies and development
+plans.
 </p>
 "
         countries:
@@ -48,14 +50,12 @@ development plans.
           intro:
             html: "
       <p>
-        The UN-REDD Programme currently supports 46 partner countries
+        The UN-REDD Programme currently supports 48 partner countries
         across Africa, Asia-Pacific and Latin America and the Caribbean.
         Many of these countries are developing approaches to ensure that
         their plans for REDD+ take account of the potential risks and
         opportunities for biodiversity and ecosystem services. Recent
-        outputs are available below. <a
-        href='http://www.un-redd.org/Partner_Countries/tabid/102663/Default.aspx'>On-going
-        work is highlighted here</a>.
+        outputs are available below.
       </p>
 "
           list:
