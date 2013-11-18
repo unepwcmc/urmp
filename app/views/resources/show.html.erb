@@ -28,31 +28,31 @@
       </div>
     </div>
     <dl class="resource_details">
-      <dt>Resource type:</dt>
+			<dt><%= if @resource.resource_types.blank? then "" else "Resource type:" end  %></dt>
       <dd><%= @resource.resource_types.map(&:name).join(', ') %></dd>
 
-      <dt>Topic:</dt>
+      <dt><%= if @resource.topics.blank? then "" else "Topic:" end  %></dt>
       <dd><%= @resource.topics.map(&:name).join(', ') %></dd>
 
-      <dt>Scale:</dt>
+      <dt><%= if @resource.scales.blank? then "" else "Scale:" end  %></dt>
       <dd><%= @resource.scales.map(&:name).join(',') %></dd>
 
-      <dt>Author:</dt>
+      <dt><%= if @resource.author.blank? then "" else "Author:" end  %></dt>
       <dd><%= @resource.author %></dd>
 
-      <dt>Publication:</dt>
+      <dt><%= if @resource.resource_date.blank? then "" else "Publication:" end  %></dt>
       <dd><%= @resource.resource_date %></dd>
 
-      <dt>Institution:</dt>
+      <dt><%= if @resource.institution.blank? then "" else "Institution:" end  %></dt>
       <dd><%= @resource.institution %></dd>
 
-      <dt>Language: </dt>
+      <dt><%= if @resource.languages.blank? then "" else "Language:" end  %></dt>
       <dd><%= @resource.languages.map(&:name).join(', ') %></dd>
 
-      <dt>External link:</dt>
+      <dt><%= if @resource.link.blank? then "" else "External link:" end  %></dt>
       <dd><%= link_to @resource.link, @resource.link, :class => 'external_link' %></dd>
 
-      <dt>Level of expertise required: </dt>
+      <dt><%= if @resource.technical_expertise.blank? then "" else "Level of expertise required:" end  %></dt>
       <dd><%= @resource.technical_expertise %></dd>
     </dl>
   </article>
