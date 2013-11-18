@@ -1,6 +1,7 @@
 <% content_for :main do %>
   <h1 class="header"><%= t('site.static.faq.header') %></h1>
-  <article>
+	<article>	
+   	<%= render :partial => '/shared/faq_anchor_links' %>	
     <%= t('site.static.faq.content.html') %>
   </article>
 <% end %>
