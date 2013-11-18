@@ -79,7 +79,9 @@ en:
         item_22:
           html: '<a href="resources/27">Monitoring for REDD+: carbon stock change and multiple benefits</a>'
         item_23:
-          html: '<a href="http://www.unredd.net/index.php?option=com_docman&task=doc_download&gid=10177&Itemid=53">UN-REDD framework for supporting the development of country approaches to safeguards</a>'				
+          html: '<a href="http://www.unredd.net/index.php?option=com_docman&task=doc_download&gid=10177&Itemid=53">UN-REDD framework for supporting the development of country approaches to safeguards</a>'
+        item_24:
+          html: '<a href="http://www.unep-wcmc.org/participatory-biodiversity-monitoring-for-redd-considerations-for-national-redd-programmes_1089.html">Participatory Biodiversity Monitoring for REDD+: Considerations for national REDD+ programmes</a>'				
       faq:
         header: 'FAQ'
         item_1:
