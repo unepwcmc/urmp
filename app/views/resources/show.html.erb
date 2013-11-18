@@ -28,13 +28,16 @@
       </div>
     </div>
     <dl class="resource_details">
-      <dt>Resource type</dt>
+      <dt>Resource type:</dt>
       <dd><%= @resource.resource_types.map(&:name).join(', ') %></dd>
 
-      <dt>Topic</dt>
+      <dt>Topic:</dt>
       <dd><%= @resource.topics.map(&:name).join(', ') %></dd>
 
-      <dt>Author</dt>
+      <dt>Scale:</dt>
+      <dd><%= @resource.scales.map(&:name).join(',') %></dd>
+
+      <dt>Author:</dt>
       <dd><%= @resource.author %></dd>
 
       <dt>Publication:</dt>
