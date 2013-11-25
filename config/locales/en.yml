@@ -20,6 +20,7 @@ en:
       factsheets: 'Factsheets'
       faq: 'FAQ'
       resources: 'Resources'
+      strapline: 'of biodiversity and ecosystem services'
     footer:
       left:
         html: 'If you have any questions or issues on these topics, please contact: <a href="mailto:ccb@unep-wcmc.org">ccb@unep-wcmc.org</a>'
