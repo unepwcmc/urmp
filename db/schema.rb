@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20121206154807) do
+ActiveRecord::Schema.define(:version => 20131125132600) do
 
   create_table "countries", :force => true do |t|
     t.string   "name"
@@ -43,6 +43,7 @@ ActiveRecord::Schema.define(:version => 20121206154807) do
     t.string   "attachment_content_type"
     t.integer  "attachment_file_size"
     t.datetime "attachment_updated_at"
+    t.text     "description"
   end
 
   add_index "factsheets", ["resource_id"], :name => "index_factsheets_on_resource_id"

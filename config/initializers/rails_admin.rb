@@ -113,6 +113,7 @@ RailsAdmin.config do |config|
         help 'Required'
       end
       field :resource
+      field :description
     end
   end
 end
