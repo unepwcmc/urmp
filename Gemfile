@@ -9,6 +9,8 @@ gem 'rack', '~> 1.4.5'
 gem 'pg'
 gem 'globalize3'
 
+gem 'rvm-capistrano'
+
 gem 'devise', '>= 2.2.3' # Devise must be required before RailsAdmin
 gem 'rails_admin'
 
