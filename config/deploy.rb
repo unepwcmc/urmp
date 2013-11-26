@@ -12,7 +12,7 @@ set :generate_webserver_config, false
 
 ssh_options[:forward_agent] = true
 
-ENV_SET="RAILS_ENV=production"
+# ENV_SET="RAILS_ENV=production"
 
 task :split_refs do
   #Compile coffeescript and jammit
