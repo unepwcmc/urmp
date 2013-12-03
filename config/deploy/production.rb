@@ -6,18 +6,18 @@ require 'brightbox/passenger'
 # The name of your application.  Used for deployment directory and filenames
 # and Apache configs. Should be unique on the Brightbox
 set :application, "urmp"
-set :server_name, "urmp.unepwcmc-013.vm.brightbox.net"
+set :server_name, "urmp.unepwcmc-014.vm.brightbox.net"
 set :sudo_user, "rails"
 set :app_port, "80"
 
 
 # Primary domain name of your application. Used in the Apache configs
-set :domain, "unepwcmc-013.vm.brightbox.net"
+set :domain, "unepwcmc-014.vm.brightbox.net"
 
 ## List of servers
-role :app, "unepwcmc-013.vm.brightbox.net"
-role :web, "unepwcmc-013.vm.brightbox.net"
-role :db, 'unepwcmc-013.vm.brightbox.net', :primary => true
+role :app, "unepwcmc-014.vm.brightbox.net"
+role :web, "unepwcmc-014.vm.brightbox.net"
+role :db, 'unepwcmc-014.vm.brightbox.net', :primary => true
 # Target directory for the application on the web and app servers.
 set(:deploy_to) { File.join("", "home", user, application) }
 
@@ -39,7 +39,7 @@ server {
   listen 80;
   
   client_max_body_size 4G;
-  server_name #{application}.unepwcmc-013.vm.brightbox.net #{application}.sw01.matx.info;
+  server_name #{application}.unepwcmc-014.vm.brightbox.net #{application}.sw01.matx.info;
   keepalive_timeout 5;
   root #{deploy_to}/public;
   passenger_enabled on;
