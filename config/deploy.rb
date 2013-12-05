@@ -1,6 +1,9 @@
 require 'capistrano/ext/multistage'
 set :rake, 'rake'
 
+require 'rvm/capistrano'
+set :rvm_ruby_string, '1.9.3'
+
 set :default_stage, 'staging'
 set :repository,  "git@github.com:unepwcmc/urmp.git"
 set :scm, :git
@@ -9,7 +12,7 @@ set :generate_webserver_config, false
 
 ssh_options[:forward_agent] = true
 
-ENV_SET="RAILS_ENV=production"
+# ENV_SET="RAILS_ENV=production"
 
 task :split_refs do
   #Compile coffeescript and jammit

@@ -1,3 +1,5 @@
+set :rails_env, "staging"
+
 ## Generated with 'brightbox' on 2011-05-11 16:48:20 +0100
 gem 'brightbox', '>=2.3.9'
 require 'brightbox/recipes'
@@ -11,13 +13,6 @@ set :server_name, "urmp.unepwcmc-011.vm.brightbox.net"
 set :sudo_user, "rails"
 set :app_port, "80"
 
-
-set :default_environment, {
-  'PATH' => "/home/rails/.rvm/gems/ruby-1.9.2-p320/bin:/home/rails/.rvm/bin:/home/rails/.rvm/rubies/ruby-1.9.2-p320/bin:$PATH",
-  'RUBY_VERSION' => 'ruby-1.9.2-p320',
-  'GEM_HOME' => '/home/rails/.rvm/gems/ruby-1.9.2-p320',
-  'GEM_PATH' => '/home/rails/.rvm/gems/ruby-1.9.2-p320',
-}
 
 # Primary domain name of your application. Used in the Apache configs
 set :domain, "unepwcmc-011.vm.brightbox.net"
