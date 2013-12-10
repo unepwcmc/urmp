@@ -1,3 +1,5 @@
+set :default_stage, 'staging'
+
 ## Generated with 'brightbox' on 2011-05-11 16:48:20 +0100
 gem 'brightbox', '>=2.3.9'
 require 'brightbox/recipes'
