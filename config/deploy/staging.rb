@@ -1,4 +1,4 @@
-set :rails_env, "staging"
+set :default_stage, 'staging'
 
 ## Generated with 'brightbox' on 2011-05-11 16:48:20 +0100
 gem 'brightbox', '>=2.3.9'
@@ -7,7 +7,6 @@ require 'brightbox/passenger'
 
 # The name of your application.  Used for deployment directory and filenames
 # and Apache configs. Should be unique on the Brightbox
-
 set :application, "urmp"
 set :server_name, "urmp.unepwcmc-011.vm.brightbox.net"
 set :sudo_user, "rails"
@@ -74,6 +73,10 @@ sudo "ln -s /etc/nginx/sites-available/#{application} /etc/nginx/sites-enabled/#
 end
 
 
+### Other options you can set ##
+# Comma separated list of additional domains for Apache
+# set :domain_aliases, "www.example.com,dev.example.com"
+
 ## Local Shared Area
 # These are the list of files and directories that you want
 # to share between the releases of your application on a particular
@@ -116,7 +119,7 @@ task :setup_database_configuration do
   database_user = Capistrano::CLI.ui.ask("Database username: ")
   pg_password = Capistrano::CLI.password_prompt("Database user password: ")
   require 'yaml'
-  spec = { "production" => {
+  spec = { "staging" => {
                                    "adapter" => "postgresql",
                                    "database" => database_name,
                                    "username" => database_user,
@@ -128,14 +131,3 @@ end
 
 after "deploy:setup", :setup_database_configuration
 after "deploy", "no_index_robots"
-
-after "deploy:setup", :config_vhost
-
-namespace :deploy do
-  desc "Restarting mod_rails with restart.txt"
-  task :restart, :roles => :app, :except => { :no_release => true } do
-    run "touch #{current_path}/tmp/restart.txt"
-  end
-end
-
-
